@@ -1,0 +1,302 @@
+[
+  {
+    "name": "mGluR5/Glu/Gq",
+    "legs": [
+      {
+        "label": "Glu",
+        "reaction_name": "RecLigandBinding",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecLigandBinding",
+        "Kf": 16799.799059999976,
+        "Kb": 12.0,
+        "params": [
+          "Glu+mGluR.Kd",
+          "Glu+mGluR.tau"
+        ]
+      },
+      {
+        "label": "+Gq",
+        "reaction_name": "RecGlu_bind_Gq",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecGlu_bind_Gq",
+        "Kf": 600.0051779999991,
+        "Kb": 6.0,
+        "params": [
+          "Glu_mGluR+Gq.Kd",
+          "Glu_mGluR+Gq.tau"
+        ]
+      },
+      {
+        "label": "Gq",
+        "reaction_name": "Rec_bind_Gq",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/Rec_bind_Gq",
+        "Kf": 300.00258899999955,
+        "Kb": 0.6,
+        "params": []
+      },
+      {
+        "label": "+Glu",
+        "reaction_name": "RecGq_bind_Glu",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecGq_bind_Glu",
+        "Kf": 16799.799059999976,
+        "Kb": 60.0,
+        "params": [
+          "Glu+mGluR_Gq.Kd",
+          "Glu+mGluR_Gq.tau"
+        ]
+      }
+    ],
+    "path1_ligand_then_G": 139999.53368554867,
+    "path2_G_then_ligand": 139999.53368554867,
+    "ratio": 1.0,
+    "balanced": true
+  },
+  {
+    "name": "mGluR5/DHPG/Gq",
+    "legs": [
+      {
+        "label": "DHPG",
+        "reaction_name": "DHPG_bind_mGluR",
+        "path": "/model[0]/kinetics[0]/DHPG_mGluR_g[0]/DHPG_bind_mGluR",
+        "Kf": 10000.086299999983,
+        "Kb": 10.0,
+        "params": [
+          "DHPG+mGluR.Kd",
+          "DHPG+mGluR.tau"
+        ]
+      },
+      {
+        "label": "+Gq",
+        "reaction_name": "DHPG_Rec_bind_Gq",
+        "path": "/model[0]/kinetics[0]/DHPG_mGluR_g[0]/DHPG_Rec_bind_Gq",
+        "Kf": 300.00258899999955,
+        "Kb": 6.0,
+        "params": [
+          "DHPG_mGluR+Gq.Kd",
+          "DHPG_mGluR+Gq.tau"
+        ]
+      },
+      {
+        "label": "Gq",
+        "reaction_name": "Rec_bind_Gq",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/Rec_bind_Gq",
+        "Kf": 300.00258899999955,
+        "Kb": 0.6,
+        "params": []
+      },
+      {
+        "label": "+DHPG",
+        "reaction_name": "DHPG_bind_RecGq",
+        "path": "/model[0]/kinetics[0]/DHPG_mGluR_g[0]/DHPG_bind_RecGq",
+        "Kf": 10000.086299999983,
+        "Kb": 100.0,
+        "params": [
+          "DHPG+mGluR_Gq.Kd",
+          "DHPG+mGluR_Gq.tau"
+        ]
+      }
+    ],
+    "path1_ligand_then_G": 50000.86300372368,
+    "path2_G_then_ligand": 50000.86300372369,
+    "ratio": 0.9999999999999999,
+    "balanced": true
+  },
+  {
+    "name": "RecpS870/Glu/Gq",
+    "legs": [
+      {
+        "label": "Glu",
+        "reaction_name": "RecpS870_bind_Glu",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecpS870_bind_Glu",
+        "Kf": 10000.086299999983,
+        "Kb": 10.0,
+        "params": [
+          "RpS870+Glu.Kd",
+          "RpS870+Glu.tau"
+        ]
+      },
+      {
+        "label": "+Gq",
+        "reaction_name": "RecpS870Glu_bind_Gq",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecpS870Glu_bind_Gq",
+        "Kf": 100.00086299999987,
+        "Kb": 0.4,
+        "params": [
+          "RpS870Glu+Gq.Kd",
+          "RpS870Glu+Gq.tau"
+        ]
+      },
+      {
+        "label": "Gq",
+        "reaction_name": "RecpS870_bind_Gq",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecpS870_bind_Gq",
+        "Kf": 100.00086299999987,
+        "Kb": 1.0,
+        "params": []
+      },
+      {
+        "label": "+Glu",
+        "reaction_name": "RecpS870Gq_bind_Glu",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecpS870Gq_bind_Glu",
+        "Kf": 10000.086299999983,
+        "Kb": 4.0,
+        "params": [
+          "RpS870Gq+Glu.Kd",
+          "RpS870Gq+Glu.tau"
+        ]
+      }
+    ],
+    "path1_ligand_then_G": 250004.31501861845,
+    "path2_G_then_ligand": 250004.31501861845,
+    "ratio": 1.0,
+    "balanced": true
+  },
+  {
+    "name": "RecpS870/DHPG/Gq",
+    "legs": [
+      {
+        "label": "DHPG",
+        "reaction_name": "DHPG_bind_RecpS870",
+        "path": "/model[0]/kinetics[0]/DHPG_mGluR_g[0]/DHPG_bind_RecpS870",
+        "Kf": 10000.086299999983,
+        "Kb": 1.0,
+        "params": [
+          "RpS870+DHPG.Kd",
+          "RpS870+DHPG.tau"
+        ]
+      },
+      {
+        "label": "+Gq",
+        "reaction_name": "DHPG_RecpS870_bind_Gq",
+        "path": "/model[0]/kinetics[0]/DHPG_mGluR_g[0]/DHPG_RecpS870_bind_Gq",
+        "Kf": 600.0051779999991,
+        "Kb": 12.0,
+        "params": [
+          "RpS870DHPG+Gq.Kd",
+          "RpS870DHPG+Gq.tau"
+        ]
+      },
+      {
+        "label": "Gq",
+        "reaction_name": "RecpS870_bind_Gq",
+        "path": "/model[0]/kinetics[0]/mGluR5_g[0]/RecpS870_bind_Gq",
+        "Kf": 100.00086299999987,
+        "Kb": 1.0,
+        "params": []
+      },
+      {
+        "label": "+DHPG",
+        "reaction_name": "DHPG_bind_RecpS870_Gq",
+        "path": "/model[0]/kinetics[0]/DHPG_mGluR_g[0]/DHPG_bind_RecpS870_Gq",
+        "Kf": 10000.086299999983,
+        "Kb": 10.0,
+        "params": [
+          "RpS870Gq+DHPG.Kd",
+          "RpS870Gq+DHPG.tau"
+        ]
+      }
+    ],
+    "path1_ligand_then_G": 500008.63003723684,
+    "path2_G_then_ligand": 100001.72600744737,
+    "ratio": 5.0,
+    "balanced": false
+  },
+  {
+    "name": "b2AR/Iso/Gs",
+    "legs": [
+      {
+        "label": "Iso",
+        "reaction_name": "Iso_bind_b2AR",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/Iso_bind_b2AR",
+        "Kf": 1000.0086299999984,
+        "Kb": 1.0,
+        "params": [
+          "Iso+b2AR.Kd",
+          "Iso+b2AR.tau"
+        ]
+      },
+      {
+        "label": "+Gs",
+        "reaction_name": "IsoR_bind_GsGDP",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/IsoR_bind_GsGDP",
+        "Kf": 20.00017259999997,
+        "Kb": 0.05,
+        "params": [
+          "IsoR+GsGDP.Kd",
+          "IsoR+GsGDP.tau"
+        ]
+      },
+      {
+        "label": "Gs",
+        "reaction_name": "R_bind_GsGDP",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/R_bind_GsGDP",
+        "Kf": 200.00172599999973,
+        "Kb": 1.0,
+        "params": []
+      },
+      {
+        "label": "+Iso",
+        "reaction_name": "Iso_bind_RGs",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/Iso_bind_RGs",
+        "Kf": 2000.017259999997,
+        "Kb": 1.0,
+        "params": [
+          "Iso+RGs.Kd",
+          "Iso+RGs.tau"
+        ]
+      }
+    ],
+    "path1_ligand_then_G": 400006.90402978956,
+    "path2_G_then_ligand": 400006.9040297896,
+    "ratio": 0.9999999999999999,
+    "balanced": true
+  },
+  {
+    "name": "b2AR/Epi/Gs",
+    "legs": [
+      {
+        "label": "Epi",
+        "reaction_name": "Epi_bind_b2AR",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/Epi_bind_b2AR",
+        "Kf": 1000.0086299999984,
+        "Kb": 1.0,
+        "params": [
+          "Epi+b2AR.Kd",
+          "Epi+b2AR.tau"
+        ]
+      },
+      {
+        "label": "+Gs",
+        "reaction_name": "EpiR_bind_GsGDP",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/EpiR_bind_GsGDP",
+        "Kf": 20.00017259999997,
+        "Kb": 0.05,
+        "params": [
+          "EpiR+GsGDP.Kd",
+          "EpiR+GsGDP.tau"
+        ]
+      },
+      {
+        "label": "Gs",
+        "reaction_name": "R_bind_GsGDP",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/R_bind_GsGDP",
+        "Kf": 200.00172599999973,
+        "Kb": 1.0,
+        "params": []
+      },
+      {
+        "label": "+Epi",
+        "reaction_name": "Epi_bind_RGs",
+        "path": "/model[0]/kinetics[0]/b2AR_g[0]/Epi_bind_RGs",
+        "Kf": 4000.034519999994,
+        "Kb": 2.0,
+        "params": [
+          "Epi+RGs.Kd",
+          "Epi+RGs.tau"
+        ]
+      }
+    ],
+    "path1_ligand_then_G": 400006.90402978956,
+    "path2_G_then_ligand": 400006.9040297896,
+    "ratio": 0.9999999999999999,
+    "balanced": true
+  }
+]

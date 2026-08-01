@@ -1,0 +1,97 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8914981,
+            "authors": "Kleijn M et al.",
+            "journal": "FEBS Letter, ",
+            "year": 1996,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "cell-line",
+        "cellType": "PC12 cells",
+        "samplePrep": "rat Pheochromocytoma cell line (PC12)  treated with NGF",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "NGF",
+                "alias": "NGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    1.11
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "a4EBP",
+            "alias": "a4EBP"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "presetTime",
+            "entity": {
+                "name": "4EBP",
+                "alias": "4EBP"
+            },
+            "sampTime": 0
+        },
+        "data": [
+            [
+                4000.0,
+                0.281,
+                0
+            ],
+            [
+                4300.0,
+                0.281,
+                0
+            ],
+            [
+                4900,
+                0.305,
+                0
+            ],
+            [
+                5800,
+                0.296,
+                0
+            ],
+            [
+                7600,
+                0.155,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

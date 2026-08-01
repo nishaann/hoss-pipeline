@@ -1,0 +1,47 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 3542117,
+            "authors": "Goto S et al.",
+            "journal": "Brain Res., ",
+            "year": 1986,
+            "figure": "Table1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Rat",
+        "samplePrep": "hippocampus from wistar/albino rats",
+        "temperature": 4,
+        "notes": "Distribution of CaN in different regions of the brain using EIA."
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "CaN",
+                    "alias": "CaN"
+                },
+                "field": "concInit",
+                "units": "uM",
+                "value": 9.6,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22492229,
+            "authors": "Ru W et al.",
+            "journal": "J Mol Neurosci., ",
+            "year": 2012,
+            "figure": "Fig1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mouse",
+        "samplePrep": "primary cortical neuronal cultures from C57 mouse embryos (E18)",
+        "temperature": 37,
+        "notes": "Used a settleTime of 1800s instead of 3600s as its taking more time to run."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "quantityUnits": "mM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "S6Kpqr",
+            "alias": "S6KpT389"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "S6Kpqr"
+            },
+            "dose": 0.01
+        },
+        "data": [
+            [
+                0,
+                0.704,
+                0
+            ],
+            [
+                0.01,
+                1.0,
+                0.197
+            ],
+            [
+                0.1,
+                0.873,
+                0.063
+            ],
+            [
+                1.0,
+                0.901,
+                0.19
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

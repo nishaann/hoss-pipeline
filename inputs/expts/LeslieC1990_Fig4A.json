@@ -1,0 +1,144 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nisha.viswan@gmail.com",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 2167132,
+            "authors": "Leslie CC & Channon JY",
+            "journal": "Biochim Biophys Acta.",
+            "year": 1990,
+            "figure": ""
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mouse",
+        "sampleType": "cell-line",
+        "cellType": "RAW264.7 cells",
+        "samplePrep": "PLA2 was partially purified from RAW264.7 murine macrophages",
+        "temperature": 37,
+        "notes": "PLA2 extracted from cells. 2ug of PLA2 was used. Unlabelled 20g AA was added as cold carrier. GPC is the substrate."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "PIP2",
+                "alias": "PIP2"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 60,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "AA",
+            "alias": "AA"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "AA"
+            },
+            "dose": 0.6,
+            "sampling": "dose"
+        },
+        "data": [
+            [
+                0.0,
+                0.145,
+                0
+            ],
+            [
+                0.04,
+                0.188,
+                0.067
+            ],
+            [
+                0.08,
+                0.456,
+                0.072
+            ],
+            [
+                0.15,
+                0.746,
+                0.036
+            ],
+            [
+                0.3,
+                0.783,
+                0.041
+            ],
+            [
+                0.6,
+                1.0,
+                0.145
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PLA2_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "PIP2"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "Degrade_AA"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "PLA2",
+                    "alias": "PLA2_cytosolic"
+                },
+                "field": "concInit",
+                "value": 0.00047,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "PIP2"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "APC",
+                    "alias": "APC"
+                },
+                "field": "concInit",
+                "value": 0.03,
+                "units": "mM"
+            }
+        ]
+    }
+}

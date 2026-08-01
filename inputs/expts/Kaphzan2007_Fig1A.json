@@ -1,0 +1,85 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17645456,
+            "authors": "Kaphzan H et al.",
+            "journal": "J Neurochem., ",
+            "year": 2007,
+            "figure": "Fig 1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Rat",
+        "samplePrep": "hippocampal slice from adult male Sprague-Dawley rats",
+        "temperature": 32,
+        "notes": "Assuming 10uM of NMDA is equivalent to 1uM Glutamate and therefore translating to ~200nM Ca. The slices were ground up for the assay so it isn't surprising that the effect is so small. Therefore hard to interpret."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "value": 10,
+            "entity": {
+                "name": "NMDA",
+                "alias": "NMDA"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKpq",
+            "alias": "ppERK2"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "MAPKpq"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.03,
+                "value": 1.0
+            },
+            {
+                "stimulus": [
+                    "NMDA"
+                ],
+                "stderr": 0.03,
+                "value": 1.18
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "NMDA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

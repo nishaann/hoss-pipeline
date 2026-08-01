@@ -1,0 +1,99 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 21593322,
+            "authors": "Mockett_BG et al.",
+            "journal": "J Neurosci. ",
+            "year": 2011,
+            "figure": "Fig 3A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "hippocampal synaptoneurosomes from Sprague Dawley rats (42-70 d)",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    20
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "tCaMKIIT286",
+            "alias": "tCaMKIIT286"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "CaMKII",
+                "alias": "CaMKII"
+            },
+            "sampling": "presetTime",
+            "sampTime": 4000
+        },
+        "data": [
+            [
+                4000.0,
+                0.69,
+                0.75
+            ],
+            [
+                4300.0,
+                1.3,
+                0.0
+            ],
+            [
+                4600.0,
+                1.05,
+                0.1
+            ],
+            [
+                5200.0,
+                1.37,
+                0.02
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

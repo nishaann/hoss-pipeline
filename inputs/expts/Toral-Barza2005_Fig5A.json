@@ -1,0 +1,58 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15896331,
+            "authors": "Toral-Barza et al.",
+            "journal": "Biochem Biophys Res Commun., ",
+            "year": 2005,
+            "figure": "Fig5A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Human",
+        "sampleType": "expression system",
+        "cellType": "cell-free",
+        "samplePrep": "human mTOR cDNA was sequenced and expressedin HEK293 cells, human S6K was used",
+        "temperature": 30,
+        "notes": "Western blotting.Assuming the rate is in 1/sec.Vmax=50000, 800ng/ml of mTOR for 2h."
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "emTORC1+S6K",
+                    "alias": "mTOR_act_S6K"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 0.8,
+                "stderr": 0.0
+            },
+            {
+                "entity": {
+                    "name": "emTORC1+S6K"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.0625,
+                "stderr": 0.0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

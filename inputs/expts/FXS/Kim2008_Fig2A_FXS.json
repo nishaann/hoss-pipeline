@@ -1,0 +1,94 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18332424,
+            "authors": "Kim SH et al.",
+            "journal": "Proc Natl Acad Sci U S A. ",
+            "year": 2008,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "sampleType": "synaptoneurosomes",
+        "cellType": "cortex",
+        "samplePrep": "P10-14 mice cortical synaptoneurosomes",
+        "temperature": 25,
+        "notes": "fmr-1 KO cortical synaptoneurosomes"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    2000,
+                    100.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKKpq",
+            "alias": "MAPKKpp"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "MAPKKpq"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                2000,
+                1,
+                0
+            ],
+            [
+                2060,
+                0.758,
+                0
+            ],
+            [
+                2120,
+                0.7,
+                0
+            ],
+            [
+                2300,
+                0.54,
+                0
+            ],
+            [
+                2600,
+                0.46,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

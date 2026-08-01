@@ -1,0 +1,114 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10581244,
+            "authors": "Lorsch JR and Herschlag D",
+            "journal": "EMBO J., ",
+            "year": 1999,
+            "figure": "Fig5A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "partially purified rabbit reticulocyte ribosomes and initiation factors, rabbit tRNA",
+        "temperature": 26,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "40S_mRNA",
+                "alias": "40S_mRNA"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    60
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "43S",
+            "alias": "43S"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "43S"
+            },
+            "sampling": "presetTime",
+            "sampTime": 1200
+        },
+        "data": [
+            [
+                0.0,
+                0,
+                0
+            ],
+            [
+                30.0,
+                0.193,
+                0
+            ],
+            [
+                90,
+                0.366,
+                0
+            ],
+            [
+                150,
+                0.61,
+                0
+            ],
+            [
+                300,
+                0.792,
+                0
+            ],
+            [
+                600,
+                0.972,
+                0
+            ],
+            [
+                1200,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "43S_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Q_clx",
+                    "alias": "Q_clx"
+                },
+                "field": "concInit",
+                "value": 1e-05,
+                "units": "mM"
+            }
+        ]
+    }
+}

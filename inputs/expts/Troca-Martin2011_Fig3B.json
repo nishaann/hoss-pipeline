@@ -1,0 +1,109 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 21715609,
+            "authors": "Troca-Martin JA et al.",
+            "journal": "J Neurosci., ",
+            "year": 2011,
+            "figure": "Fig 3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "primary culture",
+        "cellType": "hippocampal neurons",
+        "samplePrep": "cultures of C57BL/6J P0 mouse hippocampal neurons",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "value": 0.05,
+            "label": "BDNF_1"
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "BDNF"
+            },
+            "value": 3.6,
+            "label": "BDNF_2"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "eIF4E_S209",
+            "alias": "eIF4E_S209"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "eIF4E_S209"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [
+                    "BDNF_1"
+                ],
+                "value": 1,
+                "stderr": 0.174
+            },
+            {
+                "stimulus": [
+                    "BDNF_2"
+                ],
+                "value": 1.72,
+                "stderr": 0.1
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

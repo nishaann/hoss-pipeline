@@ -1,0 +1,123 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15514998,
+            "authors": "Dijkhuizen and Ghosh",
+            "journal": "J Neurobiol. ",
+            "year": 2005,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "cortical neurons",
+        "samplePrep": "E18 Long-Evans rat primary cortical neurons",
+        "temperature": 37,
+        "notes": "Deleting the rest of the model for convenience"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    2
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aAKT",
+            "alias": "aAKT"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aAKT"
+            }
+        },
+        "data": [
+            [
+                4000,
+                1.0,
+                0
+            ],
+            [
+                4030,
+                2.0,
+                0
+            ],
+            [
+                4120,
+                16.4,
+                0
+            ],
+            [
+                4600,
+                14.4,
+                0
+            ],
+            [
+                5800,
+                13.8,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "AKT",
+                    "alias": "AKT"
+                },
+                "field": "concInit",
+                "value": 0.00017,
+                "units": "mM"
+            }
+        ],
+        "notes": "Jain2009_Fig5B"
+    }
+}

@@ -1,0 +1,132 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9249258,
+            "authors": "Akam EC et al.",
+            "journal": "Br J Pharmacol. ",
+            "year": 1997,
+            "figure": "Fig3"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "sampleType": "cell-line",
+        "cellType": "BHK cells",
+        "samplePrep": "membrane preparations of BHK cells expressing rat mGluR1",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "M",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "amGluR",
+            "alias": "Glu_mGluR_Gq"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "amGluR"
+            },
+            "dose": 3e-08,
+            "sampling": "dose"
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                3e-08,
+                1.0,
+                0
+            ],
+            [
+                1e-07,
+                1.24,
+                0.32
+            ],
+            [
+                3e-07,
+                1.719,
+                0.64
+            ],
+            [
+                1e-06,
+                6.119,
+                0.72
+            ],
+            [
+                3e-06,
+                11.557,
+                1.679
+            ],
+            [
+                1e-05,
+                16.356,
+                2.4
+            ],
+            [
+                3e-05,
+                22.115,
+                0.8
+            ],
+            [
+                0.0001,
+                23.154,
+                1.92
+            ],
+            [
+                0.0003,
+                26.833,
+                1.84
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Glutamate"
+            },
+            {
+                "name": "mGluR_g"
+            },
+            {
+                "name": "Gq_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "G_GDP",
+                    "alias": "G_GDP"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "mM"
+            }
+        ]
+    }
+}

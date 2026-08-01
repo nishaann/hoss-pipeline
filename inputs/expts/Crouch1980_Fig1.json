@@ -1,0 +1,177 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 7407067,
+            "authors": "Crouch TH and Klee CB",
+            "journal": "Biochem, ",
+            "year": 1980,
+            "figure": "Fig1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Bovine",
+        "sampleType": "purified proteins",
+        "cellType": "cerebral cortex",
+        "samplePrep": "bovine brain purified CaM and subjected to equilibrum dialysis at 0–4°C against buffer A (0.01M Hepes-KOH pH7.5, 0.1M KCl) with Chelex changed every 12h until free Ca²⁺ <4×10⁻⁷M",
+        "temperature": 4,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "M",
+            "entity": {
+                "name": "Ca",
+                "alias": "Ca"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "tCa_on_CaM",
+            "alias": "tot_Ca_on_CaM"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "tCa_on_CaM"
+            },
+            "dose": 0.000162,
+            "sampling": "dose"
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                1.84e-07,
+                0.0176,
+                0
+            ],
+            [
+                2.96e-07,
+                0.0206,
+                0
+            ],
+            [
+                3.42e-07,
+                0.0412,
+                0
+            ],
+            [
+                7.41e-07,
+                0.1014,
+                0
+            ],
+            [
+                1.21e-06,
+                0.191,
+                0
+            ],
+            [
+                1.89e-06,
+                0.291,
+                0
+            ],
+            [
+                6.11e-06,
+                0.591,
+                0
+            ],
+            [
+                8.16e-06,
+                0.6542,
+                0
+            ],
+            [
+                1.1e-05,
+                0.711,
+                0
+            ],
+            [
+                3.84e-05,
+                0.913,
+                0
+            ],
+            [
+                8.73e-05,
+                0.977,
+                0
+            ],
+            [
+                0.000162,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "aCaN_CaM",
+                "alias": "tCaM_CaN"
+            },
+            {
+                "name": "aCaN",
+                "alias": "CaN_Ca4"
+            },
+            {
+                "name": "neurogranin_CaM",
+                "alias": "ng_CaM"
+            },
+            {
+                "name": "neurograninp",
+                "alias": "ngp"
+            },
+            {
+                "name": "neurogranin",
+                "alias": "ng"
+            },
+            {
+                "name": "eCaM+ngp",
+                "alias": "CaM_ng_deph"
+            },
+            {
+                "name": "ng+CaM",
+                "alias": "ng_bind_CaM"
+            },
+            {
+                "name": "CaMCa4+CaMKIII",
+                "alias": "CaMKIII_bind_CaMCa4"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "CaM",
+                    "alias": "CaM"
+                },
+                "field": "concInit",
+                "value": 3e-05,
+                "units": "mM"
+            }
+        ]
+    }
+}

@@ -1,0 +1,97 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11961129,
+            "authors": "Mundell SJ et al.",
+            "journal": "Mol. Pharmacol., ",
+            "year": 2002,
+            "figure": "Fig2C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Monkey",
+        "sampleType": "cell-line",
+        "cellType": "COS-7 cells",
+        "samplePrep": "mGluR1a transfected into COS-7 cells",
+        "temperature": 37,
+        "notes": "Here we use mGluR5 is used instead of mGluR1a."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    10.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "mGluR5",
+            "alias": "mGluR5"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "mGluR5"
+            },
+            "sampling": "presetTime",
+            "sampTime": 0
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4300,
+                0.97,
+                0.03
+            ],
+            [
+                4600,
+                0.78,
+                0.11
+            ],
+            [
+                4900,
+                0.73,
+                0.11
+            ],
+            [
+                5800,
+                0.65,
+                0.12
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": []
+    }
+}

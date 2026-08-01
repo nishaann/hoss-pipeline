@@ -1,0 +1,57 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 3040753,
+            "authors": "Ryu SH et al.",
+            "journal": "J Biol Chem., ",
+            "year": 1987,
+            "figure": "Table2"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "Extracts from 16 bovine brains PLCg, unilamellar vesicles of PIP2",
+        "temperature": 37,
+        "notes": "Bovine brain cytosol contains more PLCg II enzyme activity than PLCg I.Therefore PLCg II  was considered. 9uM free Ca in the presence or absence of 2mM ATP"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eCaPLCg+PIP2",
+                    "alias": "CaPLCg_PIP2hydr"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 2.05,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eCaPLCgp+PIP2",
+                    "alias": "EGF_PLCg_PIP2hydr"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 2.32,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

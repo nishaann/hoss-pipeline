@@ -1,0 +1,158 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8410192,
+            "authors": "Schaechter and Benowitz",
+            "journal": "JNeurosci ",
+            "year": 1993,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "samplePrep": "cerebral cortex synaptosomal membranes from Sprague-Dawley rats",
+        "temperature": 30,
+        "notes": "Omitting the rest of the model, to reduce time. Varying concentrations of AA, in the presence of 1uM free Ca2+ or its absence using 1mM EGTA. GAP-43p is the readout"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "AA",
+                "alias": "AA"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aPKC",
+            "alias": "GAP-43p"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "aPKC"
+            },
+            "dose": 0.01,
+            "sampling": "dose"
+        },
+        "data": [
+            [
+                0.01,
+                1.0,
+                0
+            ],
+            [
+                10.0,
+                1.27,
+                0
+            ],
+            [
+                25.0,
+                1.61,
+                0
+            ],
+            [
+                50.0,
+                1.96,
+                0
+            ],
+            [
+                100.0,
+                1.61,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "AA"
+            },
+            {
+                "name": "PKC_g"
+            },
+            {
+                "name": "DAG"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "AA"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "AA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "DAG",
+                    "alias": "DAG"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "DAG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "PKC",
+                    "alias": "GAP-43"
+                },
+                "field": "concInit",
+                "value": 20,
+                "units": "uM"
+            }
+        ]
+    }
+}

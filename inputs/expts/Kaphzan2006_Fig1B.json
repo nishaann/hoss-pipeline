@@ -1,0 +1,97 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17205142,
+            "authors": "Kaphzan H et al.",
+            "journal": "PLoS One., ",
+            "year": 2006,
+            "figure": "Fig 1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "hippocampal slice from adult male Sprague-Dawley rats",
+        "temperature": 32,
+        "notes": "Assuming 100uM of NMDA and 10uM Glycine is equivalent to 20uM Glutamate and therefore translating to ~2500nM Ca."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "NMDA",
+                "alias": "NMDA"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKp",
+            "alias": "pERK2"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "MAPKp"
+            }
+        },
+        "data": [
+            [
+                4000,
+                1.0,
+                0.02
+            ],
+            [
+                4300,
+                1.66,
+                0.1
+            ],
+            [
+                4600,
+                1.42,
+                0.07
+            ],
+            [
+                5800,
+                1.21,
+                0.08
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "NMDA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

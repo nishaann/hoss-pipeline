@@ -1,0 +1,157 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20052014,
+            "authors": "Schapansky J, et al.",
+            "journal": "Can. J. Physiol. Pharmacol, ",
+            "year": 2009,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "hippocampal neurons",
+        "samplePrep": "Hippocampal neurons from E18 Sprague-Dawley rats were treated with 100uM Glutamate  and cytosolic Ca was measured for 20s",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "max",
+            "entity": {
+                "name": "Ca"
+            }
+        },
+        "data": [
+            [
+                3998,
+                0.03,
+                0
+            ],
+            [
+                4000,
+                0.37,
+                0.064
+            ],
+            [
+                4002.0,
+                0.82,
+                0.105
+            ],
+            [
+                4004.0,
+                0.93,
+                0.105
+            ],
+            [
+                4006.0,
+                0.97,
+                0.109
+            ],
+            [
+                4008.0,
+                0.99,
+                0.105
+            ],
+            [
+                4010.0,
+                1.0,
+                0.109
+            ],
+            [
+                4012.0,
+                1.0,
+                0.114
+            ],
+            [
+                4014.0,
+                1.0,
+                0.105
+            ],
+            [
+                4016.0,
+                0.99,
+                0.109
+            ],
+            [
+                4018.0,
+                0.98,
+                0.109
+            ],
+            [
+                4020.0,
+                0.98,
+                0.105
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca_ext",
+                    "alias": "Ca_ext"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca_ext"
+                },
+                "field": "concInit",
+                "value": 2.3,
+                "units": "mM"
+            }
+        ]
+    }
+}

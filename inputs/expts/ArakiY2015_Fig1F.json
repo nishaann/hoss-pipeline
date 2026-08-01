@@ -1,0 +1,181 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 25569349,
+            "authors": "Araki Y et al.",
+            "journal": "Neuron., ",
+            "year": 2015,
+            "figure": "Fig 1F"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "CA1 pyramidal neurons",
+        "samplePrep": "Hippocampal neurons from E18 rats seeded on ploy L-Lysine coated coverslips andthen grown on media",
+        "temperature": 30,
+        "notes": "chemical LTP is the stimulus used to activate synaptic NMDARs. Gly is perfused into the media while Mg is withdrawan from the media causing spontaneous Glu release from axonal terminals. Here using 100uM Glutamate instead. 50uM NMDA receptor antagoist (APV), 20uM CaM inhibitor (W7), 4uM and 20uM CaMKII inhibitor (KN62) each blocked chemLTP completely. Reducing CaM concentration instead of usng the inhibitor W7."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 100,
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            }
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 50,
+            "entity": {
+                "name": "APV",
+                "alias": "APV"
+            }
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 1,
+            "entity": {
+                "name": "W7",
+                "alias": "W7"
+            }
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 4,
+            "entity": {
+                "name": "KN62",
+                "alias": "KN62"
+            },
+            "label": "KN62_4"
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 20,
+            "entity": {
+                "name": "KN62"
+            },
+            "label": "KN62_20"
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 0.01,
+            "entity": {
+                "name": "Ras",
+                "alias": "RasDN"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "synGAPp",
+            "alias": "synGAPp"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "synGAPp"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [
+                    "Glutamate"
+                ],
+                "stderr": 0.126,
+                "value": 1.0
+            },
+            {
+                "stimulus": [
+                    "Glutamate",
+                    "APV"
+                ],
+                "stderr": 0.046,
+                "value": 0.069
+            },
+            {
+                "stimulus": [
+                    "Glutamate",
+                    "W7"
+                ],
+                "stderr": 0.08,
+                "value": 0.184
+            },
+            {
+                "stimulus": [
+                    "Glutamate",
+                    "KN62_4"
+                ],
+                "stderr": 0.138,
+                "value": 0.345
+            },
+            {
+                "stimulus": [
+                    "Glutamate",
+                    "KN62_20"
+                ],
+                "stderr": 0.069,
+                "value": 0.195
+            },
+            {
+                "stimulus": [
+                    "Glutamate",
+                    "Ras"
+                ],
+                "stderr": 0.104,
+                "value": 1.184
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "concInit",
+                "value": 0.01,
+                "units": "uM"
+            }
+        ]
+    }
+}

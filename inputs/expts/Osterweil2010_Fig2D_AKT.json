@@ -1,0 +1,85 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 21084617,
+            "authors": "Osterweil EK et al.",
+            "journal": "J Neurosci., ",
+            "year": 2010,
+            "figure": "Fig 2D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "samplePrep": "hippocampal CA1 slices from P25-P30 C57BL/6J mice",
+        "temperature": 32.5,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 100,
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aAKT",
+            "alias": "aAKT"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aAKT"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.083,
+                "value": 1.0
+            },
+            {
+                "stimulus": [
+                    "DHPG"
+                ],
+                "stderr": 0.074,
+                "value": 1.06
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

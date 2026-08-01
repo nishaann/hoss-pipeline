@@ -1,0 +1,164 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17586816,
+            "authors": "Demeshkina N et al.",
+            "journal": "Nucleic Acids Res., ",
+            "year": 2007,
+            "figure": "FigS3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "in-vitro",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "yeast  ribosomes, eEF2  and eIF6",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "80S",
+                "alias": "80S"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1500,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "S6",
+            "alias": "S6"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "S6"
+            },
+            "dose": 0,
+            "sampling": "dose"
+        },
+        "data": [
+            [
+                0,
+                1,
+                0
+            ],
+            [
+                0.05,
+                0.9,
+                0
+            ],
+            [
+                0.1,
+                0.62,
+                0
+            ],
+            [
+                0.25,
+                0.2,
+                0
+            ],
+            [
+                0.5,
+                0.04,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "TransElong_g"
+            },
+            {
+                "name": "43S_g"
+            },
+            {
+                "name": "40S_g"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "bTranslation",
+                "alias": "bTransl"
+            },
+            {
+                "name": "eEF2p"
+            },
+            {
+                "name": "eTrans+AA",
+                "alias": "pro_syn"
+            },
+            {
+                "name": "FMRP_synth"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "60S",
+                    "alias": "60S"
+                },
+                "field": "concInit",
+                "value": 0.0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "80S"
+                },
+                "field": "concInit",
+                "value": 0.0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "80S"
+                },
+                "field": "isBuffered",
+                "value": 1.0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "S6"
+                },
+                "field": "concInit",
+                "value": 5e-05,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "S6"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eEF2",
+                    "alias": "eEF2"
+                },
+                "field": "concInit",
+                "value": 0.0025,
+                "units": "mM"
+            }
+        ]
+    }
+}

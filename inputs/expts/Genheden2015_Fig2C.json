@@ -1,0 +1,115 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 25609615,
+            "authors": "Genheden M et al.",
+            "journal": "J Neurosci. ",
+            "year": 2015,
+            "figure": "Fig2C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "primary culture of cortical neurons from C57Bl/6J mice (p0-p1)",
+        "temperature": 37,
+        "notes": "Adding an extra datapoint at 4001 to avoid conflicts with LSODA."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    0.893
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aMAPK",
+            "alias": "aMAPK"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "aMAPK"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0.5
+            ],
+            [
+                4001,
+                1.01,
+                0
+            ],
+            [
+                4900,
+                15,
+                2
+            ],
+            [
+                5800,
+                12,
+                2.5
+            ],
+            [
+                7600,
+                14,
+                3.5
+            ],
+            [
+                9400,
+                15,
+                2.5
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

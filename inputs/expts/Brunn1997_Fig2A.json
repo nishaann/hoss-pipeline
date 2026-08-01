@@ -1,0 +1,101 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9204908,
+            "authors": "Brunn GJ et al.",
+            "journal": "Science, ",
+            "year": 1997,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "rat PHAS-1 transfected into HEK293 cells and purified. Immunoprecipitated mTOR from rat brain extracts were colocalized with anti-mTOR. Wortmannin was used. Wortmannin is an inhibitor of PI3K.",
+        "temperature": 23,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "Wortmannin",
+                "alias": "Wortmannin"
+            },
+            "field": "conc",
+            "quantityUnits": "nM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 2400,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "a4EBP",
+            "alias": "a4EBP"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "a4EBP"
+            },
+            "dose": 0
+        },
+        "data": [
+            [
+                0.0,
+                1,
+                0
+            ],
+            [
+                30.0,
+                1.45,
+                0
+            ],
+            [
+                100.0,
+                0.98,
+                0
+            ],
+            [
+                300.0,
+                0.56,
+                0
+            ],
+            [
+                1000.0,
+                0.08,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "4EBP",
+                    "alias": "4EBP"
+                },
+                "field": "concInit",
+                "value": 7.9e-05,
+                "units": "mM"
+            }
+        ]
+    }
+}

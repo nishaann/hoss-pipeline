@@ -1,0 +1,68 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 201280,
+            "authors": "Klee CB and Krinks MH",
+            "journal": "Biochem., ",
+            "year": 1978,
+            "figure": ""
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Bovine",
+        "sampleType": "purified proteins",
+        "cellType": "cerebral cortex",
+        "samplePrep": "bovine erebral cortex purified PDE,  assayed at subsaturating CaM of 7nM",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "CaMCa4+PDE1",
+                    "alias": "CaM_bind_PDE1"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 4.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eCaM_PDE+cAMP",
+                    "alias": "CaM_PDE1_enz"
+                },
+                "field": "Km",
+                "units": "nM",
+                "value": 0.5,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eCaM_PDE+cAMP"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 11.7,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

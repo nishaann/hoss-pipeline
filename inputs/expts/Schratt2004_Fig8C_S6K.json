@@ -1,0 +1,111 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15317862,
+            "authors": "Schratt GM et al.",
+            "journal": "J Neurosci., ",
+            "year": 2004,
+            "figure": "Fig8C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Rat",
+        "samplePrep": "synaptoneurosomes from P15 Long-Evans rat pups",
+        "temperature": 25,
+        "notes": "20ng/ml rapamycin (22nM) used."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "Rapamycin",
+                "alias": "Rapamycin"
+            },
+            "value": 8
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "value": 7.14
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "S6Kpqr",
+            "alias": "S6KpT412"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "S6Kpqr"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "BDNF"
+                ],
+                "value": 6.9,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "Rapamycin",
+                    "BDNF"
+                ],
+                "value": 3.2,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

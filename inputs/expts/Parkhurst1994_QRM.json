@@ -1,0 +1,124 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 7999777,
+            "authors": "Parkhurst KM et al.",
+            "journal": "Biochemistry. ",
+            "year": 1994,
+            "figure": "in-text"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rabbit",
+        "sampleType": "lysate",
+        "cellType": "cell-free",
+        "samplePrep": "eIF2C,40S and Met-tRNA from rabbit reticulocyte",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "aS6",
+                "alias": "S6p"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 2400,
+        "quantityUnits": "nM",
+        "entity": {
+            "name": "43S",
+            "alias": "43S"
+        },
+        "field": "conc",
+        "data": [
+            [
+                6.8,
+                3.61,
+                0
+            ],
+            [
+                20.4,
+                15.3,
+                0
+            ],
+            [
+                68,
+                30.7,
+                0
+            ],
+            [
+                204,
+                42.4,
+                0
+            ],
+            [
+                612,
+                45.3,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "TransInit_g"
+            },
+            {
+                "name": "43S_g"
+            },
+            {
+                "name": "aS6"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "eIF4G",
+                "alias": "eIF4G"
+            },
+            {
+                "name": "eIF4A",
+                "alias": "eIF4A"
+            },
+            {
+                "name": "eIF4GA",
+                "alias": "eIF4GA"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "M_clx",
+                    "alias": "M_clx"
+                },
+                "field": "concInit",
+                "value": 0.0015,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Q_clx",
+                    "alias": "Q_clx"
+                },
+                "field": "concInit",
+                "value": 4.97e-05,
+                "units": "mM"
+            }
+        ],
+        "notes": "Jain2009_Fig4F"
+    }
+}

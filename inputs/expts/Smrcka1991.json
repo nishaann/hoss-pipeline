@@ -1,0 +1,67 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1846707,
+            "authors": "Smrcka AV et al.",
+            "journal": "Science, ",
+            "year": 1991,
+            "figure": "Fig1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "bovine brain Gq and PLCb",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "PLC_Ca+Gq",
+                    "alias": "Act_PLC_by_Gq"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.1,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "ePLCb+PIP2",
+                    "alias": "PLCb_Ca_Gq"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 33.5,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eCaPLCb+PIP2",
+                    "alias": "PLCbCa_PIP2hydr"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 19.2,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

@@ -1,0 +1,117 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10486198,
+            "authors": "Yuen and Mobley",
+            "journal": "Exp Neurol ",
+            "year": 1999,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "sampleType": "cell-line",
+        "cellType": "NIH 3T3 cells",
+        "samplePrep": "NIH 3T3 cells (murine fibroblasts) transfected with rat TrKB",
+        "temperature": 37,
+        "notes": "Deleting the rest of the model for convenience"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    7.3
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aTrKB",
+            "alias": "aTrKB"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "presetTime",
+            "entity": {
+                "name": "aTrKB"
+            },
+            "sampTime": 4000
+        },
+        "data": [
+            [
+                4000,
+                1.0,
+                0
+            ],
+            [
+                4300,
+                19.015,
+                0
+            ],
+            [
+                4900,
+                12.57,
+                0
+            ],
+            [
+                5800,
+                9.47,
+                0
+            ],
+            [
+                7600,
+                5.51,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "BDNF"
+            },
+            {
+                "name": "TrKB_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ],
+        "notes": "Jain2009_Fig2B"
+    }
+}

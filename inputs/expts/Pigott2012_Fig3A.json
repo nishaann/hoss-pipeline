@@ -1,0 +1,134 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22115317,
+            "authors": "Pigott CR et al.",
+            "journal": "Biochem J, ",
+            "year": 2012,
+            "figure": "Fig3A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "in-vitro",
+        "samplePrep": "human eEF2K expressed in E.coli",
+        "temperature": 30,
+        "notes": "Readout in paper is absorbance at 450 nm. Here taken relative to max."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "CaMKIII",
+                "alias": "CaMKIII"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aCaMKIII",
+            "alias": "aCaMKIII"
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "dose": 462.5,
+            "entity": {
+                "name": "aCaMKIII"
+            }
+        },
+        "data": [
+            [
+                0.74,
+                0.095,
+                0
+            ],
+            [
+                3.7,
+                0.17,
+                0
+            ],
+            [
+                18.5,
+                0.41,
+                0
+            ],
+            [
+                92.5,
+                0.7,
+                0
+            ],
+            [
+                462.5,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "CaMKIII_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "CaM",
+                    "alias": "CaM"
+                },
+                "field": "concInit",
+                "value": 1,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "concInit",
+                "value": 2,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

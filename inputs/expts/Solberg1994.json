@@ -1,0 +1,79 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Surbhit Wagle",
+        "organization": "NCBS",
+        "email": "surbhitw@instem.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 7925653,
+            "authors": "Solberg et al.",
+            "journal": "Expt. Cell Research, ",
+            "year": 1994,
+            "figure": "in-text"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "sampleType": "recombinant protein",
+        "cellType": "cell-free",
+        "samplePrep": "recombinant human R1b subunit, bovine R1a subunit and mouse Ca subunit to form holoenzyme.",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "R2C2+cAMP",
+                    "alias": "R2C2+cAMP"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.05,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "R2C2cAMP+cAMP",
+                    "alias": "R2C2cAMP+cAMP"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.05,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "R2C2cAMP2+cAMP",
+                    "alias": "R2C2cAMP2+cAMP"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.05,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "R2C2cAMP3+cAMP",
+                    "alias": "R2C2cAMP3+cAMP"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.05,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

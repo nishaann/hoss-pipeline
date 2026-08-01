@@ -1,0 +1,56 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 3360794,
+            "authors": "Homma Y et al.",
+            "journal": "J Biol Chem., ",
+            "year": 1988,
+            "figure": "Fig7"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "rat brain PLCb",
+        "temperature": 37,
+        "notes": "in the presence of 100uM Ca and 100uM EDTA (in the presence of 100uM EGTA, free Ca is estimated to be ~10uM).Also considering PLC-II activity"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "ePLCb_Ca+PIP2",
+                    "alias": "PLCbCa_PIP2hydr"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 60.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "ePLCb_Ca+PIP2"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 34.2,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

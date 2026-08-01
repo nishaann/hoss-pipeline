@@ -1,0 +1,105 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19794395,
+            "authors": "Robinet C and Pellerin L",
+            "journal": "J Cereb Blood Flow Metab. ",
+            "year": 2010,
+            "figure": "Fig4C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "E17 primary cultures of OF1 mouse cortical neurons",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    3.6
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aS6",
+            "alias": "S6p"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aS6"
+            }
+        },
+        "data": [
+            [
+                4000.0,
+                1,
+                0
+            ],
+            [
+                4300.0,
+                1.68,
+                0.52
+            ],
+            [
+                5800.0,
+                2.7,
+                0.96
+            ],
+            [
+                7600,
+                3.4,
+                1.47
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

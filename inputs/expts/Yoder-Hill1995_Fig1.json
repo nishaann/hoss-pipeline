@@ -1,0 +1,116 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 7499225,
+            "authors": "Yoder-Hill J et al.",
+            "journal": "J Biol Chem., ",
+            "year": 1995,
+            "figure": "Fig1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "",
+        "temperature": 30,
+        "notes": "."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "aRas",
+                "alias": "RasGTP"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    28
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "RasGDP",
+            "alias": "RasGDP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "RasGDP"
+            },
+            "sampling": "presetTime",
+            "sampTime": 7200
+        },
+        "data": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                900,
+                0.177,
+                0
+            ],
+            [
+                1800,
+                0.331,
+                0
+            ],
+            [
+                2700,
+                0.532,
+                0
+            ],
+            [
+                5400,
+                0.875,
+                0
+            ],
+            [
+                7200,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "RasGDP"
+            },
+            {
+                "name": "aRas"
+            },
+            {
+                "name": "bRasGTP_deph",
+                "alias": "Ras_intrinsic_GTPase"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "RasGDP",
+                    "alias": "RasGDP"
+                },
+                "field": "concInit",
+                "value": 0.0,
+                "units": "mM"
+            }
+        ]
+    }
+}

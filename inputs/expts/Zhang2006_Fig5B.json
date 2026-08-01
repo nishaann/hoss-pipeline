@@ -1,0 +1,47 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16213157,
+            "authors": "Zhang WG et al.",
+            "journal": "Protein Expr Purif., ",
+            "year": 2006,
+            "figure": "Fig5B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "purified human placental S6K cDNA transfected into HEK293 cells",
+        "temperature": 25,
+        "notes": "modelling paper"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eS6Kpqrs+40S",
+                    "alias": "S6_phospho"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 0.9,
+                "stderr": 0.48
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

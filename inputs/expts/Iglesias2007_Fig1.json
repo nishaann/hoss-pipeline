@@ -1,0 +1,47 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17493590,
+            "authors": "Iglesias I et al.",
+            "journal": "Brain Res. ",
+            "year": 2007,
+            "figure": "Fig1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Rat",
+        "samplePrep": "plasma membrane from five non-pregnant female rat hearts",
+        "temperature": 25,
+        "notes": "Glutamate"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "Glu+mGluR",
+                    "alias": "Glu_bind_mGluR"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 545.0,
+                "stderr": 85.6
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 2294120,
+            "authors": "Sanghera JS et al.",
+            "journal": "J Bio Chem. ",
+            "year": 1990,
+            "figure": ""
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "Sea Star oocyte",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eMAPK+PLA2",
+                    "alias": "MAPKpp_act_PLA2"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 25.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eMAPK+crafp",
+                    "alias": "MAPKpp_feedback"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 25.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eMAPK+PLA2"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.577,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eMAPK+crafp"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.577,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

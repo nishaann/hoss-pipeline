@@ -1,0 +1,112 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15192046,
+            "authors": "Saito T et al.",
+            "journal": "Endocrinology, ",
+            "year": 2004,
+            "figure": "Fig2C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Hampster",
+        "sampleType": "cell-line",
+        "cellType": "CHO1E cells",
+        "samplePrep": "Chinese hamster ovary cells expressing human EGF and insulin receptor were stimulated with EGF.",
+        "temperature": 37,
+        "notes": "1.5nM EGF. Deleting the rest of the model for convenience."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    1.5
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aEGFR",
+            "alias": "aEGFR"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "presetTime",
+            "entity": {
+                "name": "aEGFR"
+            },
+            "sampTime": 900
+        },
+        "data": [
+            [
+                0,
+                0.0,
+                0.0
+            ],
+            [
+                120,
+                0.739,
+                0.078
+            ],
+            [
+                300,
+                0.817,
+                0.07
+            ],
+            [
+                900,
+                1.0,
+                0.13
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "EGFR_g"
+            },
+            {
+                "name": "EGF"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

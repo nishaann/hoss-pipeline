@@ -1,0 +1,178 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Surbhit Wagle",
+        "organization": "NCBS",
+        "email": "surbhitw@instem.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8034568,
+            "authors": "Sette C., Vicini E. & Conti M.",
+            "journal": "J Biol Chem, ",
+            "year": 1994,
+            "figure": ""
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "expression system",
+        "cellType": "cell-free",
+        "samplePrep": " recombinant rat PDE3 from cDNAs ligated from sertoli cells and rat brain expressed in MA-10 Leydig tumor cells in soluble exracts from MA-10 cells",
+        "temperature": 34,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "min",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "aPKA",
+                "alias": "PKA_active"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    6,
+                    0.01
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "min",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "AMP",
+            "alias": "AMP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "AMP"
+            },
+            "sampling": "presetTime",
+            "sampTime": 16
+        },
+        "data": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                2.0,
+                0.087,
+                0
+            ],
+            [
+                4.0,
+                0.159,
+                0
+            ],
+            [
+                6.0,
+                0.246,
+                0
+            ],
+            [
+                8.0,
+                0.346,
+                0
+            ],
+            [
+                10.0,
+                0.467,
+                0
+            ],
+            [
+                12.0,
+                0.598,
+                0
+            ],
+            [
+                14.0,
+                0.776,
+                0
+            ],
+            [
+                16.0,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PKA_g"
+            },
+            {
+                "name": "PKA_inhibitor"
+            },
+            {
+                "name": "iPKA",
+                "alias": "inhibited_PKA"
+            },
+            {
+                "name": "AC_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "ATP",
+                    "alias": "ATP"
+                },
+                "field": "concInit",
+                "value": 0.2,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "AMP"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "AMP"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "cAMP",
+                    "alias": "cAMP"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "cAMP"
+                },
+                "field": "isBuffered",
+                "value": 1.0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "PKA_inhibitor",
+                    "alias": "PKA_inhibitor"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            }
+        ]
+    }
+}

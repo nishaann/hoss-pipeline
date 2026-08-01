@@ -1,0 +1,49 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15949941,
+            "authors": "Albasanz JL et al.",
+            "journal": "Neurobiol Dis. ",
+            "year": 2005,
+            "figure": "Fig1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Human",
+        "sampleType": "plasma membrane",
+        "cellType": "frontal cortex",
+        "samplePrep": "plasma membrane from human left frontal cortex from 5 patients",
+        "temperature": 25,
+        "notes": "Glutamate"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "Glu+mGluR",
+                    "alias": "Glu_bind_mGluR"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 1497.5,
+                "stderr": 303.5
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

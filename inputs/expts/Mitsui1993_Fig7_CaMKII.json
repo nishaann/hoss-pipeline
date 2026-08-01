@@ -1,0 +1,219 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8514778,
+            "authors": "Mitsui K et al.",
+            "journal": "J Biol Chem. ",
+            "year": 1993,
+            "figure": "Fig7"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rabbit",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "CaM purified from rabbit brain, CaMKIII from rabbit reticulocytes, EF2 from either rat pancreas or rabbit reticulocytes",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "M",
+            "entity": {
+                "name": "CaM",
+                "alias": "CaM"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "CaMKIIT286_CaM",
+            "alias": "CaMKIIT286_CaM"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "CaMKIIT286_CaM"
+            },
+            "dose": 5.72e-06
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                1e-09,
+                9e-07,
+                0
+            ],
+            [
+                2.43e-09,
+                0.0244,
+                0
+            ],
+            [
+                5.9e-09,
+                0.0772,
+                0
+            ],
+            [
+                1.18e-08,
+                0.1586,
+                0
+            ],
+            [
+                2.43e-08,
+                0.3007,
+                0
+            ],
+            [
+                5.91e-08,
+                0.5326,
+                0
+            ],
+            [
+                1.14e-07,
+                0.6992,
+                0
+            ],
+            [
+                2.35e-07,
+                0.8414,
+                0
+            ],
+            [
+                5.72e-07,
+                0.9328,
+                0
+            ],
+            [
+                1.14e-06,
+                0.9695,
+                0
+            ],
+            [
+                2.43e-06,
+                0.9898,
+                0
+            ],
+            [
+                5.72e-06,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "CaMKII_g"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "tot_autonomous_CaMKII_func",
+                "alias": "tot_autonomous_CaMKII_func"
+            },
+            {
+                "name": "aCaMKII_func",
+                "alias": "aCaMKII_func"
+            },
+            {
+                "name": "CaMKIIppp",
+                "alias": "CaMKIIppp"
+            },
+            {
+                "name": "aCaMKII_auto",
+                "alias": "tot_autonomous_CaMKII"
+            },
+            {
+                "name": "CaMKII_thr306",
+                "alias": "CaMKII_thr306"
+                
+            },
+            {
+                "name": "CaMCaMKII_act_T305",
+                "alias": "eCaMCaMKII+CaMKIIp"
+            },
+            {
+                "name": "neurogranin_CaM",
+                "alias": "ng_CaM"
+            },
+            {
+                "name": "neurograninp",
+                "alias": "ngp"
+            },
+            {
+                "name": "neurogranin",
+                "alias": "ng"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "CaMKII",
+                    "alias": "CaMKII"
+                },
+                "field": "concInit",
+                "value": 0.05,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "concInit",
+                "value": 1.5,
+                "units": "mM"
+            }
+        ],
+        "notes": "Used in Jain2009_Fig4B"
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20702695,
+            "authors": "Gross C et al.",
+            "journal": "J Neurosci. ",
+            "year": 2010,
+            "figure": "Fig5I"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "synaptoneurosomes",
+        "cellType": "cortex",
+        "samplePrep": "C57BL/6 mice cortical synaptoneurosomes",
+        "temperature": 37,
+        "notes": "Basal translation measured with or without DHPG and 20uM U0126. U0126 is an inhibitor of MEK."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "value": 100
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": {
+                "name": "U0126",
+                "alias": "U0126"
+            },
+            "value": 20
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "protein",
+            "alias": "protein"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "protein"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1.0,
+                "stderr": 0.015
+            },
+            {
+                "stimulus": [
+                    "DHPG"
+                ],
+                "value": 1.206,
+                "stderr": 0.073
+            },
+            {
+                "stimulus": [
+                    "U0126"
+                ],
+                "value": 0.85,
+                "stderr": 0.018
+            },
+            {
+                "stimulus": [
+                    "DHPG",
+                    "U0126"
+                ],
+                "value": 0.774,
+                "stderr": 0.017
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

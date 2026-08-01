@@ -1,0 +1,78 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 26558778,
+            "authors": "Barnes SA et al.",
+            "journal": "J Neurosci., ",
+            "year": 2015,
+            "figure": "Fig 4Diii"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "tissue slice",
+        "cellType": "hippocampal slice",
+        "samplePrep": "WT and synGAP+/- mutant hippocampal slices from C57BL/6J P25-32 mice were left n ACSF to recoverfor 4h at 30C, then 5uM U0126 was added fo 30min and then transferred to fresh ACSF containing S35-Met/Cys protein labelling mix anf 5uM U0126 for 45 mins",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 5,
+            "entity": {
+                "name": "U0126",
+                "alias": "U0126"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 2700,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKp",
+            "alias": "pERK1/2"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "MAPKp"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.0,
+                "value": 1.0
+            },
+            {
+                "stimulus": [
+                    "U0126"
+                ],
+                "stderr": 0.037,
+                "value": 0.096
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": []
+    }
+}

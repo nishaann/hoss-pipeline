@@ -1,0 +1,115 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22817682,
+            "authors": "Jeon SJ et al.",
+            "journal": "J Neurochem. ",
+            "year": 2012,
+            "figure": "Fig1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "Primary cortical neuron cultures from E16 rat",
+        "temperature": 37,
+        "notes": "Glutamate is bath applied"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    50
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aAKT",
+            "alias": "AKTpT308S473"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aAKT"
+            }
+        },
+        "data": [
+            [
+                4000,
+                1.0,
+                0.069
+            ],
+            [
+                4900,
+                4.828,
+                0.121
+            ],
+            [
+                5800,
+                5.121,
+                0.172
+            ],
+            [
+                7600,
+                4.293,
+                0.138
+            ],
+            [
+                14800,
+                3.672,
+                0.204
+            ],
+            [
+                25600,
+                1.121,
+                0.104
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "concInit",
+                "value": 1,
+                "units": "nM"
+            }
+        ]
+    }
+}

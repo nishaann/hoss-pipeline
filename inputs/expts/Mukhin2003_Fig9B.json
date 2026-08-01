@@ -1,0 +1,112 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 12604671,
+            "authors": "Mukhin YV et al.",
+            "journal": "J Pharmacol Exp Ther.",
+            "year": 2003,
+            "figure": "Fig 9B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "cell-line",
+        "cellType": "mIMCD-3 cells",
+        "samplePrep": "mIMCD-3 cells stimulated with EGF",
+        "temperature": 37,
+        "notes": "10ng/ml EGF"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "label": "EGF_1",
+            "field": "conc",
+            "value": 0.001,
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            }
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "label": "EGF_2",
+            "field": "conc",
+            "value": 1.5625,
+            "entity": {
+                "name": "EGF"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aEGFR",
+            "alias": "aEGFR"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aEGFR"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [
+                    "EGF_1"
+                ],
+                "stderr": 0.11,
+                "value": 1
+            },
+            {
+                "stimulus": [
+                    "EGF_2"
+                ],
+                "stderr": 0.82,
+                "value": 4.38
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "EGFR_g"
+            },
+            {
+                "name": "EGF"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

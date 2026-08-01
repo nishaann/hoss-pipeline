@@ -1,0 +1,77 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18614538,
+            "authors": "Slepenkov SV et al.",
+            "journal": "J Biol Chem, ",
+            "year": 2008,
+            "figure": "Table3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "full-length human eIF4E expressed in E.coli, 90aa human eIF4G(557-646) peptide",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eIF4E+GA",
+                    "alias": "eIF4E_bind_eIF4G"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 4.6,
+                "stderr": 1.7
+            },
+            {
+                "entity": {
+                    "name": "eIF4F+mRNA",
+                    "alias": "eIF4E_G_bind_mRNA"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 440.0,
+                "stderr": 90
+            },
+            {
+                "entity": {
+                    "name": "eIF4EmRNA+F",
+                    "alias": "eIF4EmRNA_bind_GA"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 450,
+                "stderr": 130
+            },
+            {
+                "entity": {
+                    "name": "eIF4E+mRNA",
+                    "alias": "eIF4E_bind_mRNA"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 4.4,
+                "stderr": 1.3
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

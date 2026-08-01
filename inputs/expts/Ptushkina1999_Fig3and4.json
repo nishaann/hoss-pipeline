@@ -1,0 +1,59 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10406811,
+            "authors": "Ptushkina M et al.",
+            "journal": "EMBO J., ",
+            "year": 1999,
+            "figure": "Fig3 and Fig4"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Human",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "human eIF4E, 4EBP1 expressed in E.coli",
+        "temperature": 25,
+        "notes": "SPR"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eIF4E+4EBP",
+                    "alias": "eIF4E_bind_BP2"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.01,
+                "stderr": 0.004
+            },
+            {
+                "entity": {
+                    "name": "eIF4E+mRNA",
+                    "alias": "eIF4E_bind_mRNA"
+                },
+                "field": "tau",
+                "units": "sec",
+                "value": 4.0,
+                "stderr": 0.0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

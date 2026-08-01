@@ -1,0 +1,77 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16966599,
+            "authors": "Shifman JM et al.",
+            "journal": "PNAS, ",
+            "year": 2006,
+            "figure": "Table2"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "CaM+Ca",
+                    "alias": "CaM_bind_Ca"
+                },
+                "field": "Kd",
+                "units": "mM",
+                "value": 0.0079,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "CaMCa+Ca",
+                    "alias": "CaMCa_bind_Ca"
+                },
+                "field": "Kd",
+                "units": "mM",
+                "value": 0.0017,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "CaMCa2+Ca",
+                    "alias": "CaMCa2_bind_Ca"
+                },
+                "field": "Kd",
+                "units": "mM",
+                "value": 0.035,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "CaMCa3+Ca",
+                    "alias": "CaMCa3_bind_Ca"
+                },
+                "field": "Kd",
+                "units": "mM",
+                "value": 0.0089,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

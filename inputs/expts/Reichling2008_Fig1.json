@@ -1,0 +1,75 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18354135,
+            "authors": "Reichling LJ et al.",
+            "journal": "J Biomol Screen., ",
+            "year": 2008,
+            "figure": "Fig1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "GST-mTOR (1360-2549),GFP-4EBP1 expressed in insect cells",
+        "temperature": 30,
+        "notes": "possibly human DNA constructs expressed in insects and immunoprecipitated"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "emTORC1+eIF4E_4EBP",
+                    "alias": "TOR_4EBP_phospho"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 19.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "emTORC1+4EBP",
+                    "alias": "TOR_4EBPp"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 19.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "emTORC1+eIF4E_4EBP"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.038,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "emTORC1+4EBP"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.038,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

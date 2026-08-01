@@ -1,0 +1,115 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 23882690,
+            "authors": "Li D et al.",
+            "journal": "Invest Ophthalmol Vis Sci, ",
+            "year": 2013,
+            "figure": "Fig 2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "cultured conjunctival goblet cells from Sprague-Dawley rats (4-6 wks old)",
+        "temperature": 37,
+        "notes": "0.1uM EGF"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKp",
+            "alias": "pERK1/2"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "MAPKp"
+            }
+        },
+        "data": [
+            [
+                4000.0,
+                1,
+                0
+            ],
+            [
+                4030.0,
+                0.807,
+                0.176
+            ],
+            [
+                4060.0,
+                1.415,
+                0.211
+            ],
+            [
+                4120.0,
+                2.725,
+                0.643
+            ],
+            [
+                4300.0,
+                3.064,
+                0.714
+            ],
+            [
+                4600.0,
+                2.936,
+                0.959
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

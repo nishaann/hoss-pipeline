@@ -1,0 +1,47 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11136978,
+            "authors": "Pacold ME et al.",
+            "journal": "Cell, ",
+            "year": 2000,
+            "figure": ""
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "human PI3K and human NRas were cloned into Sf9 cells",
+        "temperature": 20,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "PI3K+RasGTP",
+                    "alias": "PI3K_bind_RasGTP"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 3.2,
+                "stderr": 0.5
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

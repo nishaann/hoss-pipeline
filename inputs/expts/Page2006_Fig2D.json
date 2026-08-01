@@ -1,0 +1,93 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16549223,
+            "authors": "Page G et al.",
+            "journal": "Neurochem Int, ",
+            "year": 2006,
+            "figure": "Fig2D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "samplePrep": "hippocampal synaptoneurosomes from male Wistar rats",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "quantityUnits": "uM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "S6Kpqr",
+            "alias": "S6KpT389"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "S6Kpqr"
+            },
+            "dose": 0.001
+        },
+        "data": [
+            [
+                0.001,
+                1.0,
+                0
+            ],
+            [
+                1,
+                1.3,
+                0.35
+            ],
+            [
+                50,
+                1.54,
+                0.28
+            ],
+            [
+                100,
+                1.26,
+                0.1
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

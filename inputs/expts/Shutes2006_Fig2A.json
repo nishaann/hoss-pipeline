@@ -1,0 +1,128 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16757310,
+            "authors": "Shutes A et al.",
+            "journal": "Methods Enzymol. ",
+            "year": 2006,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "human R-Ras",
+        "temperature": 25,
+        "notes": "rate change, Q10=3"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "GAP",
+                "alias": "GAP"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    2.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "RasGDP",
+            "alias": "RasGDP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "RasGDP"
+            },
+            "sampling": "presetTime",
+            "sampTime": 2000
+        },
+        "data": [
+            [
+                0.0,
+                0,
+                0
+            ],
+            [
+                250.0,
+                0.125,
+                0
+            ],
+            [
+                500.0,
+                0.25,
+                0
+            ],
+            [
+                750.0,
+                0.375,
+                0
+            ],
+            [
+                1000,
+                0.5,
+                0
+            ],
+            [
+                1250,
+                0.625,
+                0
+            ],
+            [
+                1500,
+                0.888,
+                0
+            ],
+            [
+                2000,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Ras_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "aRas",
+                    "alias": "RasGTP"
+                },
+                "field": "concInit",
+                "value": 0.002,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "RasGDP",
+                    "alias": "RasGDP"
+                },
+                "field": "concInit",
+                "value": 0.0,
+                "units": "mM"
+            }
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 24634513,
+            "authors": "Guo W et al.",
+            "journal": "J Cell Sci, ",
+            "year": 2014,
+            "figure": "Fig 4D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "primary culture of hippocampal neurons from E18 rat embryos",
+        "temperature": 37,
+        "notes": "Deleting the rest of the model for convenience"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    1
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "mM",
+        "entity": {
+            "name": "aTrKB",
+            "alias": "aTrKB"
+        },
+        "field": "conc",
+        "data": [
+            [
+                4000.0,
+                1.1976e-05,
+                0
+            ],
+            [
+                4900.0,
+                0.0002,
+                1.8e-05
+            ],
+            [
+                5800.0,
+                0.000179641,
+                3e-05
+            ],
+            [
+                7600.0,
+                0.000146108,
+                3.2e-05
+            ],
+            [
+                11200.0,
+                8.5389e-05,
+                1.8e-05
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "BDNF"
+            },
+            {
+                "name": "TrKB_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

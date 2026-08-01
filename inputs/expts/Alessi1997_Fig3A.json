@@ -1,0 +1,118 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9094314,
+            "authors": "Alessi et al.",
+            "journal": "Curr Biol. ",
+            "year": 1997,
+            "figure": "Fig3A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rabbit",
+        "sampleType": "purified proteins",
+        "cellType": "Rabbit skeletal muscles",
+        "samplePrep": "GST-PKBa expressed in HEK293 cells, PDK1 purified from rabbit skeletal muscle. PDK1 activity is 12U/ml. U PDK1 phosphrylates 1nmol GST-PKBa in 1 min",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "PDK1",
+                "alias": "PDK1"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    20.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "AKTp",
+            "alias": "AKTpT308"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "AKTp"
+            },
+            "sampling": "max"
+        },
+        "data": [
+            [
+                300,
+                0.183,
+                0.055
+            ],
+            [
+                600,
+                0.279,
+                0.077
+            ],
+            [
+                1200,
+                0.464,
+                0.045
+            ],
+            [
+                2400,
+                0.77,
+                0.091
+            ],
+            [
+                4800,
+                1.0,
+                0.108
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "AKT_g"
+            },
+            {
+                "name": "PI3K_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "PIP3",
+                    "alias": "PIP3"
+                },
+                "field": "concInit",
+                "value": 10.0,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "AKT",
+                    "alias": "AKT"
+                },
+                "field": "concInit",
+                "value": 0.5,
+                "units": "uM"
+            }
+        ],
+        "notes": "Jain2009_Fig2F"
+    }
+}

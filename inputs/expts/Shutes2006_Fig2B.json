@@ -1,0 +1,143 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16757310,
+            "authors": "Shutes A et al.",
+            "journal": "Methods Enzymol. ",
+            "year": 2006,
+            "figure": "Fig2B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "human R-Ras",
+        "temperature": 25,
+        "notes": "rate change Q10=3. Intrinsic GTPase activity of Ras."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "GAP",
+                "alias": "GAP"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "RasGDP",
+            "alias": "RasGDP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "RasGDP"
+            },
+            "sampling": "presetTime",
+            "sampTime": 20000
+        },
+        "data": [
+            [
+                0.0,
+                0,
+                0
+            ],
+            [
+                132.0,
+                0,
+                0
+            ],
+            [
+                565,
+                0.1,
+                0
+            ],
+            [
+                1026,
+                0.2,
+                0
+            ],
+            [
+                2052,
+                0.4,
+                0
+            ],
+            [
+                3500,
+                0.6,
+                0
+            ],
+            [
+                4512,
+                0.7,
+                0
+            ],
+            [
+                5841,
+                0.8,
+                0
+            ],
+            [
+                7855,
+                0.9,
+                0
+            ],
+            [
+                13100,
+                1,
+                0
+            ],
+            [
+                20000,
+                1,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Ras_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "aRas",
+                    "alias": "RasGTP"
+                },
+                "field": "concInit",
+                "value": 0.002,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "RasGDP",
+                    "alias": "RasGDP"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            }
+        ]
+    }
+}

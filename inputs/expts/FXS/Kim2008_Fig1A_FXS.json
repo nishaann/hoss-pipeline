@@ -1,0 +1,109 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18332424,
+            "authors": "Kim SH et al.",
+            "journal": "Proc Natl Acad Sci U S A. ",
+            "year": 2008,
+            "figure": "Fig1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "sampleType": "synaptoneurosomes",
+        "cellType": "cortex",
+        "samplePrep": "P10-14 mice cortical synaptoneurosomes",
+        "temperature": 25,
+        "notes": "fmr-1 KO cortical synaptoneurosomes"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4900,
+                    100.0
+                ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "MPEP",
+                "alias": "MPEP"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    10.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKpq",
+            "alias": "MAPKpp"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "MAPKpq"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4900,
+                1,
+                0
+            ],
+            [
+                4960,
+                0.755,
+                0
+            ],
+            [
+                5020,
+                0.7,
+                0
+            ],
+            [
+                5200,
+                0.56,
+                0
+            ],
+            [
+                5500,
+                0.44,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

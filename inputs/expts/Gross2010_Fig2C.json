@@ -1,0 +1,78 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20702695,
+            "authors": "Gross C et al.",
+            "journal": "J Neurosci. ",
+            "year": 2010,
+            "figure": "Fig2C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "primary culture",
+        "cellType": "cortical neurons",
+        "samplePrep": "C57BL/6 mice cortical neurons",
+        "temperature": 37,
+        "notes": "virus containing shPIKE-L were transfected into cortical neurons at 11 DIV"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 0,
+            "entity": {
+                "name": "shPIKE",
+                "alias": "shPIKE"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 4000,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "PIP3",
+            "alias": "PIP3"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "PIP3"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.115,
+                "value": 1
+            },
+            {
+                "stimulus": [
+                    "shPIKE"
+                ],
+                "stderr": 0.116,
+                "value": 0.94
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

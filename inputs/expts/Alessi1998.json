@@ -1,0 +1,59 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9427642,
+            "authors": "Alessi DR et al.",
+            "journal": "Curr Biol., ",
+            "year": 1998,
+            "figure": "Fig4 and Fig6A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Human",
+        "sampleType": "cell-line",
+        "cellType": "HEK293 cells",
+        "samplePrep": "HEK293 cells were transfected with full-length GST-p70S6K.9nM GST-PDK1.lipid vesicles of PIP3 ",
+        "temperature": 30,
+        "notes": "Liquid scintillation counting of P32 to measure specific activity"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "bS6K_act",
+                    "alias": "bS6K_act"
+                },
+                "field": "Kf",
+                "units": "1/sec",
+                "value": 0.00092,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "bAKT_act",
+                    "alias": "bAKT_act"
+                },
+                "field": "Kf",
+                "units": "1/sec",
+                "value": 0.0035,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

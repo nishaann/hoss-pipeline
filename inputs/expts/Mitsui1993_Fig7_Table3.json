@@ -1,0 +1,59 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8514778,
+            "authors": "Mitsui K et al.",
+            "journal": "J Biol Chem, ",
+            "year": 1993,
+            "figure": "Fig. 7 and Table III"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Rabbit",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "CaM purified from rabbit brain, CaMKIII from rabbit reticulocytes, EF2 from either rat pancreas or rabbit reticulocytes",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eCaMKIII+eEF2",
+                    "alias": "eEF2_phospho"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 2.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "CaMCa4+CaMKIII",
+                    "alias": "CaMKIII_bind_CaMCa4"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.0009,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

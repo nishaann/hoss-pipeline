@@ -1,0 +1,47 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22536782,
+            "authors": "McDonald CB et al.",
+            "journal": "FEBS J, ",
+            "year": 2012,
+            "figure": "Table3"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "human Grb2 and human Gab1 were cloned into bacterial vectors",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "SHCp_Grb2+Gab1",
+                    "alias": "bind_Gab1"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 7.21,
+                "stderr": 0.44
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

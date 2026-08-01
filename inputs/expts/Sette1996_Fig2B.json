@@ -1,0 +1,150 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Surbhit Wagle, Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "surbhitw@instem.res.in, nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8663227,
+            "authors": "Sette C. & Conti M.",
+            "journal": "J Biol Chem, ",
+            "year": 1996,
+            "figure": "Figure 2B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "expression system",
+        "cellType": "thyroid cells",
+        "samplePrep": "partially purified recombinant rat PDE4D3 from rat thyroid cells expressed in Sf9 insect cells",
+        "temperature": 30,
+        "notes": " time course activation of PDE in presence/absence of .1uM PKA catalytic subunit., Recombinant Rat PDE was studied  "
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "aPKA",
+                "alias": "PKA_active"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    0.1
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "min",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "cAMP_PDEp",
+            "alias": "cAMP_PDEp"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "cAMP_PDEp"
+            },
+            "sampling": "presetTime",
+            "sampTime": 14.0
+        },
+        "data": [
+            [
+                0,
+                0.0779,
+                0.0
+            ],
+            [
+                2.0,
+                0.483,
+                0.0
+            ],
+            [
+                4.0,
+                0.707,
+                0.0
+            ],
+            [
+                6.0,
+                0.836,
+                0.0
+            ],
+            [
+                8.0,
+                0.909,
+                0.0
+            ],
+            [
+                10.0,
+                0.958,
+                0.0
+            ],
+            [
+                12.0,
+                0.966,
+                0.0
+            ],
+            [
+                14.0,
+                1.0,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "AC_g"
+            },
+            {
+                "name": "PKA_inhibitor"
+            },
+            {
+                "name": "iPKA",
+                "alias": "inhibited_PKA"
+            },
+            {
+                "name": "PKA_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "ATP",
+                    "alias": "ATP"
+                },
+                "field": "concInit",
+                "value": 0.1,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "cAMP",
+                    "alias": "cAMP"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "AMP",
+                    "alias": "AMP"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            }
+        ]
+    }
+}

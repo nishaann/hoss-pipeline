@@ -1,0 +1,122 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10514507,
+            "authors": "Kholodenko BN et al.",
+            "journal": "J Biol Chem, ",
+            "year": 1999,
+            "figure": "Fig3A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "Sprague-Dawley Rat hepatocytes",
+        "temperature": 30,
+        "notes": "Deleting the rest of the model for convenience"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    2
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "PLCgp",
+            "alias": "PLCgp"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "PLCg",
+                "alias": "PLCg"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4000,
+                0.00067,
+                0
+            ],
+            [
+                4150,
+                0.0435,
+                0.0125
+            ],
+            [
+                4300,
+                0.0474,
+                0.0158
+            ],
+            [
+                4450,
+                0.0218,
+                0.0038
+            ],
+            [
+                4600,
+                0.0122,
+                0.002
+            ],
+            [
+                5200,
+                0.0189,
+                0.0065
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PLCg_g"
+            },
+            {
+                "name": "EGF"
+            },
+            {
+                "name": "EGFR_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

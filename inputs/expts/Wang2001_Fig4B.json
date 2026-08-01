@@ -1,0 +1,123 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11500364,
+            "authors": "Wang X et al.",
+            "journal": "EMBO J. ",
+            "year": 2001,
+            "figure": "Fig4B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "human eEF2k expressed in E.coli, p70S6K from ES cells",
+        "temperature": 30,
+        "notes": "The Wang et al paper says they put in 1 ug in 40 ul of GST-tagged eEF2K (CaMKIII). This has an estimated mol wt of 26 + 82 = 108kDa. So the concentration is about 230 nM. However, Pragati seems to have used 60 nM which is the level in her model. The concInit for S6Kthr_252 is based on the number of units of activity reported in Wang et al as 1U/ml. 1U of activity is the amount of enzyme that phopshrylates 1nmol of peptide in 1min. Dividing 1U/ml by S6K kcat of 10/s"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "S6Kpqrs",
+                "alias": "S6KpT252"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    1.67
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "CaMKIIIp",
+            "alias": "CaMKIIIp"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "CaMKIIIp"
+            },
+            "sampling": "presetTime",
+            "sampTime": 900
+        },
+        "data": [
+            [
+                60,
+                0.01,
+                0
+            ],
+            [
+                180,
+                0.29,
+                0
+            ],
+            [
+                300,
+                0.65,
+                0
+            ],
+            [
+                600,
+                0.8,
+                0
+            ],
+            [
+                900,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "CaMKIII_g"
+            },
+            {
+                "name": "S6K_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "bS6K",
+                    "alias": "bS6K"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaMKIII",
+                    "alias": "CaMKIII"
+                },
+                "field": "concInit",
+                "value": 230,
+                "units": "nM"
+            }
+        ],
+        "notes": "Jain2009_Fig4C"
+    }
+}

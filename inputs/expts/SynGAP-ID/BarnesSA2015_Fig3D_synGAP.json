@@ -1,0 +1,88 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 26558778,
+            "authors": "Barnes SA et al.",
+            "journal": "J Neurosci., ",
+            "year": 2015,
+            "figure": "Fig 3D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "tissue slice",
+        "cellType": "hippocampal slice",
+        "samplePrep": "WT and synGAP+/- mutant hippocampal slices from C57BL/6J P25-32 mice",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 100,
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "protein",
+            "alias": "protein"
+        },
+        "field": "conc",
+        "prepDilution": 10,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "protein"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.057,
+                "value": 1.0
+            },
+            {
+                "stimulus": [
+                    "DHPG"
+                ],
+                "stderr": 0.113,
+                "value": 1.093
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18316404,
+            "authors": "Antion MD et al.",
+            "journal": "Mol Cell Biol., ",
+            "year": 2008,
+            "figure": "Fig 5B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "sampleType": "tissue slice",
+        "cellType": "hippocampal CA1",
+        "samplePrep": "hippocampal slices from C57BL/6J mice",
+        "temperature": 32,
+        "notes": "This experiment looks at the levels of phosphorylated S6 in DHPG-stimulated slices by inhibiting MEK using 20uM U0126. Inhibitors were added 30min to 1h prior to DHPG application."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    7600,
+                    50
+                ],
+                [
+                    8200,
+                    0
+                ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "U0126",
+                "alias": "U0126"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    0.01
+                ],
+                [
+                    8200,
+                    0.18
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aS6",
+            "alias": "S6pS235"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aS6"
+            }
+        },
+        "data": [
+            [
+                4000.0,
+                1,
+                0
+            ],
+            [
+                8200.0,
+                0.846,
+                0.032
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

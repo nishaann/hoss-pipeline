@@ -1,0 +1,107 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 16757313,
+            "authors": "Li Y et al.",
+            "journal": "Methods Enzymol.\u00a0",
+            "year": 2006,
+            "figure": "Table1 and in-text"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "HA-TSC2 and myc-TSC1 co-transfected into HEK293",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "TSC1_2",
+                "alias": "TSC1_2"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    600,
+                    0.2
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Rheb_GDP",
+            "alias": "Rheb_GDP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "Rheb_GTP",
+                "alias": "Rheb_GTP"
+            },
+            "sampling": "each"
+        },
+        "data": [
+            [
+                600.0,
+                1,
+                0
+            ],
+            [
+                1800,
+                15.55,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "TSC1_2"
+            },
+            {
+                "name": "Rheb_GTP"
+            },
+            {
+                "name": "Rheb_GDP"
+            },
+            {
+                "name": "Rheb_act",
+                "alias": "GDPtoGTP"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "TSC1_2"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Rheb_GTP",
+                    "alias": "Rheb_GTP"
+                },
+                "field": "concInit",
+                "value": 0.00972,
+                "units": "mM"
+            }
+        ]
+    }
+}

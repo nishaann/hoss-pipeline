@@ -1,0 +1,75 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15102960,
+            "authors": "Heubach JF et al.",
+            "journal": "Mol Pharmacol. ",
+            "year": 2004,
+            "figure": "Fig 1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "cellType": "Left ventricular cardiac tissues from TG4 mice",
+        "temperature": 37,
+        "notes": "PKA activity ratios in the presence to the absence of cAMP were measured"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "Forskolin",
+                "alias": "Forskolin"
+            },
+            "field": "conc",
+            "value": 3.0,
+            "quantityUnits": "uM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aPKA",
+            "alias": "aPKA"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aPKA"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.03,
+                "value": 1
+            },
+            {
+                "stimulus": [
+                    "Forskolin"
+                ],
+                "stderr": 0.0714,
+                "value": 1.4973
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 7999777,
+            "authors": "Parkhurst KM et al.",
+            "journal": "Biochemistry, ",
+            "year": 1994,
+            "figure": "Table1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Rabbit",
+        "sampleType": "lysate",
+        "cellType": "cell-free",
+        "samplePrep": "rabbit reticulocyte 40S,eIF2C,Met-tRNA",
+        "temperature": 15,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "Q+R",
+                    "alias": "Q_binds_40S"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 1.06,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "QR+M",
+                    "alias": "QR_binds_mRNA"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.0091,
+                "stderr": 0.0
+            },
+            {
+                "entity": {
+                    "name": "RM+Q",
+                    "alias": "40SmRNA_bind_Q"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.0172,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "R+M",
+                    "alias": "40S_bind_mRNA"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.56,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

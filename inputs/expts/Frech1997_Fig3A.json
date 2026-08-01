@@ -1,0 +1,134 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9079675,
+            "authors": "Frech M",
+            "journal": "J Bio Chem, ",
+            "year": 1997,
+            "figure": "Fig3A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "in-vitro",
+        "samplePrep": "proteins purified from baculovirus-infected Sf9 cells",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "PIP3",
+                "alias": "PIP3"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "nM",
+        "entity": {
+            "name": "PIP3_AKT",
+            "alias": "PIP3_AKT"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0.05,
+                32,
+                0
+            ],
+            [
+                0.1,
+                45,
+                0
+            ],
+            [
+                0.2,
+                80,
+                0
+            ],
+            [
+                0.3,
+                107,
+                0
+            ],
+            [
+                0.4,
+                115,
+                0
+            ],
+            [
+                0.5,
+                145,
+                0
+            ],
+            [
+                0.7,
+                154,
+                0
+            ],
+            [
+                1,
+                170,
+                0
+            ],
+            [
+                1.5,
+                198,
+                0
+            ],
+            [
+                2,
+                212,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PIP3"
+            },
+            {
+                "name": "AKT_g"
+            }
+        ],
+        "itemsToDelete": [],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "AKTp",
+                    "alias": "AKTp"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "PIP3"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

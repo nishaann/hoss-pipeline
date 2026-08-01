@@ -1,0 +1,421 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha A Viswan",
+        "organization": "OpenSource",
+        "email": "",
+        "source": {
+            "sourceType": "simulation",
+            "PMID": 0,
+            "authors": "Nisha A Viswan",
+            "journal": "NA",
+            "year": 2025,
+            "figure": "Fig1"
+        },
+        "testModel": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/Disease_Models_08Sept2025/Source_17Sept2025.json",
+        "testMap": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/QD3_HT_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Simulation",
+        "sampleType": "Simulation",
+        "cellType": "Simulation",
+        "samplePrep": "Simulation",
+        "temperature": 37,
+        "notes": "Generated from exptSynth.py"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    101.0,
+                    1.0
+                ],
+                [
+                    111.0,
+                    0.0
+                ],
+                [
+                    201.0,
+                    1.0
+                ],
+                [
+                    212.0,
+                    0.0
+                ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "synGAP",
+                "alias": "synGAP            "
+            },
+            "field": "conc",
+            "data": [
+                [
+                    200.0,
+                    0.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "presetTime",
+            "sampTime": 105.92,
+            "entity": {
+                "name": "Ca"
+            }
+        },
+        "data": [
+            [
+                0.0,
+                0.011,
+                0.0
+            ],
+            [
+                99.0,
+                0.011,
+                0.0
+            ],
+            [
+                100.78,
+                0.013,
+                0.0
+            ],
+            [
+                101.0,
+                0.012,
+                0.0
+            ],
+            [
+                101.5,
+                0.189,
+                0.0
+            ],
+            [
+                102.0,
+                0.348,
+                0.0
+            ],
+            [
+                102.5,
+                0.518,
+                0.0
+            ],
+            [
+                102.76,
+                0.604,
+                0.0
+            ],
+            [
+                103.0,
+                0.688,
+                0.0
+            ],
+            [
+                103.46,
+                0.832,
+                0.0
+            ],
+            [
+                103.5,
+                0.839,
+                0.0
+            ],
+            [
+                104.0,
+                0.888,
+                0.0
+            ],
+            [
+                104.5,
+                0.937,
+                0.0
+            ],
+            [
+                105.0,
+                0.965,
+                0.0
+            ],
+            [
+                105.5,
+                0.985,
+                0.0
+            ],
+            [
+                105.92,
+                1.000,
+                0.0
+            ],
+            [
+                106.0,
+                0.955,
+                0.0
+            ],
+            [
+                106.5,
+                0.737,
+                0.0
+            ],
+            [
+                107.0,
+                0.599,
+                0.0
+            ],
+            [
+                107.12,
+                0.562,
+                0.0
+            ],
+            [
+                107.5,
+                0.458,
+                0.0
+            ],
+            [
+                108.0,
+                0.323,
+                0.0
+            ],
+            [
+                108.5,
+                0.188,
+                0.0
+            ],
+            [
+                108.7,
+                0.136,
+                0.0
+            ],
+            [
+                110.0,
+                0.053,
+                0.0
+            ],
+            [
+                110.5,
+                0.023,
+                0.0
+            ],
+            [
+                111.0,
+                0.025,
+                0.0
+            ],
+            [
+                111.5,
+                0.021,
+                0.0
+            ],
+            [
+                116.62,
+                0.014,
+                0.0
+            ],
+            [
+                118.6,
+                0.012,
+                0.0
+            ],
+            [
+                200.0,
+                0.011,
+                0.0
+            ],
+            [
+                201.0,
+                0.014,
+                0.0
+            ],
+            [
+                201.5,
+                0.332,
+                0.0
+            ],
+            [
+                202.0,
+                0.615,
+                0.0
+            ],
+            [
+                202.5,
+                0.913,
+                0.0
+            ],
+            [
+                202.76,
+                1.055,
+                0.0
+            ],
+            [
+                203.0,
+                1.119,
+                0.0
+            ],
+            [
+                203.46,
+                1.233,
+                0.0
+            ],
+            [
+                203.5,
+                1.235,
+                0.0
+            ],
+            [
+                204.0,
+                1.276,
+                0.0
+            ],
+            [
+                204.5,
+                1.311,
+                0.0
+            ],
+            [
+                205.0,
+                1.329,
+                0.0
+            ],
+            [
+                205.5,
+                1.338,
+                0.0
+            ],
+            [
+                205.92,
+                1.345,
+                0.0
+            ],
+            [
+                206.0,
+                1.345,
+                0.0
+            ],
+            [
+                206.5,
+                1.327,
+                0.0
+            ],
+            [
+                207.0,
+                1.311,
+                0.0
+            ],
+            [
+                207.12,
+                1.307,
+                0.0
+            ],
+            [
+                207.5,
+                1.254,
+                0.0
+            ],
+            [
+                208.0,
+                1.184,
+                0.0
+            ],
+            [
+                208.5,
+                1.109,
+                0.0
+            ],
+            [
+                208.7,
+                1.086,
+                0.0
+            ],
+            [
+                210.0,
+                0.382,
+                0.0
+            ],
+            [
+                210.5,
+                0.177,
+                0.0
+            ],
+            [
+                211.0,
+                0.131,
+                0.0
+            ],
+            [
+                211.5,
+                0.079,
+                0.0
+            ],
+            [
+                212.0,
+                0.040,
+                0.0
+            ],
+            [
+                213.0,
+                0.026,
+                0.0
+            ],
+            [
+                216.62,
+                0.015,
+                0.0
+            ],
+            [
+                218.6,
+                0.015,
+                0.0
+            ],
+            [
+                220,
+                0.011,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate",
+                    "alias": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Glutamate",
+                    "alias": "Glutamate"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            }
+        ]
+    }
+}

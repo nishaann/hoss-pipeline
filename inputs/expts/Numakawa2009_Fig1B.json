@@ -1,0 +1,93 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19126684,
+            "authors": "Numakawa T et al.",
+            "journal": "PNAS, ",
+            "year": 2009,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Rat",
+        "samplePrep": "primary culture of rat cortical neurons",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "value": 3.6
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 60,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "Ca"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "BDNF"
+                ],
+                "value": 1.48,
+                "stderr": 0.16
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8611507,
+            "authors": "Endo S et al.",
+            "journal": "Biochem., ",
+            "year": 1996,
+            "figure": "Table1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Human",
+        "samplePrep": "human brain I1 tagged with GST expressed in E.coli. PP1 catalytic subunit purified from rabbit skeletal muscle",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "I1p+PP1",
+                    "alias": "Inact_PP1"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 32,
+                "stderr": 2.4
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

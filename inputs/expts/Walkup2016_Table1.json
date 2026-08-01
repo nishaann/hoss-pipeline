@@ -1,0 +1,59 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 27623146,
+            "authors": "Walkup WG et al.",
+            "journal": "Elife, ",
+            "year": 2016,
+            "figure": "Table1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "sampleType": "recombinant protein",
+        "cellType": "cell-free",
+        "samplePrep": "synGAP-alpha1 is expressed in bacteria and purified in soluble form by deleting 102 aa from N-terminal and retains all the functional domains and regulatory domains. PDZ123 from murine PSD95 (Q62108) were purified from E.coli. Recombinant synGAP-alpha1 is incubated with CaMKII/Ca/CaM mix for 10mins before allowing it to bind to PDZ domain resins for 60min at 25C. Using PDZ123 as the readout",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "synGAP+PSD95",
+                    "alias": "synGAP_bind_PDZ123"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 0.6,
+                "stderr": 4.7
+            },
+            {
+                "entity": {
+                    "name": "synGAPp_PDZ_disso",
+                    "alias": "synGAPp_dissoc_PDZ123"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 0.01,
+                "stderr": 0.022
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 30466063,
+            "authors": "Rothenberg DA et al.",
+            "journal": "iScience Cell Press, ",
+            "year": 2018,
+            "figure": "FigS3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "cell-line",
+        "cellType": "HeLa cells",
+        "samplePrep": "",
+        "temperature": 25,
+        "notes": "20ng/ml EGF. Adding an extra datapoint at 4001 to avoid conflicts with LSODA."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    3.125
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "protein",
+            "alias": "protein"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "presetTime",
+            "entity": {
+                "name": "protein"
+            },
+            "sampTime": 13000
+        },
+        "data": [
+            [
+                4000,
+                0.81,
+                0.0
+            ],
+            [
+                4001,
+                0.82,
+                0
+            ],
+            [
+                5800,
+                0.926,
+                0.096
+            ],
+            [
+                7600,
+                1.095,
+                0.286
+            ],
+            [
+                9400,
+                1.022,
+                0.219
+            ],
+            [
+                11200,
+                1.089,
+                0.129
+            ],
+            [
+                13000,
+                1.0,
+                0.183
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "itemsToDelete": [],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

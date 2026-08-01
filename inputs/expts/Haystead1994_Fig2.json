@@ -1,0 +1,56 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8083223,
+            "authors": "Haystead TA et al.",
+            "journal": "J Biol Chem. ",
+            "year": 1994,
+            "figure": "Fig2"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "PHAS-1 immounprecipitated from male Sprague-Dawley rat adipocytes. Activated recombinant ERK2 using MEK",
+        "temperature": 22.5,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eMAPK+4EBPpq",
+                    "alias": "MAPK_4EBPpp"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 17.9,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eMAPK+4EBPpq"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.153,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

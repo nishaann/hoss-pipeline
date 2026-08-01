@@ -1,0 +1,143 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9204908,
+            "authors": "Brunn GJ et al.",
+            "journal": "Science, ",
+            "year": 1997,
+            "figure": "Fig3"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "in-vitro",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "rat 4EBP1 expressed in HEK293 cells and mTOR extracted from rat brain. 10uM Rapamycin, 0.1uM and 1uM Wortmannin were used. Wortmannin is an inhibitor of PI3K and Rapamycin inhibits mTORC1. Not using Wortmannin since PI3K is not used.",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": {
+                "name": "mTORC1",
+                "alias": "mTORC1"
+            },
+            "value": 3.5
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "Rapamycin",
+                "alias": "Rapamycin"
+            },
+            "value": 4
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 2400,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "eIF4E_4EBP",
+            "alias": "eIF4EBP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "eIF4E_4EBP"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "mTORC1"
+                ],
+                "value": 0.25,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "mTORC1",
+                    "Rapamycin"
+                ],
+                "value": 0.26,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "4EBP_g"
+            },
+            {
+                "name": "mTORC1_g"
+            },
+            {
+                "name": "Rheb_GDP"
+            },
+            {
+                "name": "Rheb_GTP"
+            },
+            {
+                "name": "Rapamycin"
+            },
+            {
+                "name": "eIF4E"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "emTORC1+S6K",
+                "alias": "mTOR_act_S6K"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "4EBP",
+                    "alias": "4EBP"
+                },
+                "field": "concInit",
+                "value": 7.9e-05,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "mTORC1"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "mTORC1"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

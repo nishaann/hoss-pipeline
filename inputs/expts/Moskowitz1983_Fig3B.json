@@ -1,0 +1,116 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Surbhit Wagle, Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "surbhitw@instem.res.in, nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 6315876,
+            "authors": "Moskowitz et al.",
+            "journal": "J Neurochem, ",
+            "year": 1983,
+            "figure": "Fig3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Bovine",
+        "cellType": "brain",
+        "samplePrep": "Synaptic vesicles",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "mM",
+            "entity": {
+                "name": "Ca",
+                "alias": "Ca"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    2
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "min",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "AA",
+            "alias": "AA"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "AA"
+            },
+            "sampling": "presetTime",
+            "sampTime": 120
+        },
+        "data": [
+            [
+                11,
+                0.245,
+                0.033
+            ],
+            [
+                20,
+                0.389,
+                0.03
+            ],
+            [
+                35,
+                0.614,
+                0.03
+            ],
+            [
+                60,
+                0.847,
+                0.057
+            ],
+            [
+                90,
+                0.985,
+                0.027
+            ],
+            [
+                120,
+                1.0,
+                0.036
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PLA2_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "PIP2"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "APC",
+                    "alias": "APC"
+                },
+                "field": "concInit",
+                "value": 0.00925,
+                "units": "mM"
+            }
+        ]
+    }
+}

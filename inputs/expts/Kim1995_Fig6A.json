@@ -1,0 +1,133 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Surbhit Wagle, Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "surbhitw@instem.res.in, nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 7646475,
+            "authors": "Kim et al.",
+            "journal": "Biochem J, ",
+            "year": 1995,
+            "figure": "Fig6A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "cortex",
+        "samplePrep": "Mixed cortical cell cultures containing both neuronal and glial cells were exposed to 500uM Glu.",
+        "temperature": 37,
+        "notes": "Authors look at PLA2 activity in response to differenent concentrations of Calcium"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "Ca",
+                "alias": "Ca"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "min",
+        "settleTime": 30,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "AA",
+            "alias": "AA"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "AA"
+            },
+            "dose": 1000000,
+            "sampling": "dose"
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                10,
+                0.16,
+                0
+            ],
+            [
+                33,
+                0.31,
+                0
+            ],
+            [
+                70,
+                0.08,
+                0
+            ],
+            [
+                100,
+                0.12,
+                0
+            ],
+            [
+                150,
+                0.25,
+                0
+            ],
+            [
+                700,
+                0.36,
+                0
+            ],
+            [
+                850,
+                0.5,
+                0
+            ],
+            [
+                5000,
+                0.72,
+                0
+            ],
+            [
+                40000,
+                1.14,
+                0
+            ],
+            [
+                1000000,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PLA2_g"
+            },
+            {
+                "name": "PIP2"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "APC",
+                    "alias": "APC"
+                },
+                "field": "concInit",
+                "value": 0.015,
+                "units": "mM"
+            }
+        ]
+    }
+}

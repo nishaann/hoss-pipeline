@@ -1,0 +1,124 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17012621,
+            "authors": "Tran_TM et al.",
+            "journal": "Mol Pharm, ",
+            "year": 2007,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "cell-line",
+        "cellType": "HEK293 cells",
+        "samplePrep": "HEK293 cells expressing FLAG-WT-b2AR",
+        "temperature": 37,
+        "notes": "Adrenergic receptors and its agonist 1uM Iso were  treated for 5min and then the dephosphorylation was measured by treating with a b2AR antagonist, propanalol. Deleting the rest of the model for convenience"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Isoproterenol",
+                "alias": "Isoproterenol"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    1.0
+                ],
+                [
+                    300,
+                    0.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "ab2AR",
+            "alias": "Iso_b2ARp"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "b2AR",
+                "alias": "b2AR"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                300,
+                1,
+                0
+            ],
+            [
+                600,
+                0.96,
+                0.06
+            ],
+            [
+                900,
+                0.86,
+                0.05
+            ],
+            [
+                1200,
+                0.65,
+                0.05
+            ],
+            [
+                1500,
+                0.52,
+                0.06
+            ],
+            [
+                2100,
+                0.34,
+                0.04
+            ],
+            [
+                3900,
+                0.07,
+                0
+            ],
+            [
+                5700,
+                0.015,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Isoproterenol"
+                },
+                "field": "isBuffered",
+                "value": 1.0,
+                "units": "none"
+            }
+        ]
+    }
+}

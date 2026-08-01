@@ -1,0 +1,109 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20029971,
+            "authors": "Zhou X et al.",
+            "journal": "J Neurosci Res ",
+            "year": 2010,
+            "figure": "Fig1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "Cortical neurons",
+        "samplePrep": "primary culture of Sprague-Dawley rats (p0-p2) cortical neurons",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "S6Kpqr",
+            "alias": "S6KpT389"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "S6Kpqr"
+            },
+            "dose": 2.0,
+            "sampling": "dose"
+        },
+        "data": [
+            [
+                0,
+                0.0806,
+                0.0328
+            ],
+            [
+                0.02,
+                0.2311,
+                0.0392
+            ],
+            [
+                0.2,
+                0.9,
+                0.0666
+            ],
+            [
+                2.0,
+                1.0,
+                0.0883
+            ],
+            [
+                4.0,
+                0.898,
+                0.0765
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

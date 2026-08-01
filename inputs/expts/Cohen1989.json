@@ -1,0 +1,69 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 2549856,
+            "authors": "Cohen P",
+            "journal": "Annu Rev Biochem., ",
+            "year": 1989,
+            "figure": "Review paper"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Rabbit",
+        "sampleType": "purified proteins",
+        "cellType": "skeletal muscle",
+        "samplePrep": "PP-1 and PP-2A purified from Rabbit skeletal muscle, inhibited by okadaic acid with I50 values of 20 nM (PP-1) and 0.2 nM (PP-2A)",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "I1p+PP1",
+                    "alias": "Inact_PP1"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 1.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "CaMCa4+CaN",
+                    "alias": "CaMCa4_bind_CaN"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 0.1,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "ePP2A+I1p",
+                    "alias": "PP2A_dephos_I1"
+                },
+                "field": "Km",
+                "units": "nM",
+                "value": 0.2,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

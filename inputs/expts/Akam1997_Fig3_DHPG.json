@@ -1,0 +1,154 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9249258,
+            "authors": "Akam EC et al.",
+            "journal": "Br J Pharmacol. ",
+            "year": 1997,
+            "figure": "Fig3"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "sampleType": "cell-line",
+        "cellType": "BHK cells",
+        "samplePrep": "membrane preparations of BHK cells expressing rat mGluR1",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "M",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aDHPG_mGluR",
+            "alias": "DHPG_mGluR_Gq"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "aDHPG_mGluR"
+            },
+            "dose": 1e-07,
+            "sampling": "dose"
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                1e-07,
+                1.0,
+                0
+            ],
+            [
+                3e-07,
+                1.06,
+                0.0
+            ],
+            [
+                1e-06,
+                1.36,
+                0.25
+            ],
+            [
+                3e-06,
+                3.76,
+                1.99
+            ],
+            [
+                1e-05,
+                15.44,
+                2.28
+            ],
+            [
+                3e-05,
+                23.77,
+                4.31
+            ],
+            [
+                0.0001,
+                25.09,
+                3.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Glutamate"
+            },
+            {
+                "name": "DHPG"
+            },
+            {
+                "name": "DHPG_mGluR_g"
+            },
+            {
+                "name": "mGluR_g"
+            },
+            {
+                "name": "Gq_g"
+            },
+            {
+                "name": "PLCb_g"
+            },
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "PKC_g"
+            },
+            {
+                "name": "PKA_g"
+            },
+            {
+                "name": "Phosphatase_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "G_GDP",
+                    "alias": "G_GDP"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "mM"
+            }
+        ]
+    }
+}

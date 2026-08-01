@@ -1,0 +1,119 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9133370,
+            "authors": "Marin P et al.",
+            "journal": "J Neurosci., ",
+            "year": 1997,
+            "figure": "Fig 1C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "primary culture of neurons from mouse cerebral cortex",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "eEF2p",
+            "alias": "eEF2p"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "eEF2",
+                "alias": "eEF2"
+            },
+            "sampling": "presetTime",
+            "sampTime": 0
+        },
+        "data": [
+            [
+                4000,
+                0.009,
+                0
+            ],
+            [
+                4060,
+                0.028,
+                0
+            ],
+            [
+                4120,
+                0.056,
+                0
+            ],
+            [
+                4240,
+                0.086,
+                0
+            ],
+            [
+                4360,
+                0.172,
+                0
+            ],
+            [
+                4600,
+                0.315,
+                0
+            ],
+            [
+                4900,
+                0.422,
+                0
+            ],
+            [
+                5800,
+                0.753,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

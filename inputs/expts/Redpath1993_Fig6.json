@@ -1,0 +1,124 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8386634,
+            "authors": "Redpath et al.",
+            "journal": "Eur J Biochem. ",
+            "year": 1993,
+            "figure": "Fig6"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rabbit",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "eEF2 and eEF2k isolated from rabbit reticulocytes, rabbit reticulocyte lysate acts as source of PP2A",
+        "temperature": 30,
+        "notes": "1:400 dilution of reticulocyte lysate used as source for PP2A. Assuming 0.26uM of PP2A in the reticulocyte lysate as this works well for this experiment. 1:400 dilution gives 0.00065uM"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "mM",
+            "entity": {
+                "name": "eEF2p",
+                "alias": "eEF2p"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    2.2e-05
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "nM",
+        "entity": {
+            "name": "eEF2",
+            "alias": "eEF2"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                300,
+                0.24,
+                0
+            ],
+            [
+                600,
+                0.44,
+                0
+            ],
+            [
+                900,
+                0.62,
+                0
+            ],
+            [
+                1000,
+                0.7,
+                0
+            ],
+            [
+                1200,
+                0.82,
+                0
+            ],
+            [
+                1500,
+                0.92,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PP2A"
+            },
+            {
+                "name": "eEF2"
+            },
+            {
+                "name": "eEF2p"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "PP2A",
+                    "alias": "PP2A"
+                },
+                "field": "concInit",
+                "value": 6.5e-07,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "eEF2"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            }
+        ],
+        "notes": "Jain2009_Fig4D"
+    }
+}

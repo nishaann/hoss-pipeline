@@ -1,0 +1,56 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8550571,
+            "authors": "Laminet AA et al.",
+            "journal": "J Biol Chem, ",
+            "year": 1996,
+            "figure": "in-text"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "Sf9 cell lysate containing HA-tagged GST-PTB domain of SHC",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "SHCpGrb2Gab1+PI3K",
+                    "alias": "PI3K_act"
+                },
+                "field": "Kf",
+                "units": "uM",
+                "value": 30.0,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "SHCpGrb2Gab1+PI3K"
+                },
+                "field": "Kb",
+                "units": "1/sec",
+                "value": 1.0,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

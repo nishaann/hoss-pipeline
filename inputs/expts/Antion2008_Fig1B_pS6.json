@@ -1,0 +1,114 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18316404,
+            "authors": "Antion MD et al.",
+            "journal": "Mol Cell Biol., ",
+            "year": 2008,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "sampleType": "tissue slice",
+        "cellType": "hippocampal CA1",
+        "samplePrep": "hippocampal slices from C57BL/6J mice",
+        "temperature": 32,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    50
+                ],
+                [
+                    4600,
+                    0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aS6",
+            "alias": "S6p"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "aS6"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4000.0,
+                1,
+                0
+            ],
+            [
+                4600.0,
+                1.32,
+                0.1
+            ],
+            [
+                4900.0,
+                1.34,
+                0.08
+            ],
+            [
+                5500.0,
+                1.26,
+                0.18
+            ],
+            [
+                6400.0,
+                1.3,
+                0.11
+            ],
+            [
+                8200.0,
+                1.03,
+                0.14
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

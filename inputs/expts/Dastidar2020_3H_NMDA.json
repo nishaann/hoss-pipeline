@@ -1,0 +1,106 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan, Upi Bhalla",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in, bhalla@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 32351028,
+            "authors": "Dastidar SG et al.",
+            "journal": "EMBO Rep. ",
+            "year": 2020,
+            "figure": "Fig3H"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "Cortical synaptoneurosomes P30 Sprague-Dawley rats",
+        "temperature": 37,
+        "notes": "Assuming 40uM of NMDA is equivalent to 10uM Glutamate and therefore translating to ~2000nM Ca. The original data in this file was for the response to DHPG, not to NMDA. Now corrected."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "NMDA",
+                "alias": "NMDA"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    40.0
+                ],
+                [
+                    4300,
+                    0.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "eEF2p",
+            "alias": "eEF2p"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "eEF2p"
+            }
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4060,
+                1.6634,
+                0.3425
+            ],
+            [
+                4120,
+                1.5079,
+                0.0826
+            ],
+            [
+                4300,
+                1.3878,
+                0.3307
+            ],
+            [
+                4600,
+                0.7637,
+                0.1457
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "NMDA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

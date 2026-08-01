@@ -1,0 +1,117 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 12869586,
+            "authors": "Inoki K et al.",
+            "journal": "Genes Dev., ",
+            "year": 2003,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "in-vitro",
+        "samplePrep": "purified TSC1/2 from transfected HEK293 cells,GST-Rheb expressed in bacteria",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "TSC1_2",
+                "alias": "TSC1_2"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1200,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Rheb_GDP",
+            "alias": "Rheb_GDP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "Rheb_GDP"
+            },
+            "dose": 1,
+            "sampling": "dose"
+        },
+        "data": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                0.1,
+                0.24,
+                0
+            ],
+            [
+                0.2,
+                0.35,
+                0
+            ],
+            [
+                0.5,
+                0.65,
+                0
+            ],
+            [
+                1,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "TSC1_2"
+            },
+            {
+                "name": "Rheb_GTP"
+            },
+            {
+                "name": "Rheb_GDP"
+            },
+            {
+                "name": "Rheb_act",
+                "alias": "GDPtoGTP"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "TSC1_2"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Rheb_GTP",
+                    "alias": "Rheb_GTP"
+                },
+                "field": "concInit",
+                "value": 0.00027,
+                "units": "mM"
+            }
+        ]
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20173744,
+            "authors": "Ji Y et al.",
+            "journal": "Nat Neurosci. ",
+            "year": 2010,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "Embryonic hippocampal neurons E18",
+        "temperature": 37,
+        "notes": "Deleting the rest of the model for convenience"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    1
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "mM",
+        "entity": {
+            "name": "aTrKB",
+            "alias": "aTrKB"
+        },
+        "field": "conc",
+        "data": [
+            [
+                4000,
+                2.0161e-05,
+                0
+            ],
+            [
+                4900,
+                0.000125,
+                0
+            ],
+            [
+                5800,
+                7.6613e-05,
+                0
+            ],
+            [
+                7600,
+                5.4435e-05,
+                0
+            ],
+            [
+                11200,
+                3.8306e-05,
+                0
+            ],
+            [
+                18400,
+                2.0161e-05,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "BDNF"
+            },
+            {
+                "name": "TrKB_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

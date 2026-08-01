@@ -1,0 +1,56 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Surbhit Wagle, Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "surbhitw@instem.res.in, nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9442060,
+            "authors": "Mosior et al.",
+            "journal": "J Biol Chem, ",
+            "year": 1998,
+            "figure": "Fig3"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "Large Unilamellar Vesicles of PIP2 and APC; recombinant human PLA2_cytosolic",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "ePLA2PIP2Ca+APC",
+                    "alias": "PLA2PIP2Ca_form_AA"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 64,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "ePLA2PIP2Ca+APC"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 29.75,
+                "stderr": 5.25
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

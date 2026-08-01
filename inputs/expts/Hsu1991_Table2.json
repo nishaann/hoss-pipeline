@@ -1,0 +1,56 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1845982,
+            "authors": "Hsu CY et al.",
+            "journal": "J Biol Chem., ",
+            "year": 1991,
+            "figure": "Table2"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "amino acid sequence bovine brain PLCg",
+        "temperature": 4,
+        "notes": "PLCg Tyr 783 is essential for activation of enzymatic activity and therefore the kinetics of this peptide was considered."
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eEGFR+PLCg",
+                    "alias": "EGFR_act_PLCg"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 460.0,
+                "stderr": 60
+            },
+            {
+                "entity": {
+                    "name": "eEGFR+PLCg"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.00465,
+                "stderr": 0.00041
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

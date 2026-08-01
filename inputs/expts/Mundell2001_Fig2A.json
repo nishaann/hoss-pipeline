@@ -1,0 +1,96 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11483657,
+            "authors": "Mundell SJ et al.",
+            "journal": "Journal of Neurochemistry. ",
+            "year": 2001,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "cell-line",
+        "cellType": "HEK293 cells",
+        "samplePrep": "rat HA-mGluR1a and arrestin3-GFP transfected into HEK293 cells",
+        "temperature": 37,
+        "notes": "Adding an extra datapoint at 4001 to avoid conflicts with LSODA. Here we use mGluR5 is used instead of mGluR1a."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "mM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    1.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "mGluR5",
+            "alias": "mGluR5"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "mGluR5"
+            },
+            "sampling": "presetTime",
+            "sampTime": 4000
+        },
+        "data": [
+            [
+                4000,
+                1.0,
+                0
+            ],
+            [
+                4001,
+                0.99,
+                0.0
+            ],
+            [
+                4900,
+                0.6,
+                0.036
+            ],
+            [
+                5800,
+                0.511,
+                0.068
+            ],
+            [
+                7600,
+                0.318,
+                0.0286
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

@@ -1,0 +1,130 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22115317,
+            "authors": "Pigott CR et al.",
+            "journal": "Biochem J, ",
+            "year": 2012,
+            "figure": "Fig4C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "human eEF2K expressed in E.coli",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "CaM",
+                "alias": "CaM"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    1.2
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aCaMKIII",
+            "alias": "aCaMKIII"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "aCaMKIII"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                300,
+                1,
+                0
+            ],
+            [
+                600,
+                2.1,
+                0
+            ],
+            [
+                900,
+                3.3,
+                0
+            ],
+            [
+                1800,
+                6.2,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "eEF2"
+            },
+            {
+                "name": "eEF2p"
+            },
+            {
+                "name": "PP2A"
+            },
+            {
+                "name": "CaMKIII_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "CaMKIII",
+                    "alias": "CaMKIII"
+                },
+                "field": "concInit",
+                "value": 7.3,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "concInit",
+                "value": 0.67,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            }
+        ]
+    }
+}

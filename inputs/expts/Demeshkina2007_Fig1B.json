@@ -1,0 +1,49 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 17586816,
+            "authors": "Demeshkina N et al.",
+            "journal": "Nucleic Acids Res., ",
+            "year": 2007,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "yeast  ribosomes, eEF2  and eIF6",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "elongation",
+                    "alias": "elongation"
+                },
+                "field": "Kd",
+                "units": "uM",
+                "value": 0.26,
+                "stderr": 0.04
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

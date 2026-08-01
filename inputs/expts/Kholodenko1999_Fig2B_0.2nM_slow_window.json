@@ -1,0 +1,131 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10514507,
+            "authors": "Kholodenko BN et al.",
+            "journal": "J Biol Chem, ",
+            "year": 1999,
+            "figure": "Fig2B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "Sprague-Dawley Rat hepatocytes",
+        "temperature": 30,
+        "notes": "Deleting the rest of the model for convenience. Experiment time-scales were fast, therefore, we are considering the time-scales to be 150,300,450,600,1200secs instead of 15,30,45,60,120secs"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    0.01
+                ],
+                [
+                    4000,
+                    0.2
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aEGFR",
+            "alias": "aEGFR"
+        },
+        "field": "conc",
+        "window": {
+            "startt": -100,
+            "endt": 1500,
+            "dt": 50,
+            "operation": "max",
+            "baseline": "min"
+        },
+        "normalization": {
+            "entity": {
+                "name": "EGFR",
+                "alias": "EGFR"
+            },
+            "sampling": "presetTime",
+            "sampTime": 0
+        },
+        "data": [
+            [
+                4000,
+                0.006,
+                0
+            ],
+            [
+                4150,
+                0.067,
+                0.011
+            ],
+            [
+                4300,
+                0.035,
+                0.006
+            ],
+            [
+                4450,
+                0.035,
+                0.0
+            ],
+            [
+                4600,
+                0.017,
+                0.0
+            ],
+            [
+                5200,
+                0.009,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "EGFR_g"
+            },
+            {
+                "name": "EGF"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

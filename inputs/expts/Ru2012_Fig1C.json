@@ -1,0 +1,107 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22492229,
+            "authors": "Ru W et al.",
+            "journal": "J Mol Neurosci., ",
+            "year": 2012,
+            "figure": "Fig1C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "primary cortical neuronal cultures from C57 mouse embryos (E18)",
+        "temperature": 37,
+        "notes": "Adding an extra datapoint at 4001 to avoid conflicts with LSODA."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "mM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    10
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "S6Kpqr",
+            "alias": "S6KpT389"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "S6Kpqr"
+            }
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4001,
+                1.01,
+                0
+            ],
+            [
+                4120,
+                0.93,
+                0.11
+            ],
+            [
+                4300,
+                1.2,
+                0.2
+            ],
+            [
+                4600,
+                2.07,
+                0.44
+            ],
+            [
+                5200,
+                3.89,
+                0.47
+            ],
+            [
+                5800,
+                4.73,
+                0.09
+            ],
+            [
+                7600,
+                4.38,
+                0.18
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

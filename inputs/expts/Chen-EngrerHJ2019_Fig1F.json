@@ -1,0 +1,371 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 31324793,
+            "authors": "Chen-Engerer HJ et al.",
+            "journal": "Nat Comm. ",
+            "year": 2019,
+            "figure": "Fig1F"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "sampleType": "tissue slice",
+        "cellType": "CA1 hippocampal pyramidal neurons",
+        "samplePrep": "500uM DHPG was pressure-applied to patch-clamped CA1 PNs for 200ms separated by 2 mins and uncaging of 0.4mM NPE-IP3",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    500
+                ],
+                [
+                    4000.2,
+                    0
+                ],
+                [
+                    4001.2,
+                    0
+                ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "mM",
+            "entity": {
+                "name": "IP3",
+                "alias": "IP3"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4120,
+                    0.4
+                ],
+                [
+                    4120.1,
+                    0
+                ],
+                [
+                    4121.2,
+                    0
+                ]                
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "Ca"
+            }
+        },
+        "data": [
+            [
+                4000,
+                0,
+                0
+            ],
+            [
+                4000.27,
+                0.029,
+                0
+            ],
+            [
+                4000.41,
+                0.138,
+                0
+            ],
+            [
+                4000.55,
+                0.516,
+                0
+            ],
+            [
+                4000.69,
+                0.853,
+                0
+            ],
+            [
+                4000.82,
+                0.879,
+                0
+            ],
+            [
+                4001.1,
+                0.914,
+                0
+            ],
+            [
+                4001.51,
+                0.885,
+                0
+            ],
+            [
+                4001.78,
+                0.85,
+                0
+            ],
+            [
+                4001.92,
+                0.795,
+                0
+            ],
+            [
+                4002.19,
+                0.729,
+                0
+            ],
+            [
+                4002.47,
+                0.666,
+                0
+            ],
+            [
+                4002.88,
+                0.597,
+                0
+            ],
+            [
+                4003.01,
+                0.533,
+                0
+            ],
+            [
+                4003.29,
+                0.464,
+                0
+            ],
+            [
+                4003.56,
+                0.415,
+                0
+            ],
+            [
+                4003.97,
+                0.355,
+                0
+            ],
+            [
+                4004.66,
+                0.245,
+                0
+            ],
+            [
+                4005.21,
+                0.182,
+                0
+            ],
+            [
+                4005.89,
+                0.121,
+                0
+            ],
+            [
+                4006.57,
+                0.092,
+                0
+            ],
+            [
+                4007.26,
+                0.061,
+                0
+            ],
+            [
+                4007.4,
+                0.038,
+                0
+            ],
+            [
+                4120,
+                0,
+                0
+            ],
+            [
+                4120.27,
+                0.043,
+                0
+            ],
+            [
+                4120.41,
+                0.081,
+                0
+            ],
+            [
+                4120.55,
+                0.133,
+                0
+            ],
+            [
+                4120.69,
+                0.184,
+                0
+            ],
+            [
+                4120.82,
+                0.542,
+                0
+            ],
+            [
+                4120.96,
+                0.81,
+                0
+            ],
+            [
+                4120.82,
+                0.856,
+                0
+            ],
+            [
+                4120.95,
+                0.928,
+                0
+            ],
+            [
+                4120.96,
+                1.0,
+                0
+            ],
+            [
+                4121.37,
+                0.948,
+                0
+            ],
+            [
+                4121.51,
+                0.873,
+                0
+            ],
+            [
+                4121.64,
+                0.787,
+                0
+            ],
+            [
+                4121.78,
+                0.732,
+                0
+            ],
+            [
+                4121.92,
+                0.68,
+                0
+            ],
+            [
+                4122.06,
+                0.637,
+                0
+            ],
+            [
+                4122.19,
+                0.6,
+                0
+            ],
+            [
+                4122.33,
+                0.536,
+                0
+            ],
+            [
+                4122.74,
+                0.458,
+                0
+            ],
+            [
+                4123.01,
+                0.401,
+                0
+            ],
+            [
+                4123.43,
+                0.34,
+                0
+            ],
+            [
+                4123.7,
+                0.285,
+                0
+            ],
+            [
+                4124.25,
+                0.231,
+                0
+            ],
+            [
+                4124.8,
+                0.19,
+                0
+            ],
+            [
+                4125.48,
+                0.156,
+                0
+            ],
+            [
+                4126.03,
+                0.133,
+                0
+            ],
+            [
+                4126.71,
+                0.115,
+                0
+            ],
+            [
+                4127.4,
+                0.092,
+                0
+            ],
+            [
+                4127.67,
+                0.066,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

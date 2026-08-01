@@ -1,0 +1,108 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "National Centre for Biological Sciences",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 14576170,
+            "authors": "Gu J et al.",
+            "journal": "Glycobiology ",
+            "year": 2004,
+            "figure": "Fig 3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "cell-line",
+        "cellType": "PC12 cells",
+        "samplePrep": "rat Pheochromocytoma cell line (PC12)  treated with EGF",
+        "temperature": 37,
+        "notes": "5ng/ml EGF"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    0.78125
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aMAPK",
+            "alias": "aMAPK"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "aMAPK"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4300,
+                2.5,
+                1
+            ],
+            [
+                5800,
+                1.5,
+                0.3
+            ],
+            [
+                7600,
+                1.3,
+                0.6
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

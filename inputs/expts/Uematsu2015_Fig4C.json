@@ -1,0 +1,200 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 25639954,
+            "authors": "Uematsu K et al",
+            "journal": "J Neurochem., ",
+            "year": 2015,
+            "figure": "Fig 4C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "expression system",
+        "cellType": "HEK293T cells",
+        "samplePrep": "WT or mutant Cherry or GFP-tagged mGluR5b construct expressed in HEK293T cells. Incubated with 100uM DHPG",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    10
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "Ca"
+            },
+            "sampling": "max"
+        },
+        "data": [
+            [
+                0.0,
+                0.464,
+                0
+            ],
+            [
+                0.1,
+                0.459,
+                0
+            ],
+            [
+                0.2,
+                0.459,
+                0
+            ],
+            [
+                0.3,
+                0.891,
+                0
+            ],
+            [
+                0.35,
+                1.0,
+                0
+            ],
+            [
+                0.4,
+                0.924,
+                0
+            ],
+            [
+                0.5,
+                0.786,
+                0
+            ],
+            [
+                0.6,
+                0.715,
+                0
+            ],
+            [
+                0.65,
+                0.772,
+                0
+            ],
+            [
+                0.68,
+                0.834,
+                0
+            ],
+            [
+                0.7,
+                0.801,
+                0
+            ],
+            [
+                0.8,
+                0.692,
+                0
+            ],
+            [
+                0.9,
+                0.729,
+                0
+            ],
+            [
+                1.0,
+                0.772,
+                0
+            ],
+            [
+                1.1,
+                0.886,
+                0
+            ],
+            [
+                1.2,
+                0.786,
+                0
+            ],
+            [
+                1.3,
+                0.758,
+                0
+            ],
+            [
+                1.4,
+                0.782,
+                0
+            ],
+            [
+                1.5,
+                0.867,
+                0
+            ],
+            [
+                1.6,
+                0.772,
+                0
+            ],
+            [
+                1.7,
+                0.734,
+                0
+            ],
+            [
+                1.8,
+                0.72,
+                0
+            ],
+            [
+                1.9,
+                0.729,
+                0
+            ],
+            [
+                2.0,
+                0.81,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

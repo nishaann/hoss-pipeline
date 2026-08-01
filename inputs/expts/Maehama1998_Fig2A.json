@@ -1,0 +1,122 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9593664,
+            "authors": "Maehama T et al.",
+            "journal": "J Bio Chem, ",
+            "year": 1998,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "PI3K immunoprecipitated from HEK293 cells",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "PIP3",
+                "alias": "PIP3"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    2
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "PIP2",
+            "alias": "PIP2"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "PIP2"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                60,
+                0.618,
+                0
+            ],
+            [
+                120,
+                0.72,
+                0
+            ],
+            [
+                300,
+                0.84,
+                0
+            ],
+            [
+                600,
+                0.934,
+                0
+            ],
+            [
+                1200,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PI3K_g"
+            },
+            {
+                "name": "PIP2"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "PTEN",
+                    "alias": "PTEN"
+                },
+                "field": "concInit",
+                "value": 1.06,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "PIP2"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "PIP2"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            }
+        ]
+    }
+}

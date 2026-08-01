@@ -1,0 +1,204 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha A Viswan",
+        "organization": "OpenSource",
+        "email": "",
+        "source": {
+            "sourceType": "simulation",
+            "PMID": 0,
+            "authors": "Nisha A Viswan",
+            "journal": "NA",
+            "year": 2025,
+            "figure": "Fig1"
+        },
+        "testModel": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/Disease_Models_08Sept2025/Source_17Sept2025.json",
+        "testMap": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/QD3_HT_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Simulation",
+        "sampleType": "Simulation",
+        "cellType": "Simulation",
+        "samplePrep": "Simulation",
+        "temperature": 37,
+        "notes": "Generated from exptSynth.py"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "NMDA",
+                "alias": "NMDA"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    101.0,
+                    1.0
+                ],
+                [
+                    102.0,
+                    0.0
+                ],
+                [
+                    201.0,
+                    1.0
+                ],
+                [
+                    202.0,
+                    0.0
+                ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "synGAP",
+                "alias": "synGAP            "
+            },
+            "field": "conc",
+            "data": [
+                [
+                    200.0,
+                    0.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "uM",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0.0,
+                0.08,
+                0.0
+            ],
+            [
+                99.0,
+                0.08,
+                0.0
+            ],
+            [
+                100.98,
+                0.104,
+                0.0
+            ],
+            [
+                102.0,
+                0.73,
+                0.0
+            ],
+            [
+                102.96,
+                0.584,
+                0.0
+            ],
+            [
+                104.4,
+                0.221,
+                0.0
+            ],
+            [
+                105.5,
+                0.133,
+                0.0
+            ],
+            [
+                106.92,
+                0.103,
+                0.0
+            ],
+            [
+                108.9,
+                0.096,
+                0.0
+            ],
+            [
+                110.88,
+                0.108,
+                0.0
+            ],
+            [
+                120.0,
+                0.08,
+                0.0
+            ],
+            [
+                201.0,
+                0.08,
+                0.0
+            ],
+            [
+                202.0,
+                0.744,
+                0.0
+            ],
+            [
+                202.96,
+                0.584,
+                0.0
+            ],
+            [
+                204.4,
+                0.201,
+                0.0
+            ],
+            [
+                205.5,
+                0.115,
+                0.0
+            ],
+            [
+                206.92,
+                0.108,
+                0.0
+            ],
+            [
+                208.9,
+                0.104,
+                0.0
+            ],
+            [
+                210,
+                0.080,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "NMDA",
+                    "alias": "NMDA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "NMDA",
+                    "alias": "NMDA"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            }
+        ]
+    }
+}

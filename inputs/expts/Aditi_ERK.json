@@ -1,0 +1,109 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "National Centre for Biological Sciences",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "personal_communication",
+            "PMID": 0,
+            "authors": "Aditi",
+            "year": 2017,
+            "figure": ""
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "sampleType": "tissue slice",
+        "cellType": "hippocampal slices",
+        "samplePrep": "hippocampal slices",
+        "temperature": 32,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    50
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKpq",
+            "alias": "MAPKpp"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "MAPKpq"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4180,
+                1.212989472,
+                0.087263753
+            ],
+            [
+                4300,
+                1.344169339,
+                0.100996395
+            ],
+            [
+                4600,
+                1.28237498,
+                0.1475383777
+            ],
+            [
+                4900,
+                1.362496764,
+                0.0651328959
+            ],
+            [
+                5800,
+                0.9219555343,
+                0.0707972797
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

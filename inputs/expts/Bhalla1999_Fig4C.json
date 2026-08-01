@@ -1,0 +1,836 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9888852,
+            "authors": "Bhalla and Iyengar",
+            "journal": "Science ",
+            "year": 1999,
+            "figure": "Fig4C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Simulation",
+        "sampleType": "Simulation",
+        "cellType": "Simulation",
+        "samplePrep": "Simulation",
+        "notes": "Modeling paper"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Ca",
+                "alias": "Ca"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    1000,
+                    10
+                ],
+                [
+                    1000.2,
+                    9
+                ],
+                [
+                    1000.4,
+                    8
+                ],
+                [
+                    1000.8,
+                    7
+                ],
+                [
+                    1001,
+                    4
+                ],
+                [
+                    1002,
+                    1
+                ],
+                [
+                    1003,
+                    0.92
+                ],
+                [
+                    1004,
+                    0.8
+                ],
+                [
+                    1005,
+                    0.7
+                ],
+                [
+                    1006,
+                    0.6
+                ],
+                [
+                    1007,
+                    0.5
+                ],
+                [
+                    1008,
+                    0.48
+                ],
+                [
+                    1010,
+                    0.42
+                ],
+                [
+                    1012,
+                    0.38
+                ],
+                [
+                    1014,
+                    0.32
+                ],
+                [
+                    1016,
+                    0.28
+                ],
+                [
+                    1018,
+                    0.22
+                ],
+                [
+                    1020,
+                    0.18
+                ],
+                [
+                    1022,
+                    0.12
+                ],
+                [
+                    1032,
+                    0.1
+                ],
+                [
+                    1036,
+                    0.08
+                ],
+                [
+                    1600,
+                    10
+                ],
+                [
+                    1600.2,
+                    9
+                ],
+                [
+                    1600.4,
+                    8
+                ],
+                [
+                    1600.8,
+                    7
+                ],
+                [
+                    1601,
+                    4
+                ],
+                [
+                    1602,
+                    1
+                ],
+                [
+                    1603,
+                    0.92
+                ],
+                [
+                    1604,
+                    0.8
+                ],
+                [
+                    1605,
+                    0.7
+                ],
+                [
+                    1606,
+                    0.6
+                ],
+                [
+                    1607,
+                    0.5
+                ],
+                [
+                    1608,
+                    0.48
+                ],
+                [
+                    1610,
+                    0.42
+                ],
+                [
+                    1612,
+                    0.38
+                ],
+                [
+                    1614,
+                    0.32
+                ],
+                [
+                    1616,
+                    0.28
+                ],
+                [
+                    1618,
+                    0.22
+                ],
+                [
+                    1620,
+                    0.18
+                ],
+                [
+                    1622,
+                    0.12
+                ],
+                [
+                    1632,
+                    0.1
+                ],
+                [
+                    1636,
+                    0.08
+                ],
+                [
+                    2200,
+                    10
+                ],
+                [
+                    2200.2,
+                    9
+                ],
+                [
+                    2200.4,
+                    8
+                ],
+                [
+                    2200.8,
+                    7
+                ],
+                [
+                    2201,
+                    4
+                ],
+                [
+                    2202,
+                    1
+                ],
+                [
+                    2203,
+                    0.92
+                ],
+                [
+                    2204,
+                    0.8
+                ],
+                [
+                    2205,
+                    0.7
+                ],
+                [
+                    2206,
+                    0.6
+                ],
+                [
+                    2207,
+                    0.5
+                ],
+                [
+                    2208,
+                    0.48
+                ],
+                [
+                    2210,
+                    0.42
+                ],
+                [
+                    2212,
+                    0.38
+                ],
+                [
+                    2214,
+                    0.32
+                ],
+                [
+                    2216,
+                    0.28
+                ],
+                [
+                    2218,
+                    0.22
+                ],
+                [
+                    2220,
+                    0.18
+                ],
+                [
+                    2222,
+                    0.12
+                ],
+                [
+                    2232,
+                    0.1
+                ],
+                [
+                    2236,
+                    0.08
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "uM",
+        "entity": {
+            "name": "MAPKpq",
+            "alias": "MAPKpp"
+        },
+        "field": "conc",
+        "data": [
+            [
+                600,
+                0.0001,
+                0
+            ],
+            [
+                1000,
+                0.0002,
+                0
+            ],
+            [
+                1200,
+                0.0005,
+                0
+            ],
+            [
+                1800,
+                0.01,
+                0
+            ],
+            [
+                2400,
+                0.03,
+                0
+            ],
+            [
+                3000,
+                0.13,
+                0
+            ],
+            [
+                3600,
+                0.18,
+                0
+            ],
+            [
+                4200,
+                0.21,
+                0
+            ],
+            [
+                4800,
+                0.22,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Phosphatase_g"
+            },
+            {
+                "name": "Gq_g"
+            },
+            {
+                "name": "Gs_g"
+            },
+            {
+                "name": "mGluR_g"
+            },
+            {
+                "name": "AC_g"
+            },
+            {
+                "name": "PKA_g"
+            },
+            {
+                "name": "PP2B_g"
+            },
+            {
+                "name": "PLCg_g"
+            },
+            {
+                "name": "Ras_g"
+            },
+            {
+                "name": "MAPK_g"
+            },
+            {
+                "name": "PP1_g"
+            },
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "CaMKII_g"
+            },
+            {
+                "name": "PLCb_g"
+            },
+            {
+                "name": "PLA2_g"
+            },
+            {
+                "name": "PKC_g"
+            },
+            {
+                "name": "PIP2"
+            },
+            {
+                "name": "PIP2"
+            },
+            {
+                "name": "IP3"
+            },
+            {
+                "name": "EGFR_g"
+            },
+            {
+                "name": "EGF"
+            },
+            {
+                "name": "Sos_g"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "ePP2A+S6Kpq",
+                "alias": "clus_S6K_deph"
+            },
+            {
+                "name": "ePP2A+S6Kpqrs",
+                "alias": "S6K_dephosp"
+            },
+            {
+                "name": "Gab1"
+            },
+            {
+                "name": "bPI3K"
+            },
+            {
+                "name": "PI3K"
+            },
+            {
+                "name": "PIP3"
+            },
+            {
+                "name": "PTEN"
+            },
+            {
+                "name": "SHCpGrb2Gab1_PI3K"
+            },
+            {
+                "name": "bPLCg"
+            },
+            {
+                "name": "ebGEF+Ras",
+                "alias": "bGEF_act"
+            },
+            {
+                "name": "RasGTP_PI3K"
+            },
+            {
+                "name": "ePP2A+S6Kpqr",
+                "alias": "S6K_deph"
+            },
+            {
+                "name": "SHCpGrb2_Gab1"
+            },
+            {
+                "name": "SHCpGrb2Gab1+PI3K",
+                "alias": "PI3K_act"
+            },
+            {
+                "name": "bPI3K_act"
+            },
+            {
+                "name": "PI3K+RasGTP",
+                "alias": "PI3K_bind_RasGTP"
+            },
+            {
+                "name": "ePP2A+AKTpq",
+                "alias": "AKTpS473_deph"
+            },
+            {
+                "name": "ePP2A+AKTp",
+                "alias": "AKTpT308_deph"
+            },
+            {
+                "name": "ePP2A+eEF2p",
+                "alias": "eEF2p_deph"
+            },
+            {
+                "name": "ePP2A+4EBPpqr",
+                "alias": "PP2A_4EBPpp"
+            },
+            {
+                "name": "ePP2A+4EBPpq",
+                "alias": "PP2A_4EBPp"
+            },
+            {
+                "name": "ePP2A+eIF4EBPpqr",
+                "alias": "PP2A_eIF4EBPpp"
+            },
+            {
+                "name": "ePP2A+eIF4EBPpq",
+                "alias": "PP2A_eIF4EBPp"
+            },
+            {
+                "name": "aCaMKIII"
+            },
+            {
+                "name": "PLCgp_deph"
+            },
+            {
+                "name": "SHCp+Grb2",
+                "alias": "Grb2_bind_SHC"
+            },
+            {
+                "name": "ePDK1+S6K",
+                "alias": "PDK1_act_S6K"
+            },
+            {
+                "name": "ePI3K+AKT",
+                "alias": "phospho_AKTpT308"
+            },
+            {
+                "name": "ePDK2+AKTp",
+                "alias": "phospho_AKTpS473"
+            },
+            {
+                "name": "eMAPK+S6K",
+                "alias": "clus_S6K_phospho"
+            },
+            {
+                "name": "eMAPK+4EBPpq",
+                "alias": "MAPK_4EBPpp"
+            },
+            {
+                "name": "eMAPK+eIF4EBPpq",
+                "alias": "MAPK_4EBP_phospho"
+            },
+            {
+                "name": "ecraf+MAPKK",
+                "alias": "MEK_phospho"
+            },
+            {
+                "name": "ecraf+MAPKKp",
+                "alias": "MEKp_phospho"
+            },
+            {
+                "name": "aAKT",
+                "alias": "AKTpT308S473"
+            },
+            {
+                "name": "mGluR_barr2+Raf",
+                "alias": "mGluR_barr2_Raf"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "concInit",
+                "value": 8e-05,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "MKP1",
+                    "alias": "MKP1"
+                },
+                "field": "concInit",
+                "value": 2e-06,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Ras+craf",
+                    "alias": "Ras_act_craf"
+                },
+                "field": "Kf",
+                "value": 24000,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "CaMCa4+GEF",
+                    "alias": "CaM_bind_GEF"
+                },
+                "field": "Kf",
+                "value": 60000,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "MAPK",
+                    "alias": "MAPK"
+                },
+                "field": "concInit",
+                "value": 0.00036,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "eMAPKK+MAPKp",
+                    "alias": "MAPKKthr"
+                },
+                "field": "kcat",
+                "value": 0.15,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eMAPKK+MAPK",
+                    "alias": "MAPKKtyr"
+                },
+                "field": "kcat",
+                "value": 0.15,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eRas+MAPKK1",
+                    "alias": "Rafp_RasGTP1"
+                },
+                "field": "kcat",
+                "value": 0.105,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eRas+MAPKK2",
+                    "alias": "Rafp_RasGTP2"
+                },
+                "field": "kcat",
+                "value": 0.105,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eMKP1+MAPKpq",
+                    "alias": "MKP1pT424_deph"
+                },
+                "field": "kcat",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eMKP1+MAPKp",
+                    "alias": "MKP1pY421_deph"
+                },
+                "field": "kcat",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eMKP1+MAPKpq"
+                },
+                "field": "Km",
+                "value": 6.97e-05,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eMKP1+MAPKp"
+                },
+                "field": "Km",
+                "value": 6.97e-05,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eEGFR+SHC",
+                    "alias": "EGFR_act_SHC"
+                },
+                "field": "Km",
+                "value": 0.000871,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "SHCp_deph",
+                    "alias": "SHCp_deph"
+                },
+                "field": "Kf",
+                "value": 0.00167,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eSHCpSosGrb2+Ras",
+                    "alias": "Sos_Ras_GEF"
+                },
+                "field": "kcat",
+                "value": 0.02,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "ePKC+craf",
+                    "alias": "PKC_act_raf"
+                },
+                "field": "Km",
+                "value": 0.0697,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eCaMGEF+Ras",
+                    "alias": "CaMGEF_actRas"
+                },
+                "field": "kcat",
+                "value": 0.02,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "bPKC",
+                    "alias": "bPKCp"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "craf1",
+                    "alias": "craf1"
+                },
+                "field": "concInit",
+                "value": 0.0002,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "MAPKK",
+                    "alias": "MAPKK"
+                },
+                "field": "concInit",
+                "value": 0.00018,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "PP2A",
+                    "alias": "PP2A"
+                },
+                "field": "concInit",
+                "value": 0.00012,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "PP2A"
+                },
+                "field": "concInit",
+                "value": 0.000224,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "PIP2",
+                    "alias": "PIP2"
+                },
+                "field": "concInit",
+                "value": 0.01,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "DAG",
+                    "alias": "DAG"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "AA",
+                    "alias": "AA"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "AA"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "DAG"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "PLCg",
+                    "alias": "PLCg"
+                },
+                "field": "concInit",
+                "value": 0.00082,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "GAP",
+                    "alias": "GAP"
+                },
+                "field": "concInit",
+                "value": 2e-06,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Ras",
+                    "alias": "RasGDP"
+                },
+                "field": "concInit",
+                "value": 0.0002,
+                "units": "mM"
+            }
+        ],
+        "notes": "Bhalla1999_Fig4C"
+    }
+}

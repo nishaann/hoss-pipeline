@@ -1,0 +1,182 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1719158,
+            "authors": "Watras J, et al.",
+            "journal": "J Neurosci, ",
+            "year": 1991,
+            "figure": "Fig6B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Dog",
+        "sampleType": "Vesicles",
+        "cellType": "Reticular membrane vesicles derived from canine cerebellum",
+        "samplePrep": "Bilayers made with PE, PS and channels were fused to 0.4mg/ml membrane vesicles with 0.1uM free Ca and 2uM Ip3 in cis chamber and 53mM Ca(OH)2 in trans chamber.IP3-induced Ca release was initiated 7min after Ca uptake",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "IP3",
+                "alias": "IP3"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    15.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 420,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aIP3R",
+            "alias": "aIP3R"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "aIP3R"
+            },
+            "dose": 1.5e-05
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                1.8e-08,
+                0.06,
+                0
+            ],
+            [
+                5e-08,
+                0.16,
+                0
+            ],
+            [
+                1e-07,
+                0.28,
+                0
+            ],
+            [
+                2e-07,
+                0.43,
+                0
+            ],
+            [
+                4.2e-07,
+                0.6,
+                0
+            ],
+            [
+                8.5e-07,
+                0.75,
+                0
+            ],
+            [
+                1e-06,
+                0.82,
+                0
+            ],
+            [
+                1.8e-06,
+                0.86,
+                0
+            ],
+            [
+                2e-06,
+                0.879,
+                0
+            ],
+            [
+                3.2e-06,
+                0.915,
+                0
+            ],
+            [
+                4.3e-06,
+                0.932,
+                0
+            ],
+            [
+                6.6e-06,
+                0.955,
+                0
+            ],
+            [
+                9e-06,
+                0.964,
+                0
+            ],
+            [
+                1.3e-05,
+                0.973,
+                0
+            ],
+            [
+                1.8e-05,
+                0.981,
+                0
+            ],
+            [
+                2.2e-05,
+                0.983,
+                0
+            ],
+            [
+                3.5e-05,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Ca_g"
+            },
+            {
+                "name": "IP3"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "IP3"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca_int",
+                    "alias": "Ca_int"
+                },
+                "field": "concInit",
+                "value": 53,
+                "units": "mM"
+            }
+        ]
+    }
+}

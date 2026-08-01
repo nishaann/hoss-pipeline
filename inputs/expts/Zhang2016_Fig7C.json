@@ -1,0 +1,108 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 26902516,
+            "authors": "Zhang Z et al.",
+            "journal": "Neuroscience, ",
+            "year": 2016,
+            "figure": "Fig7C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "retinal progenitor cells",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aMAPK",
+            "alias": "aMAPK"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "presetTime",
+            "entity": {
+                "name": "aMAPK"
+            },
+            "sampTime": 11200
+        },
+        "data": [
+            [
+                4000,
+                0.5,
+                0
+            ],
+            [
+                4300,
+                0.56,
+                0
+            ],
+            [
+                4600,
+                0.49,
+                0
+            ],
+            [
+                4900,
+                0.8,
+                0
+            ],
+            [
+                7600,
+                0.9,
+                0
+            ],
+            [
+                11200,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

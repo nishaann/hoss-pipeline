@@ -1,0 +1,106 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15254091,
+            "authors": "Hou L, Klann E",
+            "journal": "J Neurosci. ",
+            "year": 2004,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "CA1 hippocampal slices from male C57BL/6 mice 6-8 wks ",
+        "temperature": 32,
+        "notes": "PP1 and PP2A inhibited."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    50.0
+                ],
+                [
+                    4300,
+                    0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aAKT",
+            "alias": "AKTpT308S473"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aAKT"
+            }
+        },
+        "data": [
+            [
+                4000,
+                1.0,
+                0.0
+            ],
+            [
+                4300,
+                1.46,
+                0.19
+            ],
+            [
+                4600,
+                2.0,
+                0.64
+            ],
+            [
+                4900,
+                1.52,
+                0.29
+            ],
+            [
+                5500,
+                0.9,
+                0.08
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

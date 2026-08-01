@@ -1,0 +1,114 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15143158,
+            "authors": "Cardone L et al.",
+            "journal": "Mol Cell Biol., ",
+            "year": 2004,
+            "figure": "Fig5D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "cell-line",
+        "cellType": "HEK293 cells",
+        "samplePrep": "HEK293 cells were stimulated with EGF",
+        "temperature": 30,
+        "notes": "Adding an extra datapoint at 4001 to avoid conflicts with LSODA."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    16.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKp",
+            "alias": "pERK1/2"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "MAPKp"
+            },
+            "sampling": "presetTime",
+            "sampTime": 4000
+        },
+        "data": [
+            [
+                4000,
+                1.0,
+                0.452
+            ],
+            [
+                4001,
+                1.001,
+                0
+            ],
+            [
+                4600,
+                6.442,
+                0.677
+            ],
+            [
+                5200,
+                7.118,
+                0.366
+            ],
+            [
+                5800,
+                2.89,
+                0.281
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

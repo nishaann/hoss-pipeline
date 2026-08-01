@@ -1,0 +1,138 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8321321,
+            "authors": "Kolch W et al.",
+            "journal": "Nature ",
+            "year": 1993,
+            "figure": "Fig2a"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "in-vitro",
+        "samplePrep": "Raf1 immunoprecipitated from PKC transfected NIH3T3 cells",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "PKC",
+                "alias": "PKC"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "craf1p",
+            "alias": "craf1p"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "craf1p"
+            },
+            "dose": 0.0313,
+            "sampling": "dose"
+        },
+        "data": [
+            [
+                0.0313,
+                1,
+                0
+            ],
+            [
+                0.0625,
+                1.91,
+                0
+            ],
+            [
+                0.156,
+                5.4,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Ras_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "PKC_g"
+            },
+            {
+                "name": "DAG"
+            },
+            {
+                "name": "PIP2"
+            },
+            {
+                "name": "MAPK_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DAG",
+                    "alias": "DAG"
+                },
+                "field": "concInit",
+                "value": 0.0084,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "DAG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "craf1",
+                    "alias": "craf1"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "concInit",
+                "value": 1.32,
+                "units": "mM"
+            }
+        ]
+    }
+}

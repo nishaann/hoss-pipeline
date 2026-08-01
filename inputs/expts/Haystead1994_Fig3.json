@@ -1,0 +1,122 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8083223,
+            "authors": "Haystead TA et al.",
+            "journal": "J Biol Chem. ",
+            "year": 1994,
+            "figure": "Fig3"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "PHAS-1 immounprecipitated from male Sprague-Dawley rat adipocytes. Activated recombinant ERK2 using MEK",
+        "temperature": 22.5,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "MAPKpq",
+                "alias": "MAPKpp"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    0.16
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "t4EBPpqr",
+            "alias": "4EBPpT37T46S65"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "t4EBPpqr"
+            },
+            "sampling": "presetTime",
+            "sampTime": 3600
+        },
+        "data": [
+            [
+                120.0,
+                0.032,
+                0
+            ],
+            [
+                300.0,
+                0.145,
+                0.03
+            ],
+            [
+                600,
+                0.23,
+                0.04
+            ],
+            [
+                900,
+                0.341,
+                0.069
+            ],
+            [
+                1200,
+                0.5,
+                0.12
+            ],
+            [
+                1800,
+                0.8,
+                0.17
+            ],
+            [
+                2700,
+                1.0,
+                0.11
+            ],
+            [
+                3600,
+                1.0,
+                0.1
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "4EBP_g"
+            },
+            {
+                "name": "MAPK_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "t4EBPpq",
+                    "alias": "4EBPpT37T46"
+                },
+                "field": "concInit",
+                "value": 0.0271,
+                "units": "mM"
+            }
+        ]
+    }
+}

@@ -1,0 +1,115 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10492006,
+            "authors": "Gottschalk WA et al.",
+            "journal": "Learn Mem. ",
+            "year": 1999,
+            "figure": "Fig1D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "hippocampal CA1 microslices from Sprague-Dawley rats (p12-13)",
+        "temperature": 34,
+        "notes": "recovery period 2hrs in ACSF(pH 7.4). Adding an extra datapoint at 4001 to avoid conflicts with LSODA."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    2.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aMAPK",
+            "alias": "aMAPK"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "aMAPK"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4001,
+                1.01,
+                0
+            ],
+            [
+                4900,
+                1.8,
+                0
+            ],
+            [
+                5800,
+                2.8,
+                0
+            ],
+            [
+                7600,
+                2.2,
+                0
+            ],
+            [
+                11200,
+                0.9,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

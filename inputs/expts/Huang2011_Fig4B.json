@@ -1,0 +1,56 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 21789487,
+            "authors": "Huang W et al.",
+            "journal": "Anal Bioanal Chem, ",
+            "year": 2011,
+            "figure": "Fig4B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "ebPI3K+PIP2",
+                    "alias": "bPIP2_phospho"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.5133,
+                "stderr": 0.1283
+            },
+            {
+                "entity": {
+                    "name": "ebPI3K+PIP2"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 44.8,
+                "stderr": 9.8
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

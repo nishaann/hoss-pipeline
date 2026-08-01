@@ -1,0 +1,121 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9427642,
+            "authors": "Alessi DR et al.",
+            "journal": "Curr Biol., ",
+            "year": 1998,
+            "figure": "Fig4B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Human",
+        "sampleType": "cell-line",
+        "cellType": "HEK293 cells",
+        "samplePrep": "HEK293 cells were transfected with full-length GST-p70S6K.9nM GST-PDK1.lipid vesicles of PIP3 ",
+        "temperature": 30,
+        "notes": "autoradiography of p32 incorporation"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "PDK1",
+                "alias": "PDK1"
+            },
+            "value": 9
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "PIP3",
+                "alias": "PIP3"
+            },
+            "value": 10000.0
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "nM",
+        "entity": {
+            "name": "AKTp",
+            "alias": "pGST_PKBalpha"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 0.5,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "PIP3"
+                ],
+                "value": 0.5,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "PDK1"
+                ],
+                "value": 1.25,
+                "stderr": 1.25
+            },
+            {
+                "stimulus": [
+                    "PDK1",
+                    "PIP3"
+                ],
+                "value": 32,
+                "stderr": 3
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "AKT_g"
+            },
+            {
+                "name": "PIP3"
+            },
+            {
+                "name": "PDK1"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "PDK1"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "PIP3"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

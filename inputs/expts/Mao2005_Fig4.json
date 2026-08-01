@@ -1,0 +1,103 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15661743,
+            "authors": "Mao L et al",
+            "journal": "J Biol Chem. ",
+            "year": 2005,
+            "figure": "Fig4"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "samplePrep": "E18 or P1 rat striatal neurons",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "quantityUnits": "uM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "MAPKpq",
+            "alias": "ppERK2"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "MAPKpq"
+            },
+            "dose": 1.0
+        },
+        "data": [
+            [
+                1.0,
+                1.0,
+                0
+            ],
+            [
+                3.0,
+                1.3,
+                0
+            ],
+            [
+                10.0,
+                2.45,
+                0
+            ],
+            [
+                30.0,
+                4.45,
+                0
+            ],
+            [
+                100.0,
+                5.65,
+                0
+            ],
+            [
+                300.0,
+                6.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

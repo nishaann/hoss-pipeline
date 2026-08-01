@@ -1,0 +1,128 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8083204,
+            "authors": "Yuan N et al.",
+            "journal": "J Biol Chem. ",
+            "year": 1994,
+            "figure": "Fig 2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "in-vitro",
+        "samplePrep": "Hamster b2AR is expressed in L cells",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "Epinephrine",
+                "alias": "Epinephrine"
+            },
+            "field": "conc",
+            "quantityUnits": "uM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "cAMP",
+            "alias": "cAMP"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "cAMP"
+            },
+            "dose": 10.0
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                0.0,
+                0.296,
+                0.0
+            ],
+            [
+                0.003,
+                0.388,
+                0.0
+            ],
+            [
+                0.01,
+                0.554,
+                0.0
+            ],
+            [
+                0.03,
+                0.714,
+                0.0
+            ],
+            [
+                0.1,
+                0.859,
+                0.0
+            ],
+            [
+                0.3,
+                0.938,
+                0.0
+            ],
+            [
+                1.0,
+                0.973,
+                0.0
+            ],
+            [
+                10.0,
+                1.0,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Epinephrine"
+            },
+            {
+                "name": "b2AR_g"
+            },
+            {
+                "name": "Gs_g"
+            },
+            {
+                "name": "BetaGamma"
+            },
+            {
+                "name": "AC_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "PKA_g"
+            }
+        ]
+    }
+}

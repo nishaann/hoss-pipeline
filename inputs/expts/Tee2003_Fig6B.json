@@ -1,0 +1,120 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 12906785,
+            "authors": "Tee AR et al.",
+            "journal": "Current Biol., ",
+            "year": 2003,
+            "figure": "Fig6B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "Flag-TSC1/2 are immunoprecipitated from HEK293 cells,GST-Rheb purified from E.coli",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "TSC1_2",
+                "alias": "TSC1_2"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    300,
+                    1.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Rheb_GTP",
+            "alias": "Rheb_GTP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "Rheb_GTP"
+            },
+            "sampling": "presetTime",
+            "sampTime": 300
+        },
+        "display": {
+            "useXlog": false,
+            "useYlog": false
+        },
+        "data": [
+            [
+                300,
+                1,
+                0
+            ],
+            [
+                900,
+                0.003,
+                0
+            ],
+            [
+                1500,
+                0.0013,
+                0
+            ],
+            [
+                2100,
+                0.0013,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "TSC1_2"
+            },
+            {
+                "name": "Rheb_GTP"
+            },
+            {
+                "name": "Rheb_GDP"
+            },
+            {
+                "name": "Rheb_act",
+                "alias": "GDPtoGTP"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "TSC1_2"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "Rheb_GTP"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "mM"
+            }
+        ]
+    }
+}

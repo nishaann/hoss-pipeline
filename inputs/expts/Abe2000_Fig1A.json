@@ -1,0 +1,104 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10713403,
+            "authors": "Abe K et al.",
+            "journal": "Neuroscience Letters, ",
+            "year": 2000,
+            "figure": "Fig 1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "hippocampus",
+        "samplePrep": "primary cultures of hippocampal neurons from p18 Wistar rats",
+        "temperature": 37,
+        "notes": "5ng/ml EGF"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "field": "conc",
+            "quantityUnits": "nM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aMAPK",
+            "alias": "aMAPK"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "aMAPK"
+            },
+            "dose": 0.001
+        },
+        "data": [
+            [
+                0.001,
+                1,
+                0
+            ],
+            [
+                0.015625,
+                1.3,
+                0.05
+            ],
+            [
+                0.15625,
+                2.6,
+                0.2
+            ],
+            [
+                1.5625,
+                3.1,
+                0.4
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

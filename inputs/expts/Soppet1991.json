@@ -1,0 +1,49 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1645620,
+            "authors": "Soppet D et al.",
+            "journal": "Cell, ",
+            "year": 1991,
+            "figure": ""
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Mouse",
+        "sampleType": "cell-line",
+        "cellType": "NIH3T3 cells",
+        "samplePrep": "rat TrKB DNA transfected NIH 3T3 cells (murine fibroblasts)",
+        "temperature": 4,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "BDNF+TrKB",
+                    "alias": "Ligand_binding"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 1.8,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

@@ -1,0 +1,157 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20052014,
+            "authors": "Schapansky J, et al.",
+            "journal": "Can. J. Physiol. Pharmacol, ",
+            "year": 2009,
+            "figure": "Fig2D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "hippocampal neurons",
+        "samplePrep": "Hippocampal neurons from E18 Sprague-Dawley rats were treated with 100uM NMDA and cytosolic Ca was measured for 20s",
+        "temperature": 37,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "NMDA",
+                "alias": "NMDA"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "max",
+            "entity": {
+                "name": "Ca"
+            }
+        },
+        "data": [
+            [
+                3998,
+                0.041,
+                0
+            ],
+            [
+                4000,
+                0.229,
+                0.106
+            ],
+            [
+                4002,
+                0.571,
+                0.118
+            ],
+            [
+                4004,
+                0.812,
+                0.127
+            ],
+            [
+                4006,
+                0.931,
+                0.127
+            ],
+            [
+                4008,
+                0.971,
+                0.127
+            ],
+            [
+                4010,
+                0.996,
+                0.123
+            ],
+            [
+                4012,
+                0.996,
+                0.123
+            ],
+            [
+                4014,
+                1.0,
+                0.118
+            ],
+            [
+                4016,
+                0.992,
+                0.118
+            ],
+            [
+                4018,
+                0.988,
+                0.114
+            ],
+            [
+                4020,
+                0.976,
+                0.114
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "NMDA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca_ext",
+                    "alias": "Ca_ext"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca_ext"
+                },
+                "field": "concInit",
+                "value": 2.3,
+                "units": "mM"
+            }
+        ]
+    }
+}

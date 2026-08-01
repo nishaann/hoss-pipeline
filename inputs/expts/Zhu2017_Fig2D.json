@@ -1,0 +1,97 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 28202907,
+            "authors": "Zhu G et al.",
+            "journal": "Sci Rep., ",
+            "year": 2017,
+            "figure": "Fig2D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "3-4 month old C57Bl/6 mouse hippocampal slices",
+        "temperature": 33,
+        "notes": "Steady state run for 1800s as 4000s was giving GSL integration error"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aS6",
+            "alias": "S6p"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "aS6"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4300,
+                1.55,
+                0.13
+            ],
+            [
+                5200,
+                1.38,
+                0.1
+            ],
+            [
+                7600,
+                1.22,
+                0.11
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

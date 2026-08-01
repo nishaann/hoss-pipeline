@@ -1,0 +1,75 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 6301828,
+            "authors": "Stewart AA et al.",
+            "journal": "Eur J Biochem., ",
+            "year": 1983,
+            "figure": "Table3"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "PP2B purified from rabbit skeletal muscles",
+        "temperature": 25,
+        "notes": "CaN activity on I1 in the presence and absence of 0.03uM CaM. Here Enzyme activity unit is not specified. Therefore assuming 1U=1nmol of Phosphate removed/min"
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eCaMCaN+I1p",
+                    "alias": "CaMCaN_deph_I1p"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 2.5,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eCaN+I1p",
+                    "alias": "CaN_deph_I1p"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 2.5,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eCaMCaN+I1p"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 2.64,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eCaN+I1p"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.215,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

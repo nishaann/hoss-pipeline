@@ -1,0 +1,118 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 2022671,
+            "authors": "Tang WJ et al.",
+            "journal": "J Biol Chem. ",
+            "year": 1991,
+            "figure": "Fig 3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "in-vitro",
+        "samplePrep": "cDNA of Bovine brain CaM-sensitive AC1 is expressed in SF9 cells",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "entity": {
+                "name": "Gs_GTP",
+                "alias": "GsGTP"
+            },
+            "field": "conc",
+            "quantityUnits": "nM"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "cAMP",
+            "alias": "cAMP"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "cAMP"
+            },
+            "dose": 87.0
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                0.01,
+                0.206,
+                0.0
+            ],
+            [
+                1.0,
+                0.296,
+                0.0
+            ],
+            [
+                1.5,
+                0.325,
+                0.0
+            ],
+            [
+                2.3,
+                0.374,
+                0.0
+            ],
+            [
+                5.5,
+                0.508,
+                0.0
+            ],
+            [
+                10.0,
+                0.61,
+                0.0
+            ],
+            [
+                22.0,
+                0.788,
+                0.0
+            ],
+            [
+                43.0,
+                0.947,
+                0.0
+            ],
+            [
+                87.0,
+                1.0,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Gs_g"
+            },
+            {
+                "name": "BetaGamma"
+            },
+            {
+                "name": "AC_g"
+            }
+        ]
+    }
+}

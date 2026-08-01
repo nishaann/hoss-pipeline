@@ -1,0 +1,105 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19794395,
+            "authors": "Robinet C and Pellerin L",
+            "journal": "J Cereb Blood Flow Metab. ",
+            "year": 2010,
+            "figure": "Fig4A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "E17 primary cultures of OF1 mouse cortical neurons",
+        "temperature": 37,
+        "notes": "mTOR Ser2448 is phosphorylated, which is catalysed by S6K. This is not included in the model, but I considered phosphorylated form of mTOR by Rheb-GTP. Omitting the rest of the model for a fast run."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    3.6
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aAKT",
+            "alias": "AKTpT308S473"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aAKT"
+            }
+        },
+        "data": [
+            [
+                4000,
+                1,
+                0
+            ],
+            [
+                4300.0,
+                3.7,
+                1.7
+            ],
+            [
+                5800.0,
+                4,
+                1.47
+            ],
+            [
+                7600,
+                3.47,
+                1.13
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

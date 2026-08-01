@@ -1,0 +1,121 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10700251,
+            "authors": "Scheetz AJ et al.",
+            "journal": "Nat Neurosci. ",
+            "year": 2000,
+            "figure": "Fig1B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "samplePrep": "Superior colliculus synaptoneurosomes P13 Sprague-Dawley rats",
+        "temperature": 37,
+        "notes": "Assuming 50uM of NMDA is equivalent to 10uM Glutamate and therefore translating to ~2500nM Ca."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "NMDA",
+                "alias": "NMDA"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    50
+                ],
+                [
+                    4030,
+                    0.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "protein",
+            "alias": "protein"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "protein"
+            }
+        },
+        "data": [
+            [
+                4030,
+                1,
+                0
+            ],
+            [
+                4210,
+                0.627,
+                0.095
+            ],
+            [
+                4330,
+                0.333,
+                0.063
+            ],
+            [
+                4630,
+                0.77,
+                0.103
+            ],
+            [
+                4930,
+                1.548,
+                0.175
+            ],
+            [
+                5830,
+                1.841,
+                0.119
+            ],
+            [
+                6730,
+                1.333,
+                0.159
+            ],
+            [
+                7630,
+                1.183,
+                0.048
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "NMDA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

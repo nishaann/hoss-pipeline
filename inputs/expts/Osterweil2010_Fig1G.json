@@ -1,0 +1,85 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 21084617,
+            "authors": "Osterweil EK et al.",
+            "journal": "J Neurosci., ",
+            "year": 2010,
+            "figure": "Fig 1G"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "samplePrep": "hippocampal CA1 slices from P25-P30 C57BL/6J mice",
+        "temperature": 32.5,
+        "notes": "This experiment looks at protein synthesis in DHPG-stimulated slice"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 100,
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "protein",
+            "alias": "protein"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "protein"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.02,
+                "value": 1
+            },
+            {
+                "stimulus": [
+                    "DHPG"
+                ],
+                "stderr": 0.03,
+                "value": 1.19
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

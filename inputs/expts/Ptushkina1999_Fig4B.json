@@ -1,0 +1,149 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10406811,
+            "authors": "Ptushkina M et al.",
+            "journal": "EMBO J. ",
+            "year": 1999,
+            "figure": "Fig4B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "human eIF4E, 4EBP1 expressed in E.coli",
+        "temperature": 25,
+        "notes": "SPR assay"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "eIF4E",
+                "alias": "eIF4E"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    1.6
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "uM",
+        "entity": {
+            "name": "eIF4E_4EBP",
+            "alias": "eIF4E_4EBP"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0,
+                0,
+                0
+            ],
+            [
+                13,
+                50,
+                0
+            ],
+            [
+                20,
+                80,
+                0
+            ],
+            [
+                25,
+                95,
+                0
+            ],
+            [
+                35,
+                115,
+                0
+            ],
+            [
+                50,
+                123,
+                0
+            ],
+            [
+                80,
+                131,
+                0
+            ],
+            [
+                100,
+                132,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "eIF4E_4EBP"
+            },
+            {
+                "name": "eIF4E+4EBP",
+                "alias": "eIF4E_bind_BP2"
+            },
+            {
+                "name": "4EBP"
+            },
+            {
+                "name": "eIF4E"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "eIF4E"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "eIF4E_4EBP"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "4EBP",
+                    "alias": "4EBP"
+                },
+                "field": "concInit",
+                "value": 0.00027,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "4EBP"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ],
+        "notes": "Jain2009_Fig3F"
+    }
+}

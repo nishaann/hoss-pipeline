@@ -1,0 +1,143 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Upinder S. Bhalla",
+        "organization": "NCBS",
+        "email": "bhalla@ncbs.res.in",
+        "source": {
+            "sourceType": "simulation",
+            "PMID": 0,
+            "authors": "Bhalla, US.",
+            "journal": "NA ",
+            "year": 2025,
+            "figure": "Fig1"
+        },
+        "testModel": "Source_aug27.json",
+        "testMap": "QD3_aug27_HT_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "comp",
+        "sampleType": "Simulation",
+        "cellType": "Simulation",
+        "samplePrep": "Simulation",
+        "temperature": 37,
+        "notes": "Synthetic experiment to constrain absolute levels of Ca responses to four stimuli: NMDA, AMPA, Glu and IP3."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "NMDA",
+                "alias": "NMDA"
+            },
+            "field": "conc",
+            "data": [
+                [ 1, 1 ],
+                [ 2, 0 ],
+                [ 3, 0 ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "AMPA",
+                "alias": "AMPA"
+            },
+            "field": "conc",
+            "data": [
+                [ 11, 1 ],
+                [ 12, 0 ], 
+                [ 13, 0 ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [ 21, 1 ],
+                [ 22, 0 ],
+                [ 23, 0 ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "IP3",
+                "alias": "IP3"
+            },
+            "field": "conc",
+            "data": [
+                [ 31, 15 ],
+                [ 32, 0 ],
+                [ 33, 0 ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "uM",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "data": [
+            [ 1, 0.08, 0 ],
+            [ 2, 0.15, 0.0 ],
+            [ 3, 0.15, 0.0 ],
+            [ 7, 0.08, 0.0 ],
+            [ 10, 0.08, 0.0 ],
+            [ 13, 1.2, 0.0 ],
+            [ 14, 1.4, 0.0 ],
+            [ 15, 1.4, 0.0 ],
+            [ 17, 0.8, 0.0 ],
+            [ 20, 0.12, 0.0 ],
+            [ 21, 0.1, 0.0 ],
+            [ 23, 3.8, 0.0 ],
+            [ 24, 3.7, 0.0 ],
+            [ 26, 2.0, 0.0 ],
+            [ 30, 0.27, 0.0 ],
+            [ 31, 0.16, 0.0 ],
+            [ 32, 1.0, 0.0 ],
+            [ 33, 1.25, 0.0 ],
+            [ 34, 1.0, 0.0 ],
+            [ 36, 0.57, 0.0 ],
+            [ 39, 0.22, 0.0 ],
+            [ 42, 0.16, 0.0 ],
+            [ 80, 0.10, 0.0 ],
+            [ 90, 0.08, 0.0 ],
+            [ 95, 0.08, 0.0 ],
+            [ 100, 0.08, 0.0 ]
+        ]
+    },
+    "Modifications": {
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "IP3"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "IP3"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+		]
+	}
+}

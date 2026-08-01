@@ -1,0 +1,1518 @@
+Abe2000_Fig1A					10713403
+{"sampleSource":"Rat (Wistar), primary hippocampal neurons","sampleType":"Primary neuron culture","cellType":"Hippocampal neurons","preparation":"Primary neuron culture","temperature":"Room temperature"}
+
+Abe2000_Fig1B					10713403
+{"sampleSource":"Rat (Wistar), primary hippocampal neurons","sampleType":"Primary neuron culture","cellType":"Hippocampal neurons","preparation":"Primary neuron culture","temperature":"Room temperature"}
+
+Abrams1991_Fig2					1679120
+{"sampleSource":"Aplysia californica (100–200g, anaesthetised by isotonic MgCl2 injection)","sampleType":"Membrane fraction","cellType":"Pleural ganglion neurons (mechanosensory); also whole CNS (abdominal, cerebral, pleural, pedal ganglia)","preparation":"Ganglia desheathed and homogenised on ice in glass-Teflon or glass-glass homogeniser in K-HEPES buffer with DTT and protease inhibitors; centrifuged at 1000×g 2min then 30,000×g 20min; final pellet rehomogenised in small volume; calmodulin-binding adenylate cyclase isolated by calmodulin-Sepharose affinity chromatography after Lubrol solubilisation","temperature":"0°C (solubilisation and most preparation steps); 4°C (calmodulin-Sepharose incubation, FPLC, SM-2 bead steps); 30°C (adenylate cyclase and G-protein activation assays)"}
+
+Akam1997_Fig1_inset				9249258
+{"sampleSource":"Baby hamster kidney (BHK-mGluR1a cells)","sampleType":"Cell membranes","cellType":"BHK cells","preparation":"Cell membranes","temperature":"30°C"}
+
+Akam1997_Fig3_DHPG				9249258
+{"sampleSource":"Baby hamster kidney (BHK-mGluR1a cells)","sampleType":"Cell membranes","cellType":"BHK cells","preparation":"Cell membranes","temperature":"30°C"}
+
+Akam1997_Fig3_Glu				9249258
+{"sampleSource":"Baby hamster kidney (BHK-mGluR1a cells)","sampleType":"Cell membranes","cellType":"BHK cells","preparation":"Cell membranes","temperature":"30°C"}
+
+Akam1997					9249258
+{"sampleSource":"Baby hamster kidney (BHK-mGluR1a cells)","sampleType":"Cell membranes","cellType":"BHK cells","preparation":"Cell membranes","temperature":"30°C"}
+
+Alano2010_Fig3B					20181594
+{"sampleSource":"Mouse (wild-type and PARP-1−/− mice; fetal embryonic day 15 for neurons, postnatal for astrocytes, embryonic day 13.5 for fibroblasts)","sampleType":"Primary cell culture","cellType":"Cortical neurons (primary); cortical astrocytes (primary); mouse embryonic fibroblasts; mixed neuron-astrocyte cultures","preparation":"Cortical neurons dissociated from E15 mouse cortex, plated in Neurobasal/B-27 medium, non-neuronal proliferation inhibited with cytosine arabinoside at 24h, used at 10–14 DIV; astrocytes from postnatal cortex used at confluence 19–24 DIV; fibroblasts from E13.5 cortex in DMEM/10% FBS, used within 3 passages at 90% confluence","temperature":"37°C (all culture and experimental incubations); 4°C (primary antibody overnight incubation for Western blots); ice-cold aCSF washes (glycolysis assay termination)"}
+
+Alano2010_Fig3E					20181594
+{"sampleSource":"Mouse (wild-type and PARP-1−/− mice; fetal embryonic day 15 for neurons, postnatal for astrocytes, embryonic day 13.5 for fibroblasts)","sampleType":"Primary cell culture","cellType":"Cortical neurons (primary); cortical astrocytes (primary); mouse embryonic fibroblasts","preparation":"Cortical neurons from E15 mouse cortex in Neurobasal/B-27 medium, non-neuronal cells inhibited with cytosine arabinoside, used at 10–14 DIV; astrocytes from postnatal cortex used at confluence 19–24 DIV; fibroblasts from E13.5 in DMEM/10% FBS within 3 passages at 90% confluence; mitochondria isolated by differential centrifugation as per Alano et al. 2007","temperature":"37°C (all culture and experimental incubations, chemical ischemia, glycolysis assay, NAD+ uptake); 4°C (primary antibody overnight incubation for Western blots); 65°C (SDS-PAGE sample heating); ice-cold aCSF (glycolysis assay termination washes)"}
+
+Albasanz2005_Fig1				15949941
+
+
+Alessi1997_Fig3A				9094314
+{"sampleSource":"CHO-IR cells","sampleType":"Cell membranes","cellType":"CHO-IR cells","preparation":"Transfected","temperature":"30°C (in vitro)"}
+
+Alessi1997_Fig3B				9094314
+{"sampleSource":"CHO-IR cells","sampleType":"Cell membranes","cellType":"CHO-IR cells","preparation":"Transfected","temperature":"30°C (in vitro)"}
+
+Alessi1998_Fig4B				9427642
+{"sampleSource":"Human embryo, HEK 293 cells","sampleType":"Recombinant protein","cellType":"HEK 293 cells","preparation":"Recombinant","temperature":"30°C"}
+
+Alessi1998_Fig6A				9427642
+{"sampleSource":"Human embryo, HEK 293 cells","sampleType":"Recombinant protein","cellType":"HEK 293 cells","preparation":"Recombinant","temperature":"30°C (binding)"}
+
+Alessi1998					9427642
+{"sampleSource":"Human embryo, HEK 293 cells","sampleType":"Recombinant protein","cellType":"HEK 293 cells","preparation":"Recombinant","temperature":"30°C"}
+
+Andrabi2006_Fig2B				17116882
+
+
+Andreozzi2003_Fig1A				12771945
+{"sampleSource":"Mouse NIH3T3 cells (parental, stably expressing EGFR-RET E/R, E/R-Y1062F, or RET/GFRα1)","sampleType":"Crude membrane preparation","cellType":"NIH3T3 fibroblasts","preparation":"Cells stimulated with EGF (10nM, 15 min) or TPA (100ng/ml, 30 min) ± bisindolylmaleimide p retreatment; solubilised in Tris/EDTA/EGTA/Triton X-100 extraction buffer, clarified at 5000g 20 min; crude membrane fraction (50µg/sample) used for total PKC activity; isoform-specific PKC activity from immunoprecipitates (200µg protein/sample)","temperature":"Room temperature (PKC activity assay, 10 min); 4°C (lysis for Western blot/IP); ice (quenching)"}
+
+Andreozzi2003_Fig2B				12771945
+{"sampleSource":"Mouse NIH3T3 cells (parental, stably expressing EGFR-RET E/R, or E/R-Y1062F)","sampleType":"Whole cell lipid extract","cellType":"NIH3T3 fibroblasts","preparation":"Cells stimulated with 10nM EGF for 15 min; cellular lipids extracted by chloroform/methanol/water (2:1:1); DAG mass measured by DAG kinase conversion to [32P]phosphatidic acid, purified by TLC, quantified against diolein standards","temperature":"Room temperature (PKC activity assay, 10 min); 4°C (lysis for Western blot); ice (quenching reactions)"}
+
+Antion2008_Fig1B_mTOR				18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; slices equilibrated 30min in 50% sucrose/50% ACSF, then ≥1h at room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors; snap-frozen on dry ice; CA1 microdissected and homogenised in HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (initial dissection); room temperature (1h ACSF equilibration, Western blot primary antibody 2h option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation and sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig1B_pERK2				18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; slices equilibrated 30min in 50% sucrose/50% ACSF, then ≥1h at room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors; snap-frozen on dry ice; CA1 microdissected and homogenised in HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (initial dissection); room temperature (1h ACSF equilibration, Western blot primary antibody 2h option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation and sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig1B_pS6				18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; slices equilibrated 30min in 50% sucrose/50% ACSF, then ≥1h at room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors; snap-frozen on dry ice; CA1 microdissected and homogenised in HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (initial dissection); room temperature (1h ACSF equilibration, Western blot primary antibody 2h option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation and sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig1C				18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; slices equilibrated 30min in 50% sucrose/50% ACSF, then ≥1h at room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors; snap-frozen on dry ice; CA1 microdissected and homogenised in HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (initial dissection); room temperature (1h ACSF equilibration, Western blot primary antibody 2h option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation and sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig3B_DHPG				18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; slices equilibrated 30min in 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (added 30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (initial dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration, DHPG stimulation, electrophysiology); 4°C (overnight primary antibody, mTOR IP 2h, IHC fixation overnight, sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig3B_DHPG_LY294002			18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; slices equilibrated 30min in 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (added 30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (initial dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration, DHPG stimulation, electrophysiology); 4°C (overnight primary antibody, mTOR IP 2h, IHC fixation overnight, sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig3B_DHPG_Wortmannin		18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; slices equilibrated 30min in 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (added 30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (initial dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration, DHPG stimulation, electrophysiology); 4°C (overnight primary antibody, mTOR IP 2h, IHC fixation overnight, sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig4B_pS6_DHPG			18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1) and immunohistochemistry sections","cellType":"Hippocampal CA1 neurons (stratum pyramidale and stratum radiatum)","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors; snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer; centrifuged 1,000×g 5s; for IHC: 400µm sections fixed overnight in 4% PFA/1% glutaraldehyde at 4°C, sucrose-infiltrated, OCT-embedded, cryosectioned at 20µm","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody, IHC secondary antibody 2h); 32°C (pre-treatment equilibration, DHPG stimulation, electrophysiology); 4°C (overnight primary antibody, mTOR IP, IHC fixation and sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig4B_pS6_DHPG_Rapamycin		18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1) and immunohistochemistry sections","cellType":"Hippocampal CA1 neurons (stratum pyramidale and stratum radiatum)","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors; snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer; centrifuged 1,000×g 5s; for IHC: 400µm sections fixed overnight in 4% PFA/1% glutaraldehyde at 4°C, sucrose-infiltrated, OCT-embedded, cryosectioned at 20µm","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody, IHC secondary antibody 2h); 32°C (pre-treatment equilibration, DHPG stimulation, electrophysiology); 4°C (overnight primary antibody, mTOR IP, IHC fixation and sucrose infiltration); 55°C (membrane stripping)"}
+
+Antion2008_Fig5B_pS6_DHPG			18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation); 55°C (membrane stripping)"}
+
+Antion2008_Fig5B_pS6_DHPG_U0126			18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation); 55°C (membrane stripping)"}
+
+Antion2008_Fig6B_DHPG				18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation); 55°C (membrane stripping)"}
+
+Antion2008_Fig6B_DHPG_U0126			18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation); 55°C (membrane stripping)"}
+
+Antion2008_Fig6D_DHPG				18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation); 55°C (membrane stripping)"}
+
+Antion2008_Fig6D_DHPG_LY294002			18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation); 55°C (membrane stripping)"}
+
+Antion2008_Fig6D_DHPG_Rapamycin			18316404
+{"sampleSource":"Mouse (C57BL/6J, WT and S6K1/S6K2 single or double knockout littermates, 4–5 weeks old)","sampleType":"Acute brain slice (microdissected CA1)","cellType":"Hippocampal CA1 neurons","preparation":"Brain rapidly removed into ice-cold sucrose solution; hippocampus sectioned with McIllwain tissue chopper; equilibrated 30min 50% sucrose/50% ACSF, then ≥1h room temperature in 100% ACSF, then 2h at 32°C; treated with 50µM DHPG 10min ± inhibitors (30min–1h prior); snap-frozen on dry ice; CA1 microdissected and homogenised in ice-cold HEPES/NaCl/EDTA/EGTA/Na4P2O7 buffer with protease and phosphatase inhibitors; centrifuged 1,000×g 5s","temperature":"Ice-cold (dissection and homogenisation); room temperature (≥1h ACSF equilibration, Western blot 2h primary antibody option); 32°C (2h pre-treatment equilibration and DHPG stimulation); 4°C (overnight primary antibody, mTOR IP, IHC fixation); 55°C (membrane stripping)"}
+
+ArakiY2015_Fig1B				25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig1E				25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig1F				25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig4H_PSDsynGAP			25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig4H_PSDsynGAP_KN62			25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig4H_synGAPpS1108			25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig4H_synGAPpS1108_KN62		25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig5B1				25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig6B1				25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2015_Fig8A				25569349
+{"sampleSource":"Rat (E18 embryo), hippocampal neurons","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro live imaging","temperature":"Room temperature"}
+
+ArakiY2020_Fig4D				32579114
+{"sampleSource":"Mouse (C57BL/6, male and female, various ages) and rat (Rattus norvegicus, hippocampal primary neurons DIV 3–21); HEK293T cells (human, ATCC CRL-3216)","sampleType":"PSD fraction / synaptosome fraction / whole cell lysate","cellType":"Mouse whole brain or brain regions (PSD fractionation); rat hippocampal primary neurons; HEK293T cells","preparation":"Mouse brains homogenised in Dounce A homogeniser in Buffer A (0.32M sucrose/10mM Hepes/protease inhibitors); centrifuged 1000×g 10min; supernatant centrifuged 13,800×g 20min; P2 pellet layered on discontinuous sucrose gradient (0.85/1.0/1.2M); centrifuged 82,500×g 2hr; synaptosome band collected, Triton X-100 extracted 15min at 4°C; centrifuged 32,000×g 20min for Triton-soluble (Syn/Tx) and PSD pellet fractions; HEK293T cells transfected 16hr with LipofectAMINE 2000, lysed in Tris/NaCl/EDTA/EGTA/Triton X-100/SDS/deoxycholate buffer, centrifuged 15,000×g 10min at 4°C","temperature":"4°C (all centrifugation and fractionation steps, Triton X-100 extraction); room temperature (DAPI staining and paraformaldehyde fixation, 15 min)"}
+
+Auerbach2011_Fig1D_WT				22113615
+{"sampleSource":"Mouse (C57Bl), iPSC-derived","sampleType":"iPSC-derived cells","cellType":"Hippocampal neurons","preparation":"iPSC-derived, ex vivo","temperature":"~35°C (32.5°C slice recording)"}
+
+Auerbach2011_Fig1D_TSC				22113615
+{"sampleSource":"Mouse (C57Bl), iPSC-derived","sampleType":"iPSC-derived cells","cellType":"Hippocampal neurons","preparation":"iPSC-derived, ex vivo","temperature":"~35°C (32.5°C slice recording)"}
+
+Auerbach2011_Fig2I_WT				22113615
+{"sampleSource":"Mouse (C57Bl), iPSC-derived","sampleType":"iPSC-derived cells","cellType":"Hippocampal neurons","preparation":"iPSC-derived, ex vivo","temperature":"~35°C (32.5°C slice recording)"}
+
+Auerbach2011_Fig2I_TSC				22113615
+{"sampleSource":"Mouse (C57Bl), iPSC-derived","sampleType":"iPSC-derived cells","cellType":"Hippocampal neurons","preparation":"iPSC-derived, ex vivo","temperature":"~35°C (32.5°C slice recording)"}
+
+Balez2024_Fig3A_Glu				38299492
+{"sampleSource":"Human, iPSC-derived","sampleType":"iPSC-derived neurons","cellType":"Hippocampal neurons","preparation":"iPSC-derived, ex vivo","temperature":"37°C"}
+
+Balez2024_Fig3A_NMDA				38299492
+{"sampleSource":"Human, iPSC-derived","sampleType":"iPSC-derived neurons","cellType":"Hippocampal neurons","preparation":"iPSC-derived, ex vivo","temperature":"37°C"}
+
+BarnesSA2015_Fig3D_WT				26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+BarnesSA2015_Fig3D_synGAP			26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+BarnesSA2015_Fig3Eii_WT				26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+BarnesSA2015_Fig3Eii_synGAP			26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+BarnesSA2015_Fig4Diii_WT			26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+BarnesSA2015_Fig4Diii_synGAP			26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+BarnesSA2015_Fig4Di_WT				26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+BarnesSA2015_Fig4Di_synGAP			26558778
+{"sampleSource":"Mouse (C57Bl), hippocampus","sampleType":"Ex vivo brain slice","cellType":"Hippocampal neurons","preparation":"Ex vivo slice","temperature":"35°C or 30°C"}
+
+Bateup2011_Fig1B_pS6				21677170
+{"sampleSource":"Mouse (Tsc1fl), hippocampus","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro","temperature":"Not specified"}
+
+Bateup2011_Fig1B_pS6K				21677170
+{"sampleSource":"Mouse (Tsc1fl), hippocampus","sampleType":"Primary neuron culture (in vitro)","cellType":"Hippocampal neurons","preparation":"In vitro","temperature":"Not specified"}
+
+Bayer2002_Fig4A					12110572
+{"sampleSource":"African green monkey (COS-7 cells) transfected with murine β-CaMKII expression vectors","sampleType":"Whole cell lysate / immobilized kinase preparation","cellType":"COS-7 cells","preparation":"COS-7 cells transfected by CaPO4 method, harvested 68–76h post-transfection; HA-tagged CaMKII immobilized on anti-HA-coated PVC microtiter plates or tubing; re-solubilized in SDS loading buffer at 95°C for Western detection","temperature":"30°C (kinase activity assays and oscillatory stimulation); ice (maximal autonomy autophosphorylation); room temperature (immunocytochemistry antibody incubations); 95°C (SDS re-solubilization)"}
+
+Beggiato2018_Fig1A				29674969
+
+
+Benavides1988_Fig4				2903912
+
+
+Berstein1992_Fig4				1341877
+{"sampleSource":"Bovine, purified protein","sampleType":"Purified protein","cellType":"N/A (cell-free)","preparation":"Purified, reconstituted","temperature":"30°C"}
+
+Berstein1992					1322796
+{"sampleSource":"Bovine, purified protein","sampleType":"Purified protein","cellType":"N/A (cell-free)","preparation":"Purified, reconstituted","temperature":"30°C"}
+
+BezprozvannyI1991_Fig2B				1648178
+{"sampleSource":"Canine, cerebellum","sampleType":"Reconstituted ER vesicles","cellType":"Purkinje cells","preparation":"Reconstituted ER vesicles","temperature":"35°C"}
+
+Bhalla1999_Fig4C				9888852
+
+
+Bhattacharya2016_Fig1C				26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old)","sampleType":"Acute hippocampal brain slice","cellType":"Hippocampal neurons","preparation":"Acute hippocampal slices prepared from WT and Fmr1 KO mice; treated with vehicle, PF-4708671 (10µM), or FS-115 (10µM) dissolved in DMSO; de novo protein synthesis measured by FUNCAT (fluorescent noncanonical amino acid tagging); n=60 neurons sampled across 3 mice and 3 slices per treatment","temperature":"Room temperature (slice preparation and FUNCAT labeling; specific incubation temperature not stated for slices)"}
+
+Bhattacharya2016_Fig1C_FXS			26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old)","sampleType":"Acute hippocampal brain slice","cellType":"Hippocampal neurons","preparation":"Acute hippocampal slices prepared from WT and Fmr1 KO mice; treated with vehicle, PF-4708671 (10µM), or FS-115 (10µM) dissolved in DMSO; de novo protein synthesis measured by FUNCAT (fluorescent noncanonical amino acid tagging); n=60 neurons sampled across 3 mice and 3 slices per treatment","temperature":"Room temperature (slice preparation and FUNCAT labeling; specific incubation temperature not stated for slices)"}
+
+Bhattacharya2016_Fig2B_eEF2p			26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Bhattacharya2016_Fig2B_FXS_eEF2p		26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Bhattacharya2016_Fig2B_S6p			26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Bhattacharya2016_Fig2B_FXS_S6p			26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Bhattacharya2016_Fig2D_eEF2p			26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Bhattacharya2016_Fig2D_FXS_eEF2p		26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Bhattacharya2016_Fig2D_S6p			26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Bhattacharya2016_Fig2D_FXS_S6p			26708105
+{"sampleSource":"Mouse (C57/Bl6, WT and Fmr1 KO, 3–4 months old), chronically treated in vivo with PF-4708671 or vehicle","sampleType":"Whole brain lysate (western blot)","cellType":"Mixed brain tissue (hippocampus implied from context of eEF2 phosphorylation measurement)","preparation":"Chronic in vivo administration of PF-4708671 or vehicle to WT and Fmr1 KO mice; brains collected and processed for western blotting as per Bhattacharya et al 2012; p-eEF2 (Thr56) and total eEF2 detected by western blot; n=5 mice per genotype per treatment","temperature":"Not explicitly stated for this specific panel; standard western blot conditions implied"}
+
+Biondi2000_Fig8A				10698939
+{"sampleSource":"Baculovirus/Sf9 insect cells","sampleType":"Purified recombinant protein","cellType":"Sf9 insect cells","preparation":"Purified recombinant protein","temperature":"30°C"}
+
+Bowling2016_Fig1C				26205778
+{"sampleSource":"Adult male mouse (C5), hippocampus CA1","sampleType":"Acute brain slice","cellType":"CA1 neurons","preparation":"Acute hippocampal slice (patch-clamp)","temperature":"RT then 32°C"}
+
+Bowling2016_Fig1E_CA1				26205778
+{"sampleSource":"Adult male mouse (C5), hippocampus CA1","sampleType":"Acute brain slice","cellType":"CA1 neurons","preparation":"Acute hippocampal slice (patch-clamp)","temperature":"RT then 32°C"}
+
+Bowling2016_Fig1E_DG				26205778
+{"sampleSource":"Adult male mouse (C5), hippocampus CA1","sampleType":"Acute brain slice","cellType":"CA1 neurons","preparation":"Acute hippocampal slice (patch-clamp)","temperature":"RT then 32°C"}
+
+Bradshaw2002_Fig2A				11925447
+{"sampleSource":"Rat α-CaM kinase II, baculovirus/Sf21 insect cells","sampleType":"Purified recombinant protein","cellType":"Sf21 insect cells","preparation":"Purified recombinant protein","temperature":"0°C"}
+
+Bradshaw2002_Fig2B				11925447
+{"sampleSource":"Rat α-CaM kinase II, baculovirus/Sf21 insect cells","sampleType":"Purified recombinant protein","cellType":"Sf21 insect cells","preparation":"Purified recombinant protein","temperature":"0°C"}
+
+Bradshaw2002					11925447
+{"sampleSource":"Rat α-CaM kinase II, baculovirus/Sf21 insect cells","sampleType":"Purified recombinant protein","cellType":"Sf21 insect cells","preparation":"Purified recombinant protein","temperature":"0°C–30°C (varies by experiment)"}
+
+Brunn1997_Fig2A					9204908
+{"sampleSource":"Rat α-CaM kinase II, baculovirus/Sf21 insect cells","sampleType":"Purified recombinant protein","cellType":"Sf21 insect cells","preparation":"Purified recombinant protein","temperature":"0°C–30°C (varies by experiment)"}
+
+Brunn1997_Fig3					9204908
+{"sampleSource":"Rat α-CaM kinase II, baculovirus/Sf21 insect cells","sampleType":"Purified recombinant protein","cellType":"Sf21 insect cells","preparation":"Purified recombinant protein","temperature":"0°C–30°C (varies by experiment)"}
+
+CapuaniF2015_Fig1C				26264748
+{"sampleSource":"Mouse NR6 fibroblasts","sampleType":"Whole cell lysate","cellType":"NR6 mouse fibroblasts","preparation":"Cell lysate","temperature":"37°C (EGF stimulation, 2 min)"}
+
+Cardone2004_Fig5D				15143158
+{"sampleSource":"Human embryonic kidney (HEK 293, stable lines)","sampleType":"Whole cell lysate","cellType":"HEK 293 cells","preparation":"Stable cell lines","temperature":"37°C"}
+
+Cardone2004_Fig7A				15143158
+{"sampleSource":"Human embryonic kidney (HEK 293, stable lines)","sampleType":"Whole cell lysate","cellType":"HEK 293 cells","preparation":"Stable cell lines","temperature":"37°C"}
+
+Chang2019_Fig1B					31239443
+{"sampleSource":"Recombinant purified human CaMKIIα and bacterially expressed mCherry-CaM/calmodulin (E. coli T7 Express)","sampleType":"Purified recombinant protein (cell-free kinase assay)","cellType":"N/A (cell-free)","preparation":"His-tagged mCherry-CaM and calmodulin expressed in T7 Express E. coli, purified with Ni-NTA column, desalted with PD-10 column; full-length recombinant human CaMKIIα (#PV3142, Thermo Fisher Scientific); kinase assay with 20nM CaMKIIα, 2µM mCherry-Syn1, 0.03–2µM CaM, 200µM CaCl2, 500µM ATP in 50mM Tris-HCl pH7.4/10mM MgCl2/2mM DTT; stopped at 10min with SDS sample buffer","temperature":"Room temperature (kinase assay)"}
+
+Chen-EngrerHJ2019_Fig1D				31324793
+{"sampleSource":"Mouse (C57Bl/6), hippocampal slices (P17–22)","sampleType":"Acute brain slice","cellType":"CA1 pyramidal neurons","preparation":"Acute slice, whole-cell patch-clamp","temperature":"Room temperature (RT); drug incubation temperature not specified beyond RT"}
+
+Chen-EngrerHJ2019_Fig1F				31324793
+{"sampleSource":"Mouse (C57Bl/6), hippocampal slices (P17–22)","sampleType":"Acute brain slice","cellType":"CA1 pyramidal neurons","preparation":"Acute slice, whole-cell patch-clamp","temperature":"Room temperature (RT); drug incubation temperature not specified beyond RT"}
+
+Choi2006_Fig7A					16953218
+{"sampleSource":"Mouse Ba/F3 hematopoietic cells (stable lines)","sampleType":"Whole cell lysate","cellType":"Ba/F3 cells","preparation":"Stable cell lines","temperature":"Ice, 10 min (lysis)"}
+
+Choi2011_Fig1A_mGluR1a				21508217
+{"sampleSource":"Rat, whole brain","sampleType":"Brain tissue lysate","cellType":"Brain tissue (mixed)","preparation":"Endogenous proteins + recombinant CaMKII autocamtide substrate, in vitro biochemical kinase assay (purified proteins)","temperature":"4°C (IP incubation)"}
+
+Choi2011_Fig1A_mGluR5				21508217
+{"sampleSource":"Rat, whole brain","sampleType":"Brain tissue lysate","cellType":"Brain tissue (mixed)","preparation":"Endogenous proteins + recombinant CaMKII autocamtide substrate, in vitro biochemical kinase assay (purified proteins)","temperature":"4°C (IP incubation)"}
+
+Chung2004_Fig3A					15001426
+{"sampleSource":"Rat (Sprague-Dawley, postnatal day 7)","sampleType":"Primary cell culture","cellType":"Cerebellar granule cells","preparation":"Cerebella isolated from P7 rat pups, dissociated in Ca2+-free buffer with trypsin (0.25mg/ml) and DNase (2400 U/ml), plated on poly-L-lysine-coated 60mm dishes (6×10^6 cells/dish); grown in basal Eagle's medium with 10% FBS, 2mM glutamine, 21.5mM KCl, 100U/ml penicillin/streptomycin, 10µM cytosine arabinoside added at 24h; experiments performed at DIV 8–10; cells treated with indicated concentrations of GSNO, GSH, or MnTMPyP ± glutamate (100µM) for ROS generation and caspase activity measurement; stimulated for 30min then transferred to serum-free medium for 4h","temperature":"37°C (culture and post-stimulation incubation); room temperature (glutamate/NMDA stimulation, 30 min)"}
+
+Cipolletta2010_Fig5C				20392834
+{"sampleSource":"N/A (cell-free), purified ERK2","sampleType":"Purified protein","cellType":"N/A (cell-free)","preparation":"In vitro biochemical assay (purified proteins)","temperature":"30°C"}
+
+Cohen1989					2549856
+CaMCa4+CaN
+{"sampleSource":"Bovine brain","sampleType":"Purified protein","cellType":"N/A (cell-free)","preparation":"PP-2B (calcineurin) purified from bovine brain to homogeneity; heterodimer of 61-kd A subunit and 19-kd B subunit; calmodulin binding measured at 1 mol calmodulin per mol enzyme with Kd=0.1 nM","temperature":"Not explicitly stated for calmodulin binding assay"}
+
+ePP2A+I1p
+{"sampleSource":"Rabbit skeletal muscle","sampleType":"Purified protein","cellType":"N/A (cell-free)","preparation":"PP-1 and PP-2A purified from rabbit skeletal muscle; inhibited by okadaic acid with I50 values of 20 nM (PP-1) and 0.2 nM (PP-2A) in standard phosphorylase phosphatase assay","temperature":"Not explicitly stated (standard assay conditions)"}
+
+I1p+PP1
+{"sampleSource":"Rabbit skeletal muscle","sampleType":"Purified protein","cellType":"N/A (cell-free)","preparation":"Inhibitor-1 (I-1) purified from rabbit skeletal muscle; phosphorylated by cyclic AMP-dependent protein kinase (A-kinase) at Thr-35; phosphorylated I-1 inhibits PP-1C with I50 of ~1 nM; kinetic analyses suggest inhibition occurs by binding to a region distinct from the substrate-binding site","temperature":"Not explicitly stated (standard assay conditions)"}
+
+Coultrap2012_Fig2A_0.1uM			22615928
+{"sampleSource":"Human HEK293 cells and bacterially/baculovirus-expressed recombinant protein","sampleType":"Whole cell lysate (HEK293 extracts); recombinant purified protein (CaMKIIα and CaM)","cellType":"HEK293 cells (extracts); N/A for purified protein assays","preparation":"HEK293 cells harvested 72h post-transfection, homogenized in PIPES buffer, centrifuged at 16,000g/4°C; recombinant CaMKIIα purified from bacteria or baculovirus/Sf9 cells","temperature":"30°C (kinase activity assays); 4°C (cell lysis/centrifugation)"}
+
+Coultrap2012_Fig2A_1uM				22615928
+{"sampleSource":"Human HEK293 cells and bacterially/baculovirus-expressed recombinant protein","sampleType":"Whole cell lysate (HEK293 extracts); recombinant purified protein (CaMKIIα and CaM)","cellType":"HEK293 cells (extracts); N/A for purified protein assays","preparation":"HEK293 cells harvested 72h post-transfection, homogenized in PIPES buffer, centrifuged at 16,000g/4°C; recombinant CaMKIIα purified from bacteria or baculovirus/Sf9 cells","temperature":"30°C (kinase activity assays); 4°C (cell lysis/centrifugation)"}
+
+Crouch1980_Fig1					7407067
+{"sampleSource":"Bovine brain","sampleType":"Purified protein (calmodulin at 10⁻⁹M limiting concentration; phosphodiesterase 70–100 U/mg purified per Klee et al. 1979)","cellType":"N/A (cell-free)","preparation":"Calmodulin at limiting concentration (10⁻⁹M) in 0.01M Hepes pH7.5, 0.1M KCl, 3mM MgCl₂, 0.1mM dithioerythritol, 0.1mM EGTA with [³H]cAMP and [¹⁴C]AMP; Ca²⁺ varied by exponential step gradient monitored with Ca²⁺-sensitive electrode; phosphodiesterase activity measured on 200µl duplicate samples after addition of 0.016µg phosphodiesterase; incubation 10min","temperature":"30°C (enzymatic assay); 25°C (equilibrium dialysis measurements)"}
+
+Crouch1980_Table1				7407067
+{"sampleSource":"Bovine brain","sampleType":"Purified protein (calmodulin, purified per Klee 1977a)","cellType":"N/A (cell-free)","preparation":"As for Fig1; macroscopic association constants K₁–K₄ and intrinsic binding constant k derived by fitting equilibrium dialysis data to Adair equation (eq 1 and 2); without Mg²⁺: k=1.8×10⁵ M⁻¹, Hill coefficient 1.33; with 3mM Mg²⁺: k=0.62×10⁵ M⁻¹, Hill coefficient 1.22; Kd range 3×10⁻⁶ to 2×10⁻⁵M (−Mg²⁺) and 5×10⁻⁶ to 4×10⁻⁵M (+Mg²⁺)","temperature":"0–4°C (preparation); 25°C (equilibrium dialysis)"}
+
+CsordasG2024_Fig3A_0.5uM			38362008
+{"sampleSource":"Rat basophilic leukemia (RBL-2H3)","sampleType":"Permeabilized whole-cell suspensions","cellType":"RBL-2H3 cells","preparation":"Permeabilized cell suspensions (~2.4 mg protein/1.8 mL); fluorometric quantification of ER Ca2+ content; Ca2+ pulses added, FCCP/oligomycin + Tg used","temperature":"Not explicitly stated; 35°C during permeabilization step"}
+
+CsordasG2024_Fig3A_1uM				38362008
+{"sampleSource":"Rat basophilic leukemia (RBL-2H3)","sampleType":"Permeabilized whole-cell suspensions","cellType":"RBL-2H3 cells","preparation":"Permeabilized cell suspensions (~2.4 mg protein/1.8 mL); fluorometric quantification of ER Ca2+ content; Ca2+ pulses added, FCCP/oligomycin + Tg used","temperature":"Not explicitly stated; 35°C during permeabilization step"}
+
+CsordasG2024_Fig3A_2uM				38362008
+{"sampleSource":"Rat basophilic leukemia (RBL-2H3)","sampleType":"Permeabilized whole-cell suspensions","cellType":"RBL-2H3 cells","preparation":"Permeabilized cell suspensions (~2.4 mg protein/1.8 mL); fluorometric quantification of ER Ca2+ content; Ca2+ pulses added, FCCP/oligomycin + Tg used","temperature":"Not explicitly stated; 35°C during permeabilization step"}
+
+CsordasG2024_Fig5A				38362008
+{"sampleSource":"Rat basophilic leukemia (RBL-2H3)","sampleType":"Permeabilized whole-cell suspensions","cellType":"RBL-2H3 cells","preparation":"Permeabilized cell suspensions (~2.4 mg protein/1.8 mL); fluorometric quantification of ER Ca2+ content; Ca2+ pulses added, FCCP/oligomycin + Tg used","temperature":"Not explicitly stated; 35°C during permeabilization step"}
+
+Dalfo2005_Fig2					16042316
+
+
+Dastidar2020_3C_DHPG				32351028
+
+
+Dastidar2020_3C_NMDA				32351028
+
+
+Dastidar2020_3H_DHPG				32351028
+
+
+Dastidar2020_3H_NMDA				32351028
+
+
+Deeksha2021_Fig6A				37462479
+
+
+Demeshkina2007_Fig1B				17586816
+
+
+Demeshkina2007_FigS3B				17586816
+
+
+Dieterich2010_Fig5B				20543841
+
+
+Dijkhuizen2004_Fig2A				15514998
+
+
+Doolen2012_Fig3B				22839304
+
+
+Du2003_Fig1G					14581459
+
+
+Du2003_Fig2B					14581459
+
+
+Eccleston1993_Table2				8262937
+
+
+Emery2012_Fig1B					22584219
+
+
+Emery2012_Fig1C					22584219
+
+
+Endo1996_Table1					8611507
+
+
+Feinstein1991_Fig4_AC1				9295336
+
+
+Feinstein1991_Fig4_AC1_noCaM			9295336
+
+
+Feinstein1991_Fig5				9295336
+
+
+Flotow1992_Fig1					1737763
+
+
+Flotow1992_Table1				1737763
+
+
+Force1994_Table2				8108400
+
+
+Forest2008_Fig1					18795794
+
+
+Frech1997_Fig3A					9079675,
+
+
+Fujiwara2014_Fig3C				24651445
+
+
+Fujiwara2014_Fig3D				24651445
+
+
+Fukunaga1992_Fig2A				1358879
+
+
+Genheden2015_Fig2A				25609615
+
+
+Genheden2015_Fig2B				25609615
+
+
+Genheden2015_Fig2C				25609615
+
+
+Genheden2015_Fig2D				25609615
+
+
+Genheden2015_Fig2E				25609615
+
+
+Gomez2014_Fig1					25504347
+
+
+Goto1986_Table1					3542117
+
+
+Gottschalk1999_Fig1C				10492006
+
+
+Gottschalk1999_Fig1D				10492006
+
+
+Gottschalk1999_Fig2A				10492006
+
+
+Gottschalk1999_Fig2B				10492006
+
+
+Greif2004_Fig7					14736917
+
+
+Gross2010_Fig2A					20702695
+
+
+Gross2010_Fig2A_FXS				20702695
+
+
+Gross2010_Fig2C					20702695
+
+
+Gross2010_Fig2C_FXS				20702695
+
+
+Gross2010_Fig2D					20702695
+
+
+Gross2010_Fig2E_FXS				20702695
+
+
+Gross2010_Fig5B_MPEP				20702695
+
+
+Gross2010_Fig5B_MPEP_FXS			20702695
+
+
+Gross2010_Fig5C_LY367385			20702695
+
+
+Gross2010_Fig5C_LY367385_FXS			20702695
+
+
+Gross2010_Fig5D_APV				20702695
+
+
+Gross2010_Fig5D_APV_FXS				20702695
+
+
+Gross2010_Fig5E_LY294002			20702695
+
+
+Gross2010_Fig5E_LY294002_FXS			20702695
+
+
+Gross2010_Fig5F_Wortmannin			20702695
+
+
+Gross2010_Fig5F_Wortmannin_FXS			20702695
+
+
+Gross2010_Fig5G_U0126				20702695
+
+
+Gross2010_Fig5G_U0126_FXS			20702695
+
+
+Gross2010_Fig5H_U0126_FXS			20702695
+
+
+Gross2010_Fig5H_Wortmannin_FXS			20702695
+
+
+Gross2010_Fig5I_U0126				20702695
+
+
+Gross2010_Fig5I_Wortmannin			20702695
+
+
+Gu2004_Fig3B					14576170
+
+
+Guo2014_Fig4D					24634513
+
+
+Haar2002_Fig2D					12023843
+
+
+Haar2006_Table1					16405910
+
+
+Haniu1997					9312147
+
+
+Hasler1992_Fig4C				1319361
+
+
+Haystead1992_Fig4				1628739
+
+
+Haystead1994_Fig2				8083223
+
+
+Haystead1994_Fig3				8083223
+
+
+HennigA2016_Fig1A				26861207
+
+
+Hernandez2007_Fig5I				17347665
+
+
+Heubach2004_Table1_Forskolin			15102960
+
+
+Heubach2004_Table1				15102960
+
+
+Higgins2006_Fig5B_DR				16617079
+
+
+Higgins2006_Fig5B_TS				16617079
+
+
+Higgins2006_Fig5C_DR				16617079
+
+
+Higgins2006_Fig5C_TS				16617079
+
+
+Homma1988_Fig7					3360794
+
+
+Hou2004_Fig1B					15254091
+
+
+Hsu1991_Table2					1845982
+
+
+Huang2011_Fig4A_0.4ng_ul_PI3K			21789487
+
+
+Huang2011_Fig4A_1.2ng_ul_PI3K			21789487
+
+
+Huang2011_Fig4A_2ng_ul_PI3K			21789487
+
+
+Huang2011_Fig4B					21789487
+
+
+Idrissi1999_Fig2A				10531449
+
+
+Idrissi1999_Fig2B				10531449
+
+
+Iglesias2007_Fig1				17493590
+
+
+Inoki2003_Fig1B					12869586
+
+
+Inoki2003_Fig1C					12869586
+
+
+January1997_Fig1A				9295336
+
+
+Jeon2012_Fig1A_AKT				22817682
+
+
+Jeon2012_Fig1A_PI3K				22817682
+
+
+Jeon2012_Fig1C_FMRP				22817682
+
+
+Ji2010_Fig1B_ERK_acute				20173744
+
+
+Ji2010_Fig1B_ERK_gradient			20173744
+
+
+Ji2010_Fig1B_TrKB_acute				20173744
+
+
+Ji2010_Fig1B_TrKB_gradient			20173744
+
+
+Johny2017_Fig5A					28122214
+
+
+Joshi2007_Fig2A					17535904
+
+
+Jurdo2003_Fig3B					12799420
+
+
+Kaphzan2006_Fig1B				17205142
+
+
+Kaphzan2007_Fig1A				17645456
+
+
+Karim2001_Fig8					11278829
+
+
+Kholodenko1999_Fig2B_0.2nM_slow			10514507
+
+
+Kholodenko1999_Fig2B_20nM_slow			10514507
+
+
+Kholodenko1999_Fig2B_2nM_slow			10514507
+
+
+Kholodenko1999_Fig3A_20nM_slow			10514507
+
+
+Kholodenko1999_Fig3A_2nM_slow			10514507
+
+
+Kholodenko1999_Fig3B_slow			10514507
+
+
+Kholodenko1999_Fig3C_slow			10514507
+
+
+Kim1995_Fig6A					7646475
+
+
+Kim1998_Fig6					9581761
+
+
+Kim2008_Fig1A					18332424
+{"sampleSource":"Mouse (FVB.129P2-FMR1tm1Cgr strain, WT or FMR1 KO, postnatal day P10–P14)","sampleType":"Synaptoneurosomes","cellType":"Cortical neurons (synaptoneurosome fraction)","preparation":"Cortices dissected and homogenised in glass-Teflon homogeniser in Hepes/NaCl/sucrose/potassium acetate buffer; filtered sequentially through 149, 62, 30µm nylon mesh then 10µm polypropylene filter; spun at 4,000×g 1 min; preincubated with 1µM TTX on ice 5 min then room temperature 5 min; stimulated with MPEP+DHPG (mGluR1) or CHPG (mGluR5); lysed at 1–10 min post-stimulation in Tris/NaCl/NP-40 buffer with phosphatase and protease inhibitors","temperature":"Ice (TTX preincubation, 5 min); room temperature (all stimulation reactions)"}
+
+Kim2008_Fig1A_FXS				18332424
+{"sampleSource":"Mouse (FVB.129P2-FMR1tm1Cgr strain, WT or FMR1 KO, postnatal day P10–P14)","sampleType":"Synaptoneurosomes","cellType":"Cortical neurons (synaptoneurosome fraction)","preparation":"Cortices dissected and homogenised in glass-Teflon homogeniser in Hepes/NaCl/sucrose/potassium acetate buffer; filtered sequentially through 149, 62, 30µm nylon mesh then 10µm polypropylene filter; spun at 4,000×g 1 min; preincubated with 1µM TTX on ice 5 min then room temperature 5 min; stimulated with MPEP+DHPG (mGluR1) or CHPG (mGluR5); lysed at 1–10 min post-stimulation in Tris/NaCl/NP-40 buffer with phosphatase and protease inhibitors","temperature":"Ice (TTX preincubation, 5 min); room temperature (all stimulation reactions)"}
+
+Kim2008_Fig2A_FXS				18332424
+{"sampleSource":"Mouse (FVB.129P2-FMR1tm1Cgr strain, WT or FMR1 KO, postnatal day P10–P14)","sampleType":"Synaptoneurosomes","cellType":"Cortical neurons (synaptoneurosome fraction)","preparation":"Cortices dissected and homogenised in glass-Teflon homogeniser in Hepes/NaCl/sucrose/potassium acetate buffer; filtered sequentially through 149, 62, 30µm nylon mesh then 10µm polypropylene filter; spun at 4,000×g 1 min; preincubated with 1µM tetrodotoxin on ice 5 min then room temperature 5 min; stimulated with mGluR agonists (CHPG or DHPG) ± phosphatase inhibitors; lysed at 1–10 min post-stimulation","temperature":"Ice (TTX preincubation, 5 min); room temperature (subsequent incubation and all stimulation reactions)"}
+
+Klee1978					201280
+{"sampleSource":"Bovine brain cerebral cortex","sampleType":"Purified protein (inhibitory protein, two subunits 61kDa and 15kDa = calcineurin/PP-2B)","cellType":"N/A (cell-free)","preparation":"Purified inhibitory protein prepared as described; assayed at subsaturating activator (7×10⁻⁹M) with increasing inhibitory protein concentrations; 50% inhibition at 2×10⁻⁸M inhibitory protein; maximal inhibition defined as activity level in presence of EGTA; protein composed of two polypeptides MW 61,000 and 15,000 forming cross-linked product of MW 80,000","temperature":"30°C (enzyme assay); 4°C (purification)"}
+
+Kleijn1996_Fig1B_EGF				8914981
+
+
+Kleijn1996_Fig1B_NGF				8914981
+
+
+Kleijn1996_Fig5A				8914981
+
+
+Kleijn1996_Fig5B				8914981
+
+
+Kleijn1996_Fig5B_Rapamycin			8914981
+
+
+Knowles1989_Fig2A				2567995
+
+
+Koh2006_Table1					16873482
+
+
+Kolch1993_Fig2					8321321
+
+
+Koriauli2014_Fig2				713099
+
+
+Kumar2005_Fig6L_pAKT				16339024
+
+
+Kumar2017_Fig3B_Glu				12604671
+
+
+Laliberte2002_Fig1				11852080
+
+
+Laminet1996					8550571
+
+
+Lee1998_Fig2					9765272
+
+
+Lee2008_Fig1D					18715999
+
+
+Lee2008_Fig1E					18715999
+
+
+Lee2008_Fig1I					18715999
+
+
+Lee2008_Fig2A					18715999
+
+
+Lee2008_Fig3C_Glu				18715999
+
+
+Lee2008_Fig3C_WTbaseline			18715999
+
+
+Lee2008_Fig3E					18715999
+
+
+Lee2008_Fig3F_Glu_CaM				18715999
+
+
+Lee2008_Fig3F_Glu				18715999
+
+
+Lee2008_Fig3G_Glu_shCaM				18715999
+
+
+Lee2008_Fig4C					18715999
+
+
+Lenz2005_Fig1C_Akt_BDNF				16183639
+
+
+Lenz2005_Fig1C_Akt_NMDA				16183639
+
+
+Lenz2005_Fig1C_ERK_BDNF				16183639
+
+
+Lenz2005_Fig1C_ERK_NMDA				16183639
+
+
+Lenz2005_Fig1C_S6_BDNF				16183639
+
+
+Lenz2005_Fig1C_S6K_BDNF				16183639
+
+
+Lenz2005_Fig1C_S6K_NMDA				16183639
+
+
+Lenz2005_Fig1C_S6_NMDA				16183639
+
+
+Leon2005_Fig9					15714258
+
+
+Leon2005_Table1					15714258
+
+
+Leon2007_Fig1					17303286
+
+
+Leon2007_Fig6A					17303286
+
+
+LeslieC1990_Fig4A				2167132
+
+
+Li1984_Table5					6092074
+
+
+Li2006_Table1					16757313
+
+
+Li2012_Fig1C					22217152
+
+
+Li2013_Fig2A_pAKT				23882690
+
+
+Li2013_Fig2A_pERK				23882690
+
+
+Lorsch1999_Fig5A				10581244
+
+
+Lorsch1999_Fig5B				10581244
+
+
+Mabuchi2001_Fig4				11717354
+
+
+Maehama1998_Fig2A				9593664
+
+
+Mao2005_Fig4					15661743
+
+
+Mariamoutou2018_Fig13				30322141
+
+
+Marin1997_Fig1C					9133370
+
+
+Martin1993_Table2				8420805
+
+
+Martin2006_Fig1B				16914641
+
+
+Mathews2008_Fig1A				18239155
+
+
+McDonald2012_Table3				22536782
+
+
+Meng2018_Fig1C					30503259
+
+
+Meyer1992_Table1				1317063
+
+
+Mitsui1993_Fig7_CaMKIII				8514778
+
+
+Mitsui1993_Fig7_CaMKII				8514778
+
+
+Mitsui1993_Fig7_Table3				8514778
+
+
+Mockett2011_Fig3A				21593322
+
+
+Mockett2011_Fig3B				21593322
+
+
+Molloy1995					7628625
+
+
+Mosior1998_Fig3					9442060
+
+
+Mosior1998_Fig4A				9442060
+
+
+Mosior1998_Fig4B				9442060
+
+
+Moskowitz1983_Fig3B				6315876
+
+
+Moskowitz1983_Fig4				6315876
+
+
+Mukhin2003_Fig9B_inset				12604671
+
+
+Mukhin2003_Fig9B				12604671
+
+
+Mundell2001_Fig2A				11483657
+
+
+Mundell2001_Fig2B				11483657
+
+
+Mundell2001_Fig3B				11483657
+
+
+Mundell2002_Fig2C				11961129
+
+
+Mundell2002_Fig8C				11961129
+
+
+Nicodemo2010_Fig5A				20180987
+
+
+Nimmo1978					208845
+
+
+Nonaka1998_Fig3A				9482940
+
+
+Numakawa2009_Fig1B				19126684
+
+
+Numakawa2009_Fig1Cii_PLCg			19126684
+
+
+Numakawa2009_Fig1Cii_TrKB			19126684
+
+
+Numakawa2009_FigS8B				19126684
+
+
+Numakawa2009_FigS8C				19126684
+
+
+Orita1993_Table1				8244990
+
+
+Orlando2009_Fig3A				19457112
+
+
+Osterweil2010_Fig1G				21084617
+{"sampleSource":"Mouse (C57BL/6J, WT and Fmr1 KO littermates, postnatal day P25–P30)","sampleType":"Acute brain slice","cellType":"Hippocampal neurons (whole slice and microdissected CA1 region)","preparation":"Hippocampus rapidly dissected into ice-cold ACSF; 500µm slices prepared with tissue slicer; transferred to 32.5°C oxygenated ACSF within 5 min; recovered 3.5–4h undisturbed; ActD added 30 min to inhibit transcription; slices stimulated with DHPG ±MPEP or other drugs; snap frozen in liquid nitrogen or immediately homogenised in ice-cold HEPES/EDTA/EGTA/Triton X-100 buffer with protease and phosphatase inhibitors; TCA precipitation for metabolic labeling experiments","temperature":"Ice-cold (dissection and homogenisation); 32.5°C (slice recovery and all incubations)"}
+
+Osterweil2010_Fig2D_AKT				21084617
+{"sampleSource":"Mouse (C57BL/6J, WT and Fmr1 KO littermates, postnatal day P25–P30)","sampleType":"Acute brain slice","cellType":"Hippocampal neurons (whole slice, acute stimulation with insulin or DHPG)","preparation":"Hippocampus rapidly dissected into ice-cold ACSF; 500µm slices prepared and transferred to 32.5°C oxygenated ACSF within 5 min; recovered 3.5–4h; stimulated with 100µM DHPG (5 min) or 1µM insulin (10 min); snap frozen in liquid nitrogen then homogenised in Laemmli sample buffer with phosphatase inhibitors, or thawed and microdissected in homogenisation buffer before homogenisation","temperature":"Ice-cold (dissection); 32.5°C (recovery and stimulation incubations); 4°C (primary antibody overnight immunoblotting)"}
+
+Osterweil2010_Fig2D_ERK				21084617
+{"sampleSource":"Mouse (C57BL/6J, WT and Fmr1 KO littermates, postnatal day P25–P30)","sampleType":"Acute brain slice","cellType":"Hippocampal neurons (whole slice, acute stimulation with insulin or DHPG)","preparation":"Hippocampus rapidly dissected into ice-cold ACSF; 500µm slices prepared and transferred to 32.5°C oxygenated ACSF within 5 min; recovered 3.5–4h; stimulated with 100µM DHPG (5 min) or 1µM insulin (10 min); snap frozen in liquid nitrogen then homogenised in Laemmli sample buffer with phosphatase inhibitors, or thawed and microdissected in homogenisation buffer before homogenisation","temperature":"Ice-cold (dissection); 32.5°C (recovery and stimulation incubations); 4°C (primary antibody overnight immunoblotting)"}
+
+Osterweil2010_Fig2D_AKT_FXS			21084617
+{"sampleSource":"Mouse (C57BL/6J, WT and Fmr1 KO littermates, postnatal day P25–P30)","sampleType":"Acute brain slice","cellType":"Hippocampal neurons (whole slice, acute stimulation with insulin or DHPG)","preparation":"Hippocampus rapidly dissected into ice-cold ACSF; 500µm slices prepared and transferred to 32.5°C oxygenated ACSF within 5 min; recovered 3.5–4h; stimulated with 100µM DHPG (5 min) or 1µM insulin (10 min); snap frozen in liquid nitrogen then homogenised in Laemmli sample buffer with phosphatase inhibitors, or thawed and microdissected in homogenisation buffer before homogenisation","temperature":"Ice-cold (dissection); 32.5°C (recovery and stimulation incubations); 4°C (primary antibody overnight immunoblotting)"}
+
+Osterweil2010_Fig2D_ERK_FXS			21084617
+{"sampleSource":"Mouse (C57BL/6J, WT and Fmr1 KO littermates, postnatal day P25–P30)","sampleType":"Acute brain slice","cellType":"Hippocampal neurons (whole slice, acute stimulation with insulin or DHPG)","preparation":"Hippocampus rapidly dissected into ice-cold ACSF; 500µm slices prepared and transferred to 32.5°C oxygenated ACSF within 5 min; recovered 3.5–4h; stimulated with 100µM DHPG (5 min) or 1µM insulin (10 min); snap frozen in liquid nitrogen then homogenised in Laemmli sample buffer with phosphatase inhibitors, or thawed and microdissected in homogenisation buffer before homogenisation","temperature":"Ice-cold (dissection); 32.5°C (recovery and stimulation incubations); 4°C (primary antibody overnight immunoblotting)"}
+
+Osterweil2010_Fig4_FXS				21084617
+{"sampleSource":"Mouse (C57BL/6J, WT and Fmr1 KO littermates, postnatal day P25–P30)","sampleType":"Acute brain slice (metabolic labeling with 35S-Met/Cys)","cellType":"Hippocampal neurons (whole slice ± CA1 microdissection)","preparation":"Hippocampus dissected into ice-cold ACSF; 500µm slices transferred to 32.5°C oxygenated ACSF within 5 min; recovered 3.5–4h; ActD added 30 min to block transcription; slices incubated ±drug (MPEP, U0126, rapamycin, cycloheximide) during ActD and during 35S-Met/Cys labeling (30 min); snap frozen in liquid nitrogen then homogenised in ice-cold HEPES/EDTA/EGTA/Triton X-100 buffer; TCA precipitation of radiolabeled proteins; CA1 regions microdissected for autoradiography","temperature":"Ice-cold (dissection and homogenisation); 32.5°C (all slice recovery and drug/labeling incubations); 4°C (primary antibody overnight immunoblotting)"}
+
+Osterweil2010_Fig4				21084617
+{"sampleSource":"Mouse (C57BL/6J, WT and Fmr1 KO littermates, postnatal day P25–P30)","sampleType":"Acute brain slice (metabolic labeling with 35S-Met/Cys)","cellType":"Hippocampal neurons (whole slice ± CA1 microdissection)","preparation":"Hippocampus dissected into ice-cold ACSF; 500µm slices transferred to 32.5°C oxygenated ACSF within 5 min; recovered 3.5–4h; ActD added 30 min to block transcription; slices incubated ±drug (MPEP, U0126, rapamycin, cycloheximide) during ActD and during 35S-Met/Cys labeling (30 min); snap frozen in liquid nitrogen then homogenised in ice-cold HEPES/EDTA/EGTA/Triton X-100 buffer; TCA precipitation of radiolabeled proteins; CA1 regions microdissected for autoradiography","temperature":"Ice-cold (dissection and homogenisation); 32.5°C (all slice recovery and drug/labeling incubations); 4°C (primary antibody overnight immunoblotting)"}
+
+Pacold2000					11136978
+
+
+Page2006_Fig2D					16549223
+
+
+Page2006_Fig4C					16549223
+
+
+Page2006_Fig4D					16549223
+
+
+Palumbo2001_Fig6A				10461919
+
+
+Palumbo2001_Fig6B				10461919
+
+
+Palumbo2001_Fig6C				10461919
+
+
+Pang1990					2120237
+
+
+Parkhurst1994_QR				7999777
+
+
+Parkhurst1994_QRM				7999777
+
+
+Parkhurst1994_Table1				7999777
+
+
+Peersen1997_Fig1				9098889
+
+
+Perrella2005_Fig6A				15882473
+
+
+Perrella2005_Fig6B				15882473
+
+
+Pigott2012_Fig3A				22115317
+
+
+Pigott2012_Fig4C				22115317
+
+
+Pinilla-Macua2015_Fig3A_internal		26360045	
+
+
+Pinilla-Macua2015_Fig3A_surface			26360045
+
+
+Porumb1994_Table3				7978263
+
+
+Ptushkina1999_Fig3and4				10406811
+
+
+Ptushkina1999_Fig4B				10406811
+
+
+Queipo2018_Fig2					29375309
+
+
+Radomski1990_Table1				1695013
+
+
+Ransnas1992_Fig1A				1315517
+
+
+Ransnas1992_Fig1B				1315517
+
+
+Redpath1993_Fig3				8386634
+
+
+Redpath1993_Fig6				8386634
+
+
+Reichling2008_Fig1				18354135
+
+
+Ribeiro2009_Fig1C				19564331
+
+
+Ribeiro2009_Fig4B				19564331
+
+
+Robinet2010_Fig4A				19794395
+
+
+Robinet2010_Fig4C				19794395
+
+
+Robinet2010_Fig5A				19794395
+
+
+Rothenberg2018_FigS3B				30466063
+
+
+Ru2012_Fig1A					22492229
+
+
+Ru2012_Fig1C					22492229
+
+
+Ruys2012_Fig1A					22216903
+
+
+Ryu1987_Table2					3040753
+
+
+Saito2004_Fig2C					15192046
+
+
+Sanghera1990					2294120
+
+
+Santoro1994_Fig4B				8264635
+
+
+Santoro1994_Fig5B				8264635
+
+
+Santoro1994_Fig6B				8264635
+
+
+Sato2009_Fig1C					19299511
+
+
+Schaechter1993_Fig1B_absenceOfCa		8410192
+
+
+Schaechter1993_Fig1B_presenceOfCa		8410192
+
+
+Schaechter1993_Fig6B_absenceOfAA		8410192
+
+
+Schaechter1993_Fig6B_presenceOfAA		8410192
+
+
+Schaechter1993_Fig7				8410192
+
+
+Schaechter1993_Fig8				8410192
+
+
+SchapanskyJ2009_Fig1A				20052014
+
+
+SchapanskyJ2009_Fig1B				20052014
+
+
+SchapanskyJ2009_Fig2C				20052014
+
+
+SchapanskyJ2009_Fig2D				20052014
+
+
+SchapanskyJ2009_Fig3A				20052014
+
+
+SchapanskyJ2009_Fig3B				20052014
+
+
+Scheetz2000_Fig1B				10700251
+
+
+Scheetz2000_Fig3A				10700251
+
+
+Scheper2002_Table1				11723111
+
+
+Schratt2004_Fig8C_eIF4E				15317862
+
+
+Schratt2004_Fig8C_S6K				15317862
+
+
+Schratt2004_Fig8C_TrKB				15317862
+
+
+Seger1992_Table2				1321146
+
+
+Seki1995					7864622
+
+
+Sen2009_Fig3A					19607794
+
+
+Sethna2016_Fig1A				26864654
+
+
+Sethna2016_Fig1B				26864654
+
+
+Sethna2016_Fig1C				26864654
+
+
+Sethna2016_Fig1D				26864654
+
+
+Sette1994_Fig4BwithInhibitor			8034568
+
+
+Sette1994_Fig4BwoInhibitor			8034568
+
+
+Sette1996_Fig2B					8663227
+
+
+Shah2003_Fig1B					12642580
+
+
+Shehata2012_Fig4B_AKT				22836274
+
+
+Shehata2012_Fig4B_S6K				22836274
+
+
+Shifman2006_Fig1B				16966599	
+
+
+Shifman2006_Fig4C				16966599
+
+
+Shifman2006_Fig4D				16966599
+
+
+Shifman2006_Fig5				16966599
+
+
+Shifman2006_Table2				16966599
+
+
+Shutes2006_Fig2A				16757310
+
+
+Shutes2006_Fig2B				16757310
+
+
+Singla2001_Table1				11384969	
+
+
+Sladeczek1985_Fig2_Glu				2865680
+
+
+Sladeczek1985_Fig2_NMDA				2865680
+
+
+Slepenkov2008_Table3B				18614538
+
+
+Smigel1986_Fig3_with_bg				3080431	
+
+
+Smigel1986_Fig3_wo_bg				3080431	
+
+
+Smigel1986_Fig7_with_bg				3080431	
+
+
+Smigel1986_Fig7_wo_bg				3080431	
+
+
+Smrcka1991					1846707
+
+
+Socodato2008_Fig1A				19012740
+
+
+Socodato2008_Fig1B				19012740
+
+
+Solberg1994_Fig7				7925653	
+
+
+Solberg1994					7925653
+
+
+Soppet1991					1645620
+
+
+Stemmer1994_Table2				8204620	
+
+
+Stemmer1994_Table3				8204620
+
+
+Sternweis1992					1351294
+
+
+Stewart1983_Table3				6301828
+
+
+Sunahara1998_Fig6B				9632695
+
+
+Suschek2003_Fig3A				12742995
+
+
+Suzuki1991_Fig2					1347641
+
+
+Szabo2001_Fig2C					11442752
+
+
+Takei2004_Fig4B_eIF4E_4EBP			15525761		
+
+
+Takei2004_Fig4B_p4EBP				15525761	
+
+
+Takei2004_Fig4B_pS6				15525761	
+
+
+Takei2004_Fig4B_pS6K				15525761	
+
+
+Tang1991_Fig3A					2022671
+
+
+Tang1991_Fig3B					2022671
+
+
+Tang2015_Fig4C					26204818
+
+
+Tang2015_Fig4D					26204818
+
+
+Tavares2014_Fig4A				25012662	
+
+
+Tavares2014_Fig4D				25012662
+
+
+Tee2003_Fig6B					12906785
+
+
+Teng1995_Fig9A					7657647
+
+
+Thomas2003_Fig2A				14500405
+
+
+Toral-Barza2005_Fig3B				15896331
+
+
+Toral-Barza2005_Fig4C				15896331
+
+
+Toral-Barza2005_Fig5A				15896331
+
+
+Tran2007_Fig2A					17012621
+
+
+Troca-Martin2011_Fig2A				21715609
+
+
+Troca-Martin2011_Fig2B				21715609
+
+
+Troca-Martin2011_Fig2C				21715609
+
+
+Troca-Martin2011_Fig2D				21715609
+
+
+Troca-Martin2011_Fig2E				21715609
+
+
+Troca-Martin2011_Fig3B				21715609
+
+
+Tucker1993_Fig7					7690847
+
+
+Uematsu2015_Fig2E				25639954
+
+
+Uematsu2015_Fig3B				25639954
+
+
+Uematsu2015_Fig3F				25639954
+
+
+Uematsu2015_Fig4A				25639954
+
+
+Uematsu2015_Fig4B				25639954
+
+
+Uematsu2015_Fig4C				25639954
+
+
+Umenaga2011_Table1				21964297
+
+
+Ung_2008					18505685
+
+
+Valeyev2008_Fig8				18518982
+
+
+VillaN2024_Fig5A				7999777
+
+
+Wahl1992_Fig7A					1316902
+
+
+Wahl1992_Fig7A_woEGF				1316902
+
+
+Wahl1992_Fig7B					1316902
+
+
+Wahl1992_Fig7B_woEGF				1316902
+
+
+Wahl1992_Table2					1316902
+
+
+Walkup2016_Fig10A				27623146
+
+
+Walkup2016_Fig10B				27623146
+
+
+Walkup2016_Fig3A				27623146
+
+
+Walkup2016_Fig3B				27623146
+
+
+Walkup2016_Fig3C				27623146
+
+
+Walkup2016_Fig3D				27623146
+
+
+Walkup2016_Fig3E				27623146
+
+
+Walkup2016_Fig5D				27623146
+
+
+Walkup2016_Fig6A_0.5				27623146
+
+
+Walkup2016_Fig6A_10				27623146
+
+
+Walkup2016_Fig7A				27623146
+
+
+Walkup2016_Table1				27623146
+
+
+Wang2001_Fig3B					11500364
+
+
+Wang2001_Fig4B					11500364
+
+
+WatrasJ1991_Fig1				1719158
+
+
+WatrasJ1991_Fig6A				1719158
+
+
+WatrasJ1991_Fig6B				1719158
+
+
+Watson2009_Fig1A				19704855
+
+
+Wei-Lun2015_Fig4C_BDNF				26134564
+
+
+Wei-Lun2015_Fig4C_Glutamate			26134564
+
+
+Wolter2011_Fig2A				22074826
+
+
+Wykes2002_Fig1					12358727
+
+
+Yang2006_Fig6A					16421317
+
+
+Yoder-Hill1995_Fig1				7499225
+
+
+Yoshihara1990_Fig2A				2383255
+
+
+Yuan1994_Fig2					8083204
+
+
+Yuen1999_Fig1D					10486198
+
+
+Yuen1999_Fig2A					10486198
+
+
+Yuen1999_Fig3C					10486198
+
+
+Yuen1999_Fig4D					10486198
+
+
+Yuen1999					10486198
+
+
+Zabel2002_Fig1D					11887187
+
+
+Zhang2003_Fig2A					12771962
+
+
+Zhang2006_Fig5B					16213157
+
+
+Zhang2016_Fig7C					26902516
+
+
+ZhouX2010_Fig1A					20029971
+
+
+ZhouX2010_Fig1B					20029971
+
+
+ZhouX2010_Fig2A					20029971
+
+
+ZhouY2010_Fig3C					20847549
+
+
+ZhouY2010_Fig3D					20847549
+
+
+Zhu2017_Fig2B					28202907
+
+
+Zhu2017_Fig2C					28202907
+
+
+Zhu2017_Fig2D					28202907
+
+
+Zurashvili2013_Fig4C_pAKT_Ser473		23275438
+
+
+Zurashvili2013_Fig4C_pAKT_Thr308		23275438
+

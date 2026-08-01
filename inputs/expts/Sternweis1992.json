@@ -1,0 +1,75 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1351294,
+            "authors": "Sternweis PC et al.",
+            "journal": "Phil. Trans. R. Soc. Lond. B Biol Sci ",
+            "year": 1992,
+            "figure": "Fig4"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "samplePrep": "bovine brain Gq and PLCb",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "ePLCb_Ca+PIP2",
+                    "alias": "PLCbCa_PIP2hydr"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 15.9,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "ePLCb_Ca_Gq+PIP2",
+                    "alias": "PLCb_Ca_Gq"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 26.3,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "ePLCb_Ca_Gq+PIP2"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 53.6,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "ePLCb_Ca+PIP2"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 17.9,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

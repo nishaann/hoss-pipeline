@@ -1,0 +1,77 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 1737763,
+            "authors": "Flotow H, Thomas G",
+            "journal": "J Biol Chem., ",
+            "year": 1992,
+            "figure": "Table1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "in-vitro",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "rat liver S6K",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "eS6Kpqrs+40S",
+                    "alias": "S6_phospho"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 0.25,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eS6Kpqr+40S",
+                    "alias": "S6_phos"
+                },
+                "field": "Km",
+                "units": "uM",
+                "value": 0.25,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eS6Kpqrs+40S"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.933,
+                "stderr": 0
+            },
+            {
+                "entity": {
+                    "name": "eS6Kpqr+40S"
+                },
+                "field": "kcat",
+                "units": "1/sec",
+                "value": 0.933,
+                "stderr": 0
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

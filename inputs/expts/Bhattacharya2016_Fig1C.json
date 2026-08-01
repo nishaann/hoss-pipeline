@@ -1,0 +1,94 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 26708105,
+            "authors": "Bhattacharya A et al.",
+            "journal": " Neuropsychopharmacology., ",
+            "year": 2016,
+            "figure": "Fig1C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "tissue slice",
+        "cellType": "hippocampus",
+        "samplePrep": "WT mice hippocampal slices",
+        "temperature": 37,
+        "notes": "PF-4708671 and FS-115 are S6K1 inhibitors."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "value": 300.0,
+            "entity": {
+                "name": "PF-4708671",
+                "alias": "PF-4708671"
+            }
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "value": 800.0,
+            "entity": {
+                "name": "FS-115",
+                "alias": "FS-115"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "protein",
+            "alias": "protein"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "protein"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.07,
+                "value": 1
+            },
+            {
+                "stimulus": [
+                    "PF-4708671"
+                ],
+                "stderr": 0.03,
+                "value": 0.34
+            },
+            {
+                "stimulus": [
+                    "FS-115"
+                ],
+                "stderr": 0.03,
+                "value": 0.49
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

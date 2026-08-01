@@ -1,0 +1,96 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 25569349,
+            "authors": "Araki Y et al.",
+            "journal": "Neuron., ",
+            "year": 2015,
+            "figure": "Fig 1E"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "CA1 pyramidal neurons",
+        "samplePrep": "Hippocampal neurons from E18 rats seeded on ploy L-Lysine coated coverslips andthen grown on media. GluA1 trafficking upon LTP to the spine was measured",
+        "temperature": 30,
+        "notes": "chemical LTP is the stimulus used to activate synaptic NMDARs. Gly is perfused into the media while Mg is withdrawan from the media causing spontaneous Glu release from axonal terminals. Here using 100uM Glutamate instead. To visualize AMPAR trafficking, SEP-GluA1 was transfected with pLKO-shRNA and SynGAP rescue constructs. Upon LTP induction, spines are enlarged and AMPARs are recruited to spine."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 100,
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "sAMPAR",
+            "alias": "sAMPAR"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "sAMPAR"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.049,
+                "value": 1.0
+            },
+            {
+                "stimulus": [
+                    "Glutamate"
+                ],
+                "stderr": 0.216,
+                "value": 2.51
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "concInit",
+                "value": 0.01,
+                "units": "uM"
+            }
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18715999,
+            "authors": "Lee JH et al.",
+            "journal": "PNAS., ",
+            "year": 2008,
+            "figure": "Fig 3C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "cell-line",
+        "cellType": "HeLa cells",
+        "samplePrep": "HeLa cells expressing WT myc-mGluR5 treated with 100uM DHPG. mGluR5 immunoprecipitated using Myc antibody and S901 phosphoatibody used",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "imGluR",
+            "alias": "intmGluR5"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "mGluR5",
+                "alias": "mGluR5"
+            },
+            "sampling": "presetTime",
+            "sampTime": 0
+        },
+        "data": [
+            [
+                0.0,
+                0.001,
+                0
+            ],
+            [
+                300.0,
+                0.037,
+                0.012
+            ],
+            [
+                1200.0,
+                0.075,
+                0.016
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

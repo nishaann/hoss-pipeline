@@ -1,0 +1,179 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha A Viswan",
+        "organization": "OpenSource",
+        "email": "",
+        "source": {
+            "sourceType": "simulation",
+            "PMID": 0,
+            "authors": "Nisha A Viswan",
+            "journal": "NA",
+            "year": 2025,
+            "figure": "Fig1"
+        },
+        "testModel": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/Disease_Models_08Sept2025/Source_17Sept2025.json",
+        "testMap": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/QD3_HT_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Simulation",
+        "sampleType": "Simulation",
+        "cellType": "Simulation",
+        "samplePrep": "Simulation",
+        "temperature": 37,
+        "notes": "Generated from exptSynth.py"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "AMPA",
+                "alias": "AMPA"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    101.0,
+                    1.0
+                ],
+                [
+                    102.0,
+                    0.0
+                ],
+                [
+                    201.0,
+                    1.0
+                ],
+                [
+                    202.0,
+                    0.0
+                ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "synGAP",
+                "alias": "synGAP            "
+            },
+            "field": "conc",
+            "data": [
+                [
+                    200.0,
+                    0.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "uM",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0.0,
+                0.08,
+                0.0
+            ],
+            [
+                99.0,
+                0.08,
+                0.0
+            ],
+            [
+                100.88,
+                0.108,
+                0.0
+            ],
+            [
+                102.86,
+                0.854,
+                0.0
+            ],
+            [
+                104.84,
+                0.131,
+                0.0
+            ],
+            [
+                106.75,
+                0.108,
+                0.0
+            ],
+            [
+                110.78,
+                0.096,
+                0.0
+            ],
+            [
+                200.0,
+                0.08,
+                0.0
+            ],
+            [
+                201.0,
+                0.104,
+                0.0
+            ],
+            [
+                202.0,
+                4.84,
+                0.0
+            ],
+            [
+                202.86,
+                4.37,
+                0.0
+            ],
+            [
+                204.84,
+                0.72,
+                0.0
+            ],
+            [
+                206.75,
+                0.13,
+                0.0
+            ],
+            [
+                210,
+                0.080,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "AMPA",
+                    "alias": "AMPA"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "AMPA",
+                    "alias": "AMPA"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            }
+        ]
+    }
+}

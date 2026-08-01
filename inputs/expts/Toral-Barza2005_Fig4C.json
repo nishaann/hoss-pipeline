@@ -1,0 +1,115 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15896331,
+            "authors": "Toral-Barza et al.",
+            "journal": "Biochem Biophys Res Commun., ",
+            "year": 2005,
+            "figure": "Fig4C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Human",
+        "sampleType": "expression system",
+        "cellType": "cell-free",
+        "samplePrep": "human mTOR cDNA was sequenced and expressedin HEK293 cells, human S6K was used",
+        "temperature": 30,
+        "notes": "DELFIA (dissociation-enhanced lanthanide fluorescence immunoassay)"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "mTORp",
+                "alias": "mTORp"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    6.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "S6Kpqr",
+            "alias": "S6KpT412"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "S6K",
+                "alias": "S6K"
+            },
+            "sampling": "presetTime",
+            "sampTime": 0
+        },
+        "data": [
+            [
+                900,
+                0.126,
+                0
+            ],
+            [
+                1800,
+                0.19,
+                0
+            ],
+            [
+                3600,
+                0.38,
+                0
+            ],
+            [
+                7200,
+                0.75,
+                0
+            ],
+            [
+                16200,
+                2.8,
+                0
+            ],
+            [
+                21600,
+                3.5,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "mTORC1_g"
+            },
+            {
+                "name": "S6K_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "S6Kpq",
+                    "alias": "S6KpT421S424"
+                },
+                "field": "concInit",
+                "value": 0.00125,
+                "units": "mM"
+            }
+        ]
+    }
+}

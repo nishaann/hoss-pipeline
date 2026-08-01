@@ -1,0 +1,145 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 11925447,
+            "authors": "Bradshaw JM et al.",
+            "journal": "J Biol Chem, ",
+            "year": 2002,
+            "figure": "Fig 2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "expressed rat CaMKII cDNA",
+        "temperature": 0,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "CaMKII",
+                "alias": "CaMKII"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    0.46
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "bCaMKIIp",
+            "alias": "CaMKIIpT286"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "bCaMKIIp"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                0.2,
+                1.0,
+                0.0
+            ],
+            [
+                3.0,
+                8.82,
+                2.36
+            ],
+            [
+                5.0,
+                18.82,
+                0.0
+            ],
+            [
+                7.5,
+                27.35,
+                6.77
+            ],
+            [
+                10.0,
+                38.24,
+                3.83
+            ],
+            [
+                12.5,
+                34.71,
+                7.64
+            ],
+            [
+                15.0,
+                45.88,
+                5.59
+            ],
+            [
+                20.0,
+                52.06,
+                5.88
+            ],
+            [
+                30.0,
+                58.53,
+                2.06
+            ],
+            [
+                40.0,
+                69.41,
+                4.12
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "CaMKII_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "concInit",
+                "value": 0.5,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaM",
+                    "alias": "CaM"
+                },
+                "field": "concInit",
+                "value": 0.01,
+                "units": "mM"
+            }
+        ]
+    }
+}

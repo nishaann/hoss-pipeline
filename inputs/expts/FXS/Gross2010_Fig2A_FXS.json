@@ -1,0 +1,77 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20702695,
+            "authors": "Gross C et al.",
+            "journal": "J Neurosci. ",
+            "year": 2010,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "synaptoneurosomes",
+        "cellType": "cortex",
+        "samplePrep": "C57BL/6 mice FMR1 KO cortical synaptoneurosomes",
+        "temperature": 37,
+        "notes": "Basal translation measured with or without 10uM MPEP. MPEP is an antagonist of mGluR5."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": {
+                "name": "MPEP",
+                "alias": "MPEP"
+            },
+            "value": 10
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "PIP3",
+            "alias": "PIP3"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "PIP3"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1.0,
+                "stderr": 0.325
+            },
+            {
+                "stimulus": [
+                    "MPEP"
+                ],
+                "value": 0.21,
+                "stderr": 0.02
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

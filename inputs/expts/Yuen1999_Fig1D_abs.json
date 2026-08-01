@@ -1,0 +1,114 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10486198,
+            "authors": "Yuen and Mobley",
+            "journal": "Exp Neurol ",
+            "year": 1999,
+            "figure": "Fig1D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "sampleType": "cell-line",
+        "cellType": "NIH 3T3 cells",
+        "samplePrep": "NIH 3T3 cells (murine fibroblasts) transfected with rat TrKB",
+        "temperature": 37,
+        "notes": "Omitting the rest of the model, to reduce time"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "mM",
+        "entity": {
+            "name": "aTrKB",
+            "alias": "aTrKB"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0,
+                6.6e-06,
+                0
+            ],
+            [
+                0.89,
+                3.84e-05,
+                2.2e-05
+            ],
+            [
+                1.79,
+                6.72e-05,
+                2.4e-05
+            ],
+            [
+                3.57,
+                0.000116,
+                2e-05
+            ],
+            [
+                7.14,
+                0.0001642,
+                1.2e-05
+            ],
+            [
+                14.29,
+                0.0001856,
+                2e-07
+            ],
+            [
+                28.57,
+                0.0002,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "BDNF"
+            },
+            {
+                "name": "TrKB_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

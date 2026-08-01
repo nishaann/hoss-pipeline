@@ -1,0 +1,121 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Surbhit Wagle, Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "surbhitw@instem.res.in, nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 2383255,
+            "authors": "Yoshihara et al.",
+            "journal": "Biochem Biophys Res Commun., ",
+            "year": 1990,
+            "figure": "Fig2A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rat",
+        "samplePrep": "PLA2 fraction extracted from Brain cytosol extract",
+        "temperature": 37,
+        "notes": "Authors look at PLA2 activity in response to different concentrations of Calcium"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "M",
+            "entity": {
+                "name": "Ca",
+                "alias": "Ca"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "min",
+        "settleTime": 30,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "AA",
+            "alias": "AA"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "AA"
+            },
+            "dose": 0.01,
+            "sampling": "dose"
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                0,
+                0.1,
+                0
+            ],
+            [
+                1e-08,
+                0.082,
+                0
+            ],
+            [
+                1e-07,
+                0.084,
+                0
+            ],
+            [
+                1e-06,
+                0.33,
+                0
+            ],
+            [
+                1e-05,
+                0.34,
+                0
+            ],
+            [
+                0.0001,
+                0.31,
+                0
+            ],
+            [
+                0.001,
+                0.4,
+                0
+            ],
+            [
+                0.01,
+                1,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "PLA2_g"
+            },
+            {
+                "name": "Ca"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "APC",
+                    "alias": "APC"
+                },
+                "field": "concInit",
+                "value": 0.5,
+                "units": "mM"
+            }
+        ]
+    }
+}

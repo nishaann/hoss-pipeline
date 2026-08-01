@@ -1,0 +1,96 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 25569349,
+            "authors": "Araki Y et al.",
+            "journal": "Neuron., ",
+            "year": 2015,
+            "figure": "Fig 5B1"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "CA1 pyramidal neurons",
+        "samplePrep": "Hippocampal neurons from E18 rats seeded on ploy L-Lysine coated coverslips and then grown on media",
+        "temperature": 30,
+        "notes": "chemical LTP is the stimulus used to activate synaptic NMDARs. Gly is perfused into the media while Mg is withdrawan from the media causing spontaneous Glu release from axonal terminals. Here using 100uM Glutamate instead. 50uM NMDA receptor antagoist (APV), 20uM CaM inhibitor (W7), 4uM and 20uM CaMKII inhibitor (KN62) each blocked chemLTP completely. Raf-RBD bound beads were used to precipitate GTP-Ras."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    100.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aRas",
+            "alias": "RasGTP"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "RasGDP",
+                "alias": "RasGDP"
+            }
+        },
+        "data": [
+            [
+                4000.0,
+                1.0,
+                0.15
+            ],
+            [
+                4600.0,
+                3.638,
+                0.256
+            ],
+            [
+                7600.0,
+                3.362,
+                0.191
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

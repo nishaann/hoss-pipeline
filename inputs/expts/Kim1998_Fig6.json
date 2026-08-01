@@ -1,0 +1,116 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9581761,
+            "authors": "Kim JH et al.",
+            "journal": "Neuron, ",
+            "year": 1998,
+            "figure": "Fig 6"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "sampleType": "cDNA expressed proteins",
+        "cellType": "cell-free",
+        "samplePrep": "proteins expressed from rat hippocampal cDNA libary",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "synGAP",
+                "alias": "synGAP"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    600,
+                    8
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aRas",
+            "alias": "RasGTP"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "aRas"
+            },
+            "sampling": "start"
+        },
+        "data": [
+            [
+                600.0,
+                1.0,
+                0
+            ],
+            [
+                840.0,
+                0.424,
+                0
+            ],
+            [
+                1080.0,
+                0.428,
+                0
+            ],
+            [
+                1320.0,
+                0.431,
+                0
+            ],
+            [
+                1560.0,
+                0.41,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "synGAP_g"
+            },
+            {
+                "name": "Ras_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "synGAP"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ras",
+                    "alias": "RasGDP"
+                },
+                "field": "concInit",
+                "value": 1,
+                "units": "uM"
+            }
+        ]
+    }
+}

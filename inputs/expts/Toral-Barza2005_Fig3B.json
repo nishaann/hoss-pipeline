@@ -1,0 +1,134 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 15896331,
+            "authors": "Toral-Barza L et al.",
+            "journal": "Biochem Biophys Res Commun. ",
+            "year": 2005,
+            "figure": "Fig3B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Human",
+        "sampleType": "expression system",
+        "cellType": "cell-free",
+        "samplePrep": "human mTOR cDNA was sequenced and expressedin HEK293 cells, human S6K was used",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "mTORC1",
+                "alias": "mTORC1"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "uM",
+        "entity": {
+            "name": "S6Kpqr",
+            "alias": "S6KpT412"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0.45,
+                0.01,
+                0
+            ],
+            [
+                0.66935,
+                0.05,
+                0
+            ],
+            [
+                0.8925,
+                0.08,
+                0
+            ],
+            [
+                1.785,
+                0.15,
+                0
+            ],
+            [
+                3.57,
+                0.21,
+                0
+            ],
+            [
+                7.14,
+                0.53,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "S6K_g"
+            },
+            {
+                "name": "mTORC1_g"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "eS6Kpqr+40S",
+                "alias": "S6_phos"
+            },
+            {
+                "name": "eS6Kpqrs+40S",
+                "alias": "S6_phospho"
+            },
+            {
+                "name": "eS6Kpqrs+CaMKIII",
+                "alias": "S6Kp_act_CaMKIII"
+            },
+            {
+                "name": "emTORC1+eIF4E_4EBP",
+                "alias": "TOR_4EBP_phospho"
+            },
+            {
+                "name": "S6_deph",
+                "alias": "S6_dephosph"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "bS6K",
+                    "alias": "bS6K"
+                },
+                "field": "concInit",
+                "value": 0.0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "S6Kpq",
+                    "alias": "S6Kp"
+                },
+                "field": "concInit",
+                "value": 0.0009,
+                "units": "mM"
+            }
+        ],
+        "notes": "Jain2009_Fig3B"
+    }
+}

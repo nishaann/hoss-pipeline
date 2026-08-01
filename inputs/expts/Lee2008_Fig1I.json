@@ -1,0 +1,105 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 18715999,
+            "authors": "Lee JH et al.",
+            "journal": "PNAS., ",
+            "year": 2008,
+            "figure": "Fig 1I"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Rat",
+        "sampleType": "primary culture",
+        "cellType": "hippocampus",
+        "samplePrep": "Cultured hippocampal neurons treated with 100uM DHPG for 10 mins. mGluR5pS901 immunoprecipitated using antibody",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 100,
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "mGluR5pS901",
+            "alias": "mGluR5pS901"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "mGluR5pS901"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0,
+                "value": 1.0
+            },
+            {
+                "stimulus": [
+                    "DHPG"
+                ],
+                "stderr": 0.487,
+                "value": 3.563
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "PKC",
+                    "alias": "PKC"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "PKC"
+                },
+                "field": "concInit",
+                "value": 0.33,
+                "units": "uM"
+            }
+        ]
+    }
+}

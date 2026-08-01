@@ -1,0 +1,118 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10492006,
+            "authors": "Gottschalk WA et al.",
+            "journal": "Learn Mem. ",
+            "year": 1999,
+            "figure": "Fig2B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Rat",
+        "samplePrep": "hippocampal CA1 microslices from Sprague-Dawley rats (p12-13)",
+        "temperature": 34,
+        "notes": "0.5uM Wortmannin is used and incubated for 60mins prior to treatment with 2nM of BDNF. Wortmannin is an inhibitor of PI3K. Incubation of 60mins not included in simulation ---> NEED TO FIX."
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "value": 2.0
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "Wortmannin",
+                "alias": "Wortmannin"
+            },
+            "value": 1
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 1800,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aAKT",
+            "alias": "AKTpT308S473"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "aAKT"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "BDNF"
+                ],
+                "value": 3.4,
+                "stderr": 0.41
+            },
+            {
+                "stimulus": [
+                    "Wortmannin"
+                ],
+                "value": 1,
+                "stderr": 0.43
+            },
+            {
+                "stimulus": [
+                    "BDNF",
+                    "Wortmannin"
+                ],
+                "value": 1.13,
+                "stderr": 0.14
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

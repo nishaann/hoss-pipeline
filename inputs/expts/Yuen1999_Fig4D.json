@@ -1,0 +1,128 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 10486198,
+            "authors": "Yuen and Mobley",
+            "journal": "Exp Neurol ",
+            "year": 1999,
+            "figure": "Fig4D"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Mouse",
+        "sampleType": "cell-line",
+        "cellType": "NIH 3T3 cells",
+        "samplePrep": "NIH 3T3 cells (murine fibroblasts) transfected with rat TrKB",
+        "temperature": 37,
+        "notes": "Deleting the rest of the model for convenience"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "entity": {
+                "name": "BDNF",
+                "alias": "BDNF"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aSHC",
+            "alias": "aSHC"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "aSHC"
+            },
+            "dose": 7.5
+        },
+        "data": [
+            [
+                0,
+                0.06,
+                0
+            ],
+            [
+                1,
+                0.36,
+                0
+            ],
+            [
+                2,
+                0.69,
+                0
+            ],
+            [
+                3.8,
+                0.78,
+                0
+            ],
+            [
+                7.5,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "BDNF"
+            },
+            {
+                "name": "TrKB_g"
+            },
+            {
+                "name": "Sos_g",
+                "alias": "SHC_g"
+            },
+            {
+                "name": "aSHC"
+            },
+            {
+                "name": "SHCp_deph"
+            }
+        ],
+        "itemsToDelete": [
+            {
+                "name": "eTrKB+PLCg",
+                "alias": "TrKB_act_PLCg"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "concInit",
+                "value": 5e-08,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "BDNF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ],
+        "notes": "Jain2009_Fig2C"
+    }
+}

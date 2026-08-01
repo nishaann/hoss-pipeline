@@ -1,0 +1,149 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9249258,
+            "authors": "Akam EC et al.",
+            "journal": "Br J Pharmacol. ",
+            "year": 1997,
+            "figure": "Fig1_inset"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Rat",
+        "sampleType": "cell-line",
+        "cellType": "BHK cells",
+        "samplePrep": "membrane preparations of BHK cells expressing rat mGluR1",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "Glutamate",
+                "alias": "Glutamate"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    300
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "amGluR",
+            "alias": "Glu_mGluR_Gq"
+        },
+        "field": "conc",
+        "prepDilution": 1,
+        "normalization": {
+            "entity": {
+                "name": "amGluR"
+            },
+            "sampling": "presetTime",
+            "sampTime": 7600
+        },
+        "data": [
+            [
+                4000,
+                0.011,
+                0
+            ],
+            [
+                4300,
+                0.303,
+                0.095
+            ],
+            [
+                4900,
+                0.725,
+                0.035
+            ],
+            [
+                5800,
+                0.891,
+                0.078
+            ],
+            [
+                7600,
+                1.0,
+                0.176
+            ],
+            [
+                11200,
+                0.775,
+                0.039
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "Glutamate"
+            },
+            {
+                "name": "mGluR_g"
+            },
+            {
+                "name": "Gq_g"
+            },
+            {
+                "name": "PLCb_g"
+            },
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "PKC_g"
+            },
+            {
+                "name": "PKA_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "Glutamate"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "G_GDP",
+                    "alias": "G_GDP"
+                },
+                "field": "concInit",
+                "value": 0.01,
+                "units": "mM"
+            }
+        ]
+    }
+}

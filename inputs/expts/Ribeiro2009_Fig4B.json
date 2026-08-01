@@ -1,0 +1,101 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 19564331,
+            "authors": "Ribeiro FM et al.",
+            "journal": "J Biol Chem., ",
+            "year": 2009,
+            "figure": "Fig4B"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Mouse",
+        "samplePrep": "Striatal neurons cultured from E15 mouse embryo brains transfected with GFP adenovirus",
+        "temperature": 37,
+        "notes": "10uM of DHPG-induced mGluR5 phosphrylation"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    4000,
+                    10
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aDHPG_mGluR",
+            "alias": "DHPG_mGluRp"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "max",
+            "entity": {
+                "name": "aDHPG_mGluR"
+            }
+        },
+        "data": [
+            [
+                4000,
+                0.635,
+                0
+            ],
+            [
+                4300,
+                1.0,
+                0.169
+            ],
+            [
+                4600,
+                0.96,
+                0.156
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Glutamate",
+                    "alias": "Glutamate"
+                },
+                "field": "concInit",
+                "value": 10,
+                "units": "nM"
+            }
+        ]
+    }
+}

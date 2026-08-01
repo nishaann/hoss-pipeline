@@ -1,0 +1,112 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 20702695,
+            "authors": "Gross C et al.",
+            "journal": "J Neurosci. ",
+            "year": 2010,
+            "figure": "Fig5I"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "sampleType": "synaptoneurosomes",
+        "cellType": "cortex",
+        "samplePrep": "C57BL/6 mice Fmr1 KO cortical synaptoneurosomes",
+        "temperature": 37,
+        "notes": "Basal translation measured with or without DHPG and 100nM Wortmannin. Wortmannin is an inhibitor of PI3K. virus containing shPIKE-L were transfected into cortical neurons"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "entity": {
+                "name": "DHPG",
+                "alias": "DHPG"
+            },
+            "value": 100
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "Wortmannin",
+                "alias": "Wortmannin"
+            },
+            "value": 100
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 900,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "protein",
+            "alias": "protein"
+        },
+        "field": "conc",
+        "normalization": {
+            "entity": {
+                "name": "protein"
+            },
+            "sampling": "start"
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1.0,
+                "stderr": 0.012
+            },
+            {
+                "stimulus": [
+                    "DHPG"
+                ],
+                "value": 1.216,
+                "stderr": 0.047
+            },
+            {
+                "stimulus": [
+                    "Wortmannin"
+                ],
+                "value": 1.139,
+                "stderr": 0.022
+            },
+            {
+                "stimulus": [
+                    "DHPG",
+                    "Wortmannin"
+                ],
+                "value": 1.0,
+                "stderr": 0.02
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "DHPG"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

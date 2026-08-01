@@ -1,0 +1,49 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 9249258,
+            "authors": "Akam EC et al.",
+            "journal": "Br J Pharmacol. ",
+            "year": 1997,
+            "figure": "in-text"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DirectParameter",
+        "species": "Rat",
+        "sampleType": "cell-line",
+        "cellType": "BHK cells",
+        "samplePrep": "membrane preparations of BHK cells expressing rat mGluR1",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Readouts": {
+        "paramdata": [
+            {
+                "entity": {
+                    "name": "Glu_mGluR+Gq",
+                    "alias": "Glu_mGluR_bind_Gq"
+                },
+                "field": "Kd",
+                "units": "nM",
+                "value": 0.76,
+                "stderr": 0.2
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "all"
+            }
+        ]
+    }
+}

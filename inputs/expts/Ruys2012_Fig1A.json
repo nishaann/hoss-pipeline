@@ -1,0 +1,147 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 22216903,
+            "authors": "Ruys SPD et al.",
+            "journal": "Biochem J, ",
+            "year": 2012,
+            "figure": "Fig1A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "in-vitro",
+        "samplePrep": "human GST-eEF2K expressed in E.coli",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "CaM",
+                "alias": "CaM"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0,
+                    0.6
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aCaMKIII",
+            "alias": "aCaMKIII"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "presetTime",
+            "entity": {
+                "name": "aCaMKIII"
+            },
+            "sampTime": 3600
+        },
+        "data": [
+            [
+                0,
+                0.0,
+                0
+            ],
+            [
+                300,
+                0.26,
+                0
+            ],
+            [
+                600,
+                0.439,
+                0.029
+            ],
+            [
+                900,
+                0.519,
+                0.041
+            ],
+            [
+                1200,
+                0.629,
+                0.06
+            ],
+            [
+                1800,
+                0.779,
+                0.081
+            ],
+            [
+                2400,
+                0.808,
+                0.31
+            ],
+            [
+                3000,
+                0.969,
+                0.071
+            ],
+            [
+                3600,
+                1.0,
+                0.109
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaMKIII_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "CaM_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "concInit",
+                "value": 0.2,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaMKIII",
+                    "alias": "CaMKIII"
+                },
+                "field": "concInit",
+                "value": 0.00066,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            }
+        ]
+    }
+}

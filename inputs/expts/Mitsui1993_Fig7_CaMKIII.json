@@ -1,0 +1,170 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 8514778,
+            "authors": "Mitsui K et al.",
+            "journal": "J Biol Chem. ",
+            "year": 1993,
+            "figure": "Fig7"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "DoseResponse",
+        "species": "Rabbit",
+        "sampleType": "purified proteins",
+        "cellType": "cell-free",
+        "samplePrep": "CaM purified from rabbit brain, CaMKIII from rabbit reticulocytes, EF2 from either rat pancreas or rabbit reticulocytes",
+        "temperature": 30,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "M",
+            "entity": {
+                "name": "CaM",
+                "alias": "CaM"
+            },
+            "field": "conc"
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 300,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aCaMKIII",
+            "alias": "aCaMKIII"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "dose",
+            "entity": {
+                "name": "aCaMKIII"
+            },
+            "dose": 6e-08
+        },
+        "display": {
+            "useXlog": true,
+            "useYlog": false
+        },
+        "data": [
+            [
+                5e-12,
+                0.016,
+                0
+            ],
+            [
+                3e-11,
+                0.04,
+                0
+            ],
+            [
+                3e-10,
+                0.27,
+                0
+            ],
+            [
+                6e-10,
+                0.43,
+                0
+            ],
+            [
+                1.75e-09,
+                0.61,
+                0
+            ],
+            [
+                3.16e-09,
+                0.8,
+                0
+            ],
+            [
+                6e-09,
+                0.9,
+                0
+            ],
+            [
+                1e-08,
+                0.95,
+                0
+            ],
+            [
+                3e-08,
+                0.99,
+                0
+            ],
+            [
+                6e-08,
+                1.0,
+                0
+            ]
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "CaMKIII_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "CaMKIII",
+                    "alias": "CaMKIII"
+                },
+                "field": "concInit",
+                "value": 4.2e-05,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "mM"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "isBuffered",
+                "value": 1.0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca",
+                    "alias": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 1.0,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "concInit",
+                "value": 1.5,
+                "units": "mM"
+            }
+        ],
+        "notes": "Used in Jain2009_Fig4B"
+    }
+}

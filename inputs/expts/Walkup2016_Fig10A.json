@@ -1,0 +1,161 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 27623146,
+            "authors": "Walkup WG et al.",
+            "journal": "Elife, ",
+            "year": 2016,
+            "figure": "Fig10A"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "in-vitro",
+        "sampleType": "recombinant protein",
+        "cellType": "cell-free",
+        "samplePrep": "synGAP-alpha1 is expressed in bacteria and purified in soluble form by deleting 102 aa from N-terminal and retains all the functional domains and regulatory domains. PDZ123 from murine PSD95 (Q62108) were purified from E.coli. Recombinant synGAP-alpha1 is incubated with CaMKII/Ca/CaM mix for 10mins before allowing it to bind to PDZ domain resins for 60min at 25C. Using PDZ123 as the readout",
+        "temperature": 25,
+        "notes": ""
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "mM",
+            "field": "conc",
+            "value": 0.7,
+            "entity": {
+                "name": "Ca",
+                "alias": "Ca"
+            }
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "field": "conc",
+            "value": 3.4,
+            "entity": {
+                "name": "CaM",
+                "alias": "CaM"
+            }
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 3600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "synGAP_PDZ",
+            "alias": "synGAP_PDZ"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "synGAP_PDZ"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "stderr": 0.02,
+                "value": 1
+            },
+            {
+                "stimulus": [
+                    "CaM",
+                    "Ca"
+                ],
+                "stderr": 0.048,
+                "value": 0.8
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "synGAP_g"
+            },
+            {
+                "name": "PDZ123"
+            },
+            {
+                "name": "CaMKII_g"
+            },
+            {
+                "name": "CaM_g"
+            },
+            {
+                "name": "Ca"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "CaMKII",
+                    "alias": "CaMKII"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "Ca"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "PDZ123",
+                    "alias": "PDZ123"
+                },
+                "field": "concInit",
+                "value": 80,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "CaM"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            },
+            {
+                "entity": {
+                    "name": "CaMKII"
+                },
+                "field": "concInit",
+                "value": 10,
+                "units": "nM"
+            },
+            {
+                "entity": {
+                    "name": "synGAP",
+                    "alias": "synGAP_alpha1"
+                },
+                "field": "concInit",
+                "value": 500,
+                "units": "nM"
+            }
+        ]
+    }
+}

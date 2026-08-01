@@ -1,0 +1,234 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha A Viswan",
+        "organization": "OpenSource",
+        "email": "",
+        "source": {
+            "sourceType": "simulation",
+            "PMID": 0,
+            "authors": "Nisha A Viswan",
+            "journal": "NA",
+            "year": 2025,
+            "figure": "Fig1"
+        },
+        "testModel": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/Disease_Models_08Sept2025/Source_17Sept2025.json",
+        "testMap": "/home/user/FromBebinca/SynPlast_15Apr2022/HTAutSim/HTPipeline/MouseSynProtSynth_WT/D3_HT/QD3_HT_map.json"
+    },
+    "Experiment": {
+        "design": "TimeSeries",
+        "species": "Simulation",
+        "sampleType": "Simulation",
+        "cellType": "Simulation",
+        "samplePrep": "Simulation",
+        "temperature": 37,
+        "notes": "Generated from exptSynth.py"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "IP3",
+                "alias": "IP3"
+            },
+            "field": "conc",
+            "data": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    101.0,
+                    15.0
+                ],
+                [
+                    102.0,
+                    0.0
+                ],
+                [
+                    201.0,
+                    15.0
+                ],
+                [
+                    202.0,
+                    0.0
+                ]
+            ]
+        },
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "uM",
+            "entity": {
+                "name": "synGAP",
+                "alias": "synGAP            "
+            },
+            "field": "conc",
+            "data": [
+                [
+                    200.0,
+                    0.0
+                ]
+            ]
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "quantityUnits": "uM",
+        "entity": {
+            "name": "Ca",
+            "alias": "Ca"
+        },
+        "field": "conc",
+        "data": [
+            [
+                0.0,
+                0.08,
+                0.0
+            ],
+            [
+                99.0,
+                0.08,
+                0.0
+            ],
+            [
+                100.92,
+                0.11,
+                0.0
+            ],
+            [
+                102.0,
+                1.88,
+                0.0
+            ],
+            [
+                103.0,
+                2.77,
+                0.0
+            ],
+            [
+                104.5,
+                2.43,
+                0.0
+            ],
+            [
+                106.52,
+                1.18,
+                0.0
+            ],
+            [
+                108.5,
+                0.53,
+                0.0
+            ],
+            [
+                110.48,
+                0.25,
+                0.0
+            ],
+            [
+                112.46,
+                0.19,
+                0.0
+            ],
+            [
+                114.44,
+                0.14,
+                0.0
+            ],
+            [
+                116.42,
+                0.112,
+                0.0
+            ],
+            [
+                120.38,
+                0.11,
+                0.0
+            ],
+            [
+                200.0,
+                0.08,
+                0.0
+            ],
+            [
+                202.0,
+                1.92,
+                0.0
+            ],
+            [
+                203.0,
+                2.81,
+                0.0
+            ],
+            [
+                204.5,
+                2.46,
+                0.0
+            ],
+            [
+                206.52,
+                1.22,
+                0.0
+            ],
+            [
+                208.5,
+                0.56,
+                0.0
+            ],
+            [
+                210.48,
+                0.27,
+                0.0
+            ],
+            [
+                212.46,
+                0.19,
+                0.0
+            ],
+            [
+                214.44,
+                0.14,
+                0.0
+            ],
+            [
+                216.42,
+                0.12,
+                0.0
+            ],
+            [
+                220.38,
+                0.11,
+                0.0
+            ],
+            [
+                221,
+                0.08,
+                0.0
+            ]
+        ]
+    },
+    "Modifications": {
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "IP3",
+                    "alias": "IP3"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "IP3",
+                    "alias": "IP3"
+                },
+                "field": "concInit",
+                "value": 0,
+                "units": "uM"
+            }
+        ]
+    }
+}

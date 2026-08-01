@@ -1,0 +1,102 @@
+{
+    "FileType": "FindSim",
+    "Version": "2.0",
+    "Metadata": {
+        "transcriber": "Nisha Ann Viswan",
+        "organization": "NCBS",
+        "email": "nishaav@ncbs.res.in",
+        "source": {
+            "sourceType": "paper",
+            "PMID": 26204818,
+            "authors": "Tang Y et al.",
+            "journal": "Neurosci., ",
+            "year": 2015,
+            "figure": "Fig4C"
+        },
+        "testModel": "Models/synSynth7_FMRP_19Dec2019.g",
+        "testMap": "Models/synSynth7_FMRP_20Dec2019.json"
+    },
+    "Experiment": {
+        "design": "BarChart",
+        "species": "Mouse",
+        "samplePrep": "hippocampal slices from 4-6 week old mice",
+        "temperature": 25,
+        "notes": "Omitting the rest of the model, to reduce time"
+    },
+    "Stimuli": [
+        {
+            "timeUnits": "sec",
+            "quantityUnits": "nM",
+            "field": "conc",
+            "entity": {
+                "name": "EGF",
+                "alias": "EGF"
+            },
+            "value": 7.8125
+        }
+    ],
+    "Readouts": {
+        "timeUnits": "sec",
+        "settleTime": 600,
+        "quantityUnits": "ratio",
+        "entity": {
+            "name": "aSHC",
+            "alias": "Src_p416"
+        },
+        "field": "conc",
+        "normalization": {
+            "sampling": "start",
+            "entity": {
+                "name": "aSHC"
+            }
+        },
+        "bardata": [
+            {
+                "stimulus": [],
+                "value": 1,
+                "stderr": 0
+            },
+            {
+                "stimulus": [
+                    "EGF"
+                ],
+                "value": 1.6,
+                "stderr": 0.2
+            }
+        ]
+    },
+    "Modifications": {
+        "subset": [
+            {
+                "name": "EGF"
+            },
+            {
+                "name": "EGFR_g"
+            },
+            {
+                "name": "Ca"
+            },
+            {
+                "name": "Sos_g"
+            }
+        ],
+        "parameterChange": [
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "isBuffered",
+                "value": 1,
+                "units": "none"
+            },
+            {
+                "entity": {
+                    "name": "EGF"
+                },
+                "field": "concInit",
+                "value": 0.001,
+                "units": "nM"
+            }
+        ]
+    }
+}

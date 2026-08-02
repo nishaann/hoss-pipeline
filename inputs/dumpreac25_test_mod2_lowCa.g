@@ -620,7 +620,7 @@ simundump kreac /kinetics/DHPG_mGluR_g/DHPG_Activate_Gq 0 5.0 0.0 "" indigo yell
 simundump kreac /kinetics/DHPG_mGluR_g/MPEP_bind_DHPGR 0 3.3806004332570337e-10 0.2 "" white black 7698 7384 0
 simundump kreac /kinetics/DHPG_mGluR_g/DHPG_RecpS870_bind_Gq 0 1.0142093663382038e-07 12.0 "" white black 7207 7384 0
 simundump kreac /kinetics/DHPG_mGluR_g/DHPG_bind_RecpS870 0 1.6903489438970061e-06 1.0 "" white black 7037 7375 0
-simundump kreac /kinetics/DHPG_mGluR_g/DHPG_bind_RecpS870_Gq 0 1.6903489438970061e-06 10.0 "" white black 7356 7384 0
+simundump kreac /kinetics/DHPG_mGluR_g/DHPG_bind_RecpS870_Gq 0 1.6903489438970061e-06 2.0 "" white black 7356 7384 0
 simundump kreac /kinetics/DHPG_mGluR_g/DHPGRpS870G_act 0 2.0 0.0 "" white black 7524 7384 0
 simundump kreac /kinetics/Gs_g/basalAct_Gs 0 0.0001 0.0 "" white black 9895 6687 0
 simundump kreac /kinetics/Gs_g/Inact_Gs 0 0.00667 0.0 "" white black 9873 6687 0

@@ -187,7 +187,7 @@
         "reaction_name": "DHPG_bind_RecpS870_Gq",
         "path": "/model[0]/kinetics[0]/DHPG_mGluR_g[0]/DHPG_bind_RecpS870_Gq",
         "Kf": 10000.086299999983,
-        "Kb": 10.0,
+        "Kb": 2.0,
         "params": [
           "RpS870Gq+DHPG.Kd",
           "RpS870Gq+DHPG.tau"
@@ -195,9 +195,9 @@
       }
     ],
     "path1_ligand_then_G": 500008.63003723684,
-    "path2_G_then_ligand": 100001.72600744737,
-    "ratio": 5.0,
-    "balanced": false
+    "path2_G_then_ligand": 500008.6300372369,
+    "ratio": 0.9999999999999999,
+    "balanced": true
   },
   {
     "name": "b2AR/Iso/Gs",

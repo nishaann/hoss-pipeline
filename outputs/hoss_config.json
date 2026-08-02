@@ -1196,6 +1196,9 @@
           "January1997_Fig1A.json": {
             "weight": 52
           },
+          "Klee1978.json": {
+            "weight": 52
+          },
           "Sette1996_Fig2B.json": {
             "weight": 88
           },
@@ -1225,31 +1228,98 @@
           }
         },
         "params": [
-          "Epib2ARp2_barr2_internalize.Kf",
-          "Epib2ARp1_barr2_internalize.Kf",
-          "Epib2ARp1+barr2.tau",
-          "Epib2ARp2+barr2.tau",
-          "Isob2ARp1+barr2.tau",
-          "Isob2ARp2+barr2.tau",
-          "eGRK2+Epi_b2AR.kcat",
-          "eGRK5+Epi_b2AR.kcat",
-          "eGRK5+Iso_b2AR.kcat",
-          "eGRK2+Iso_b2AR.kcat",
-          "b2ARp2barr2p_deph.kcat",
-          "Intb2ARp1_deph.kcat",
-          "Isob2ARp1_deph.kcat",
-          "Epib2ARp2_deph.kcat",
-          "Epib2ARp1_deph.kcat",
-          "Isob2ARp2_deph.kcat",
-          "I1p+PP1.tau",
-          "ePP2A+I1p.kcat",
-          "ePP2A+PP1_Ip.Km",
-          "Gs+AC2p.tau"
+          "PP1_I1_dissoc.Kf",
+          "ePP2A+PP1_Ip.kcat",
+          "Gs+AC2.Kd",
+          "eAC2Gs+ATP.kcat",
+          "Gs+AC2.tau",
+          "eAC2Gs+ATP.Km",
+          "ePKA+cAMP_PDE.Km",
+          "eAC2pGs+ATP.Km",
+          "ecAMP_PDEp+cAMP.Km",
+          "eAC2pGs+ATP.kcat",
+          "ecAMP_PDEp+cAMP.kcat",
+          "CaMCa4+PDE1.Kd",
+          "eCaM_PDE1+cAMP.Km",
+          "eCaM_PDE1+cAMP.kcat",
+          "PDE_deph.Kf",
+          "ePKA+cAMP_PDE.kcat",
+          "Gs+AC1.tau",
+          "eAC1CaM+ATP.Km",
+          "CaMCa4+AC1.tau",
+          "Gs+AC2p.Kd"
         ],
         "resultFile": "AC_1_parms.json",
         "optModelFile": "AC_1_opt.g"
       },
       "AC_2": {
+        "expt": {
+          "Feinstein1991_Fig4_AC1.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig4_AC1_noCaM.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig5.json": {
+            "weight": 61
+          },
+          "January1997_Fig1A.json": {
+            "weight": 52
+          },
+          "Sette1996_Fig2B.json": {
+            "weight": 88
+          },
+          "Smigel1986_Fig3_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig3_with_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_with_bg.json": {
+            "weight": 43
+          },
+          "Suzuki1991_Fig2.json": {
+            "weight": 46
+          },
+          "Tang1991_Fig3A.json": {
+            "weight": 43
+          },
+          "Tang1991_Fig3B.json": {
+            "weight": 43
+          },
+          "Yuan1994_Fig2.json": {
+            "weight": 43
+          }
+        },
+        "params": [
+          "AC2_deph.Kf",
+          "CaMCa4+PDE1.tau",
+          "eAC1CaM+ATP.kcat",
+          "ePDE1+cAMP.kcat",
+          "bGs_act.Kf",
+          "Epi+RGs.Kd",
+          "Epi+RGs.tau",
+          "Epi+b2AR.Kd",
+          "Epi+b2AR.tau",
+          "EpiR+GsGDP.Kd",
+          "EpiR+GsGDP.tau",
+          "Trimerize_Gs.Kf",
+          "eAC1Gs+ATP.Km",
+          "Gs+AC1.Kd",
+          "eAC1Gs+ATP.kcat",
+          "CaMCa4+AC1.Kd",
+          "eAC2p+ATP.Km",
+          "eAC2p+ATP.kcat",
+          "I1p+PP1.tau",
+          "ePP2A+I1p.kcat"
+        ],
+        "resultFile": "AC_2_parms.json",
+        "optModelFile": "AC_2_opt.g"
+      },
+      "AC_3": {
         "expt": {
           "Feinstein1991_Fig4_AC1.json": {
             "weight": 61
@@ -1295,215 +1365,18 @@
           }
         },
         "params": [
+          "ePP2A+PP1_Ip.Km",
+          "Gs+AC2p.tau",
           "Epi_act_Gs.Kf",
           "Gs_inact.Kf",
           "ePDE1+cAMP.Km",
           "ecAMP_PDE+cAMP.Km",
           "ecAMP_PDE+cAMP.kcat",
           "ePKC+AC2.Km",
-          "ePKC+AC2.kcat",
-          "b2ARp2barr2p_dissoc.Kf",
-          "Isob2ARp2_barr2_internalize.Kf",
-          "Isob2ARp1_barr2_internalize.Kf",
-          "Epib2ARp1+barr2.Kd",
-          "Epib2ARp2+barr2.Kd",
-          "Isob2ARp1+barr2.Kd",
-          "Isob2ARp2+barr2.Kd",
-          "eGRK2+Epi_b2AR.Km",
-          "eGRK5+Epi_b2AR.Km",
-          "eGRK5+Iso_b2AR.Km",
-          "eGRK2+Iso_b2AR.Km",
-          "b2ARp2barr2p_deph.Km",
-          "Intb2ARp1_deph.Km"
-        ],
-        "resultFile": "AC_2_parms.json",
-        "optModelFile": "AC_2_opt.g"
-      },
-      "AC_3": {
-        "expt": {
-          "Feinstein1991_Fig4_AC1.json": {
-            "weight": 61
-          },
-          "Feinstein1991_Fig4_AC1_noCaM.json": {
-            "weight": 61
-          },
-          "Feinstein1991_Fig5.json": {
-            "weight": 61
-          },
-          "January1997_Fig1A.json": {
-            "weight": 52
-          },
-          "Klee1978.json": {
-            "weight": 52
-          },
-          "Sette1996_Fig2B.json": {
-            "weight": 88
-          },
-          "Smigel1986_Fig3_wo_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig3_with_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig7_wo_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig7_with_bg.json": {
-            "weight": 43
-          },
-          "Suzuki1991_Fig2.json": {
-            "weight": 46
-          },
-          "Tang1991_Fig3A.json": {
-            "weight": 43
-          },
-          "Tang1991_Fig3B.json": {
-            "weight": 43
-          },
-          "Yuan1994_Fig2.json": {
-            "weight": 43
-          }
-        },
-        "params": [
-          "Isob2ARp1_deph.Km",
-          "Epib2ARp2_deph.Km",
-          "Epib2ARp1_deph.Km",
-          "Isob2ARp2_deph.Km",
-          "PP1_I1_dissoc.Kf",
-          "ePP2A+PP1_Ip.kcat",
-          "Gs+AC2.Kd",
-          "eAC2Gs+ATP.kcat",
-          "Gs+AC2.tau",
-          "eAC2Gs+ATP.Km",
-          "ePKA+cAMP_PDE.Km",
-          "eAC2pGs+ATP.Km",
-          "ecAMP_PDEp+cAMP.Km",
-          "eAC2pGs+ATP.kcat",
-          "ecAMP_PDEp+cAMP.kcat",
-          "CaMCa4+PDE1.Kd",
-          "eCaM_PDE1+cAMP.Km",
-          "eCaM_PDE1+cAMP.kcat",
-          "PDE_deph.Kf",
-          "ePKA+cAMP_PDE.kcat"
+          "ePKC+AC2.kcat"
         ],
         "resultFile": "AC_3_parms.json",
         "optModelFile": "AC_3_opt.g"
-      },
-      "AC_4": {
-        "expt": {
-          "Feinstein1991_Fig4_AC1.json": {
-            "weight": 61
-          },
-          "Feinstein1991_Fig4_AC1_noCaM.json": {
-            "weight": 61
-          },
-          "Feinstein1991_Fig5.json": {
-            "weight": 61
-          },
-          "January1997_Fig1A.json": {
-            "weight": 52
-          },
-          "Sette1996_Fig2B.json": {
-            "weight": 88
-          },
-          "Smigel1986_Fig3_wo_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig3_with_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig7_wo_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig7_with_bg.json": {
-            "weight": 43
-          },
-          "Suzuki1991_Fig2.json": {
-            "weight": 46
-          },
-          "Tang1991_Fig3A.json": {
-            "weight": 43
-          },
-          "Tang1991_Fig3B.json": {
-            "weight": 43
-          },
-          "Yuan1994_Fig2.json": {
-            "weight": 43
-          }
-        },
-        "params": [
-          "Gs+AC1.tau",
-          "eAC1CaM+ATP.Km",
-          "CaMCa4+AC1.tau",
-          "Gs+AC2p.Kd",
-          "AC2_deph.Kf",
-          "CaMCa4+PDE1.tau",
-          "eAC1CaM+ATP.kcat",
-          "ePDE1+cAMP.kcat",
-          "bGs_act.Kf",
-          "Epi+RGs.Kd",
-          "Epi+RGs.tau",
-          "Epi+b2AR.Kd",
-          "Epi+b2AR.tau",
-          "EpiR+GsGDP.Kd",
-          "EpiR+GsGDP.tau",
-          "Trimerize_Gs.Kf",
-          "eAC1Gs+ATP.Km",
-          "Gs+AC1.Kd",
-          "eAC1Gs+ATP.kcat",
-          "CaMCa4+AC1.Kd"
-        ],
-        "resultFile": "AC_4_parms.json",
-        "optModelFile": "AC_4_opt.g"
-      },
-      "AC_5": {
-        "expt": {
-          "Feinstein1991_Fig4_AC1.json": {
-            "weight": 61
-          },
-          "Feinstein1991_Fig4_AC1_noCaM.json": {
-            "weight": 61
-          },
-          "Feinstein1991_Fig5.json": {
-            "weight": 61
-          },
-          "January1997_Fig1A.json": {
-            "weight": 52
-          },
-          "Sette1996_Fig2B.json": {
-            "weight": 88
-          },
-          "Smigel1986_Fig3_wo_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig3_with_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig7_wo_bg.json": {
-            "weight": 43
-          },
-          "Smigel1986_Fig7_with_bg.json": {
-            "weight": 43
-          },
-          "Suzuki1991_Fig2.json": {
-            "weight": 46
-          },
-          "Tang1991_Fig3A.json": {
-            "weight": 43
-          },
-          "Tang1991_Fig3B.json": {
-            "weight": 43
-          },
-          "Yuan1994_Fig2.json": {
-            "weight": 43
-          }
-        },
-        "params": [
-          "eAC2p+ATP.Km",
-          "eAC2p+ATP.kcat"
-        ],
-        "resultFile": "AC_5_parms.json",
-        "optModelFile": "AC_5_opt.g"
       }
     },
     {
@@ -2415,7 +2288,9 @@
         },
         "params": [
           "ePKC+mGluRbarr2_craf.kcat",
+          "Epib2ARp1_deph.Km",
           "ePKC+ng.kcat",
+          "eGRK2+Epi_b2AR.kcat",
           "crafpq_deph.kcat",
           "eAKT+Raf.kcat",
           "Raf1_deph.kcat",
@@ -2431,9 +2306,7 @@
           "ePP2A+MAPKKp.Km",
           "eRas+MAPKKp.kcat",
           "eMAPKK+MAPK.kcat",
-          "ePP2A+MAPKKpq.kcat",
-          "ecraf+MAPKK.kcat",
-          "ecraf+MAPKKp.kcat"
+          "ePP2A+MAPKKpq.kcat"
         ],
         "resultFile": "Receptors_MAPK_1_parms.json",
         "optModelFile": "Receptors_MAPK_1_opt.g"
@@ -2571,6 +2444,8 @@
           }
         },
         "params": [
+          "ecraf+MAPKK.kcat",
+          "ecraf+MAPKKp.kcat",
           "ePP2A+MAPKKpq.Km",
           "eMKP1+MAPKp.Km",
           "ePP2A+MAPKKp.kcat",
@@ -2588,9 +2463,7 @@
           "ecraf1_mGluRbarr2+MEKp.kcat",
           "eAKT+Raf.Km",
           "mGluRpT840barr2craf_dissoc.Kf",
-          "ePKC+mGluRbarr2_craf.Km",
-          "ecraf1_mGluRbarr2+MEK.Km",
-          "ecraf1_mGluRbarr2+MEKp.Km"
+          "ePKC+mGluRbarr2_craf.Km"
         ],
         "resultFile": "Receptors_MAPK_2_parms.json",
         "optModelFile": "Receptors_MAPK_2_opt.g"
@@ -2725,31 +2598,185 @@
           }
         },
         "params": [
+          "ecraf1_mGluRbarr2+MEK.Km",
+          "ecraf1_mGluRbarr2+MEKp.Km",
           "ng+CaM.Kd",
           "ePKC+ng.Km",
           "ng+CaM.tau",
+          "Isob2ARp1_deph.Km",
           "mGluR_barr2+Raf.tau",
           "ePKC+ng_CaM.kcat",
+          "ePKC+b2ARp1barr2_craf.kcat",
+          "b2ARp2barr2p_deph.Km",
+          "ePP2A+b2ARp1barr2crafp.Km",
           "ePP2A+b2ARp1barr2crafp.kcat",
           "eIntb2ARp1barr2craf+MEK.kcat",
-          "ePP2A+b2ARp1barr2crafp.Km",
-          "eIntb2ARp1barr2craf+MEK.Km",
-          "b2ARp1_barr2+Raf.tau",
-          "ePKC+b2ARp1barr2_craf.Km",
-          "b2ARp1_barr2+Raf.Kd",
-          "b2ARp1barr2craf_dissoc.Kf",
-          "ePKC+b2ARp1barr2_craf.kcat",
-          "eIntb2ARp1barr2craf+MEKp.Km",
-          "eIntb2ARp1barr2craf+MEKp.kcat",
-          "ePKC+ng_CaM.Km",
-          "ngp_deph.Kf",
-          "eMAPK+crafp.Km",
-          "eMAPK+crafp.kcat"
+          "eGRK2+Iso_b2AR.Km",
+          "eGRK5+Epi_b2AR.kcat",
+          "Isob2ARp2_deph.Km",
+          "Isob2ARp1_deph.kcat",
+          "Intb2ARp1_deph.kcat",
+          "eGRK2+Iso_b2AR.kcat",
+          "Isob2ARp1+barr2.tau"
         ],
         "resultFile": "Receptors_MAPK_3_parms.json",
         "optModelFile": "Receptors_MAPK_3_opt.g"
       },
       "Receptors_MAPK_4": {
+        "expt": {
+          "BarnesSA2015_Fig4Diii_WT.json": {
+            "weight": 97
+          },
+          "Kolch1993_Fig2.json": {
+            "weight": 85
+          },
+          "Genheden2015_Fig2C.json": {
+            "weight": 100
+          },
+          "Gottschalk1999_Fig1C.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig1D.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig2A.json": {
+            "weight": 97
+          },
+          "Ji2010_Fig1B_ERK_acute.json": {
+            "weight": 100
+          },
+          "Ji2010_Fig1B_ERK_gradient.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_ERK_BDNF.json": {
+            "weight": 100
+          },
+          "Numakawa2009_FigS8C.json": {
+            "weight": 100
+          },
+          "Robinet2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1B.json": {
+            "weight": 100
+          },
+          "Teng1995_Fig9A.json": {
+            "weight": 64
+          },
+          "Cardone2004_Fig5D.json": {
+            "weight": 61
+          },
+          "Gu2004_Fig3B.json": {
+            "weight": 70
+          },
+          "Li2013_Fig2A_pERK.json": {
+            "weight": 94
+          },
+          "Queipo2018_Fig2.json": {
+            "weight": 100
+          },
+          "Shah2003_Fig1B.json": {
+            "weight": 73
+          },
+          "Tang2015_Fig4D.json": {
+            "weight": 94
+          },
+          "Tucker1993_Fig7.json": {
+            "weight": 97
+          },
+          "ZhouY2010_Fig3C.json": {
+            "weight": 70
+          },
+          "Aditi_ERK.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig1B_pERK2.json": {
+            "weight": 97
+          },
+          "Auerbach2011_Fig1D_WT.json": {
+            "weight": 100
+          },
+          "BarnesSA2015_Fig3Eii_WT.json": {
+            "weight": 97
+          },
+          "Kim2008_Fig1A.json": {
+            "weight": 94
+          },
+          "Mao2005_Fig4.json": {
+            "weight": 100
+          },
+          "Nicodemo2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Osterweil2010_Fig2D_ERK.json": {
+            "weight": 97
+          },
+          "Page2006_Fig4C.json": {
+            "weight": 100
+          },
+          "Sethna2016_Fig1A.json": {
+            "weight": 94
+          },
+          "Sethna2016_Fig1C.json": {
+            "weight": 94
+          },
+          "Uematsu2015_Fig3B.json": {
+            "weight": 74
+          },
+          "Uematsu2015_Fig3F.json": {
+            "weight": 74
+          },
+          "Zhang2016_Fig7C.json": {
+            "weight": 79
+          },
+          "Zhu2017_Fig2C.json": {
+            "weight": 97
+          },
+          "Emery2012_Fig1B.json": {
+            "weight": 61
+          },
+          "Emery2012_Fig1C.json": {
+            "weight": 61
+          },
+          "Kaphzan2006_Fig1B.json": {
+            "weight": 97
+          },
+          "Kaphzan2007_Fig1A.json": {
+            "weight": 97
+          },
+          "Lenz2005_Fig1C_ERK_NMDA.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "Epib2ARp2+barr2.tau",
+          "Isob2ARp1+barr2.Kd",
+          "eGRK5+Iso_b2AR.Km",
+          "Epib2ARp1+barr2.tau",
+          "ePKC+b2ARp1barr2_craf.Km",
+          "eIntb2ARp1barr2craf+MEK.Km",
+          "b2ARp1_barr2+Raf.tau",
+          "eGRK5+Epi_b2AR.Km",
+          "Epib2ARp2_deph.Km",
+          "eGRK2+Epi_b2AR.Km",
+          "Isob2ARp2_barr2_internalize.Kf",
+          "Epib2ARp2+barr2.Kd",
+          "eGRK5+Iso_b2AR.kcat",
+          "Isob2ARp2+barr2.Kd",
+          "b2ARp1_barr2+Raf.Kd",
+          "Epib2ARp1_barr2_internalize.Kf",
+          "Epib2ARp2_deph.kcat",
+          "Epib2ARp1+barr2.Kd",
+          "Isob2ARp2_deph.kcat",
+          "Intb2ARp1_deph.Km"
+        ],
+        "resultFile": "Receptors_MAPK_4_parms.json",
+        "optModelFile": "Receptors_MAPK_4_opt.g"
+      },
+      "Receptors_MAPK_5": {
         "expt": {
           "BarnesSA2015_Fig4Diii_WT.json": {
             "weight": 97
@@ -2882,12 +2909,25 @@
           }
         },
         "params": [
+          "Epib2ARp1_deph.kcat",
+          "Isob2ARp2+barr2.tau",
+          "Epib2ARp2_barr2_internalize.Kf",
+          "b2ARp1barr2craf_dissoc.Kf",
+          "Isob2ARp1_barr2_internalize.Kf",
+          "b2ARp2barr2p_dissoc.Kf",
+          "eIntb2ARp1barr2craf+MEKp.kcat",
+          "eIntb2ARp1barr2craf+MEKp.Km",
+          "b2ARp2barr2p_deph.kcat",
+          "ePKC+ng_CaM.Km",
+          "ngp_deph.Kf",
+          "eMAPK+crafp.Km",
+          "eMAPK+crafp.kcat",
           "ePKC+craf.Km",
           "eMAPKK+MAPKp.Km",
           "eMAPKK+MAPK.Km"
         ],
-        "resultFile": "Receptors_MAPK_4_parms.json",
-        "optModelFile": "Receptors_MAPK_4_opt.g"
+        "resultFile": "Receptors_MAPK_5_parms.json",
+        "optModelFile": "Receptors_MAPK_5_opt.g"
       }
     },
     {

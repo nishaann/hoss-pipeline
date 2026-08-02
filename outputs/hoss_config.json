@@ -1,0 +1,3479 @@
+{
+  "FileType": "HOSS",
+  "Version": "2.0",
+  "author": "Nisha Ann Viswan",
+  "model": "./dumpreac25_test_mod2_lowCa.g",
+  "map": "./QD4_ODE_map_16Jun2026.json",
+  "exptDir": "../D4_ODE/Expts",
+  "outputDir": "./OPTIMIZED/HOSS_19Aug2025_COBYLA/",
+  "scoreFunc": "NRMS",
+  "tolerance": 0.001,
+  "timeout": 20000,
+  "algorithm": "COBYLA",
+  "hossMethod": {
+    "method": "hoss",
+    "numProcesses": 40
+  },
+  "comment": "HOSS1 is individual pathway opts.",
+  "HOSS": [
+    {
+      "name": "Receptors",
+      "hierarchyLevel": 1,
+      "NMDAR": {
+        "expt": {
+          "SchapanskyJ2009_Fig1A.json": {
+            "weight": 100
+          },
+          "SchapanskyJ2009_Fig1B.json": {
+            "weight": 100
+          },
+          "SchapanskyJ2009_Fig2C.json": {
+            "weight": 100
+          },
+          "SchapanskyJ2009_Fig2D.json": {
+            "weight": 100
+          },
+          "Sladeczek1985_Fig2_NMDA.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "NMDA+NMDAR.Kd",
+          "NMDA+NMDAR.tau",
+          "Glu+NMDAR.Kd",
+          "Glu+NMDAR.tau",
+          "NMDAR_inact.Kf",
+          "eAMPAR+Glu_NMDAR.Km",
+          "eAMPAR+Glu_NMDAR.kcat"
+        ],
+        "resultFile": "NMDAR_parms.json",
+        "optModelFile": "NMDAR_opt.g"
+      },
+      "TrKB": {
+        "expt": {
+          "Du2003_Fig1G.json": {
+            "weight": 70
+          },
+          "Du2003_Fig2B.json": {
+            "weight": 70
+          },
+          "Du2003_Fig2B_abs.json": {
+            "weight": 100
+          },
+          "Guo2014_Fig4D.json": {
+            "weight": 70
+          },
+          "Guo2014_Fig4D_abs.json": {
+            "weight": 70
+          },
+          "Guo2014_Fig4D_window.json": {
+            "weight": 100
+          },
+          "Haniu1997.json": {
+            "weight": 67
+          },
+          "Ji2010_Fig1B_TrKB_acute.json": {
+            "weight": 700
+          },
+          "Ji2010_Fig1B_TrKB_acute_abs.json": {
+            "weight": 700
+          },
+          "Ji2010_Fig1B_TrKB_acute_window.json": {
+            "weight": 100
+          },
+          "Ji2010_Fig1B_TrKB_gradient.json": {
+            "weight": 50
+          },
+          "Numakawa2009_Fig1Cii_TrKB.json": {
+            "weight": 100
+          },
+          "Schratt2004_Fig8C_TrKB.json": {
+            "weight": 94
+          },
+          "Soppet1991.json": {
+            "weight": 37
+          },
+          "Yuen1999_Fig1D.json": {
+            "weight": 70
+          },
+          "Yuen1999_Fig1D_abs.json": {
+            "weight": 100
+          },
+          "Yuen1999_Fig2A.json": {
+            "weight": 70
+          },
+          "Yuen1999_Fig2A_abs.json": {
+            "weight": 70
+          },
+          "Yuen1999_Fig2A_window.json": {
+            "weight": 70
+          },
+          "Yuen1999.json": {
+            "weight": 70
+          }
+        },
+        "params": [
+          "BDNF+TrKB.Kd",
+          "BDNF+TrKB.tau",
+          "TrKBdimeriz.Kd",
+          "TrKBdimeriz.tau",
+          "auto_TrKB.Kf",
+          "TrKB_Internalize.Kf",
+          "TrKB_cycling.Kf",
+          "IntTrKB2_deph.Kf"
+        ],
+        "resultFile": "TrKB_parms.json",
+        "optModelFile": "TrKB_opt.g"
+      },
+      "EGFR": {
+        "expt": {
+          "CapuaniF2015_Fig1C.json": {
+            "weight": 152
+          },
+          "CapuaniF2015_Fig1C_abs.json": {
+            "weight": 152
+          },
+          "Choi2006_Fig7A.json": {
+            "weight": 25
+          },
+          "Kholodenko1999_Fig2B_0.2nM_slow.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_0.2nM_slow_abs.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_0.2nM_slow_window.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_2nM_slow.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_2nM_slow_abs.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_2nM_slow_window.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_20nM_slow.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_20nM_slow_abs.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig2B_20nM_slow_window.json": {
+            "weight": 88
+          },
+          "Martin2006_Fig1B.json": {
+            "weight": 64
+          },
+          "Martin2006_Fig1B_abs.json": {
+            "weight": 64
+          },
+          "Mukhin2003_Fig9B_inset.json": {
+            "weight": 58
+          },
+          "Mukhin2003_Fig9B_inset_abs.json": {
+            "weight": 58
+          },
+          "Mukhin2003_Fig9B_inset_window.json": {
+            "weight": 58
+          },
+          "Mukhin2003_Fig9B.json": {
+            "weight": 58
+          },
+          "Pinilla-Macua2015_Fig3A_internal.json": {
+            "weight": 70
+          },
+          "Pinilla-Macua2015_Fig3A_internal_abs.json": {
+            "weight": 70
+          },
+          "Pinilla-Macua2015_Fig3A_surface.json": {
+            "weight": 70
+          },
+          "Pinilla-Macua2015_Fig3A_surface_abs.json": {
+            "weight": 70
+          },
+          "Saito2004_Fig2C.json": {
+            "weight": 58
+          },
+          "Saito2004_Fig2C_abs.json": {
+            "weight": 58
+          }
+        },
+        "params": [
+          "EGF+EGFR.Kd",
+          "EGF+EGFR.tau",
+          "EGFR_Internalize.Kf",
+          "EGFR_recycling.Kf"
+        ],
+        "resultFile": "EGFR_parms.json",
+        "optModelFile": "EGFR_opt.g"
+      },
+      "Glu_mGluR_1": {
+        "expt": {
+          "Akam1997_Fig1_inset.json": {
+            "weight": 58
+          },
+          "Akam1997_Fig3_Glu.json": {
+            "weight": 58
+          },
+          "Choi2011_Fig1A_mGluR5.json": {
+            "weight": 85
+          },
+          "Lee2008_Fig1D.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig1E.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig1I.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig2A.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3C_Glu.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3C_WTbaseline.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3E.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3F_Glu.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3F_Glu_CaM.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3G_Glu_shCaM.json": {
+            "weight": 61
+          }
+        },
+        "params": [
+          "ePKA+GluR.kcat",
+          "ePP2A+IntRpS840.Km",
+          "ePP2A+IntRpS840.kcat",
+          "ePP2A+LRpS870.kcat",
+          "Gq_release.Kf",
+          "ePKC+LRG.Km",
+          "ePP2A+RpS870G.kcat",
+          "ePP2A+RpS870S901.kcat",
+          "ePKC+mGluR.Km",
+          "ePKA+GluR.Km",
+          "ePP2A+LRpS870G.Km",
+          "ePP2A+LRpS870G.kcat",
+          "RpS870+Glu.Kd",
+          "RpS870+Glu.tau",
+          "RpS870Glu+Gq.Kd",
+          "RpS870Glu+Gq.tau",
+          "RpS870Gq+Glu.Kd",
+          "RpS870Gq+Glu.tau",
+          "ePP2A+IntRpS901.Km",
+          "ePP2A+LRpS870.Km"
+        ],
+        "resultFile": "Glu_mGluR_1_parms.json",
+        "optModelFile": "Glu_mGluR_1_opt.g"
+      },
+      "Glu_mGluR_2": {
+        "expt": {
+          "Akam1997_Fig1_inset.json": {
+            "weight": 58
+          },
+          "Akam1997_Fig3_Glu.json": {
+            "weight": 58
+          },
+          "Choi2011_Fig1A_mGluR5.json": {
+            "weight": 85
+          },
+          "Lee2008_Fig1D.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig1E.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig1I.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig2A.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3C_Glu.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3C_WTbaseline.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3E.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3F_Glu.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3F_Glu_CaM.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3G_Glu_shCaM.json": {
+            "weight": 61
+          }
+        },
+        "params": [
+          "ePKC+LRG.kcat",
+          "ePKA+R.kcat",
+          "ePP2A+RpS870.Km",
+          "ePP2A+RpS870.kcat",
+          "ePP2A+RpS870G.Km",
+          "ePKA+GluRG.Km",
+          "ePKA+RG.kcat",
+          "ePKA+R.Km",
+          "mGluR5_recycling.Kd",
+          "ePKA+GluRG.kcat",
+          "GluRpS870G_act.Kf",
+          "ePP2A+IntRpS901.kcat",
+          "mGluR5_Internalize.Kf",
+          "ePP2A+RpS870S901G.Km",
+          "mGluR5_recycling.tau",
+          "ePKA+RG.Km",
+          "ePP2A+RpS870S901G.kcat",
+          "ePKC+mGluR.kcat",
+          "ePKC+LRpS870G.kcat"
+        ],
+        "resultFile": "Glu_mGluR_2_parms.json",
+        "optModelFile": "Glu_mGluR_2_opt.g"
+      },
+      "Glu_mGluR_3": {
+        "expt": {
+          "Akam1997_Fig1_inset.json": {
+            "weight": 58
+          },
+          "Akam1997.json": {
+            "weight": 58
+          },
+          "Akam1997_Fig3_Glu.json": {
+            "weight": 58
+          },
+          "Albasanz2005_Fig1.json": {
+            "weight": 82
+          },
+          "Choi2011_Fig1A_mGluR5.json": {
+            "weight": 85
+          },
+          "Dalfo2005_Fig2.json": {
+            "weight": 82
+          },
+          "Iglesias2007_Fig1.json": {
+            "weight": 85
+          },
+          "Lee2008_Fig1D.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig1E.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig1I.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig2A.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3C_Glu.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3C_WTbaseline.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3E.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3F_Glu.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3F_Glu_CaM.json": {
+            "weight": 61
+          },
+          "Lee2008_Fig3G_Glu_shCaM.json": {
+            "weight": 61
+          },
+          "Leon2005_Table1.json": {
+            "weight": 94
+          },
+          "Leon2007_Fig1.json": {
+            "weight": 94
+          },
+          "Martin1993_Table2.json": {
+            "weight": 52
+          }
+        },
+        "params": [
+          "Glu+mGluR.Kd",
+          "Glu+mGluR.tau",
+          "Glu+mGluR_Gq.Kd",
+          "Glu+mGluR_Gq.tau",
+          "Glu_mGluR+Gq.Kd",
+          "Glu_mGluR+Gq.tau",
+          "GluGq_act.Kf",
+          "ePKC+RpS870G.kcat",
+          "ePKC+RpS870G.Km",
+          "ePKC+RpS870.kcat",
+          "ePKC+RpS870.Km",
+          "ePKC+LRpS870.kcat",
+          "ePKC+LRpS870.Km",
+          "ePKC+RG.kcat",
+          "ePKC+RG.Km",
+          "ePKC+LR.Km",
+          "ePKC+LR.kcat",
+          "ePKC+LRpS870G.Km",
+          "ePP2A+RpS870S901.Km"
+        ],
+        "resultFile": "Glu_mGluR_3_parms.json",
+        "optModelFile": "Glu_mGluR_3_opt.g"
+      },
+      "DHPG_mGluR_1": {
+        "expt": {
+          "Akam1997_Fig3_DHPG.json": {
+            "weight": 58
+          },
+          "Lee2008_Fig4C.json": {
+            "weight": 100
+          },
+          "Ribeiro2009_Fig4B.json": {
+            "weight": 100
+          },
+          "Uematsu2015_Fig4A.json": {
+            "weight": 74
+          },
+          "Uematsu2015_Fig4B.json": {
+            "weight": 74
+          }
+        },
+        "params": [
+          "ePKC+DHPGRG.kcat",
+          "ePKA+DHPGRG.kcat",
+          "ePKA+DHPGRG.Km",
+          "ePKC+DHPGRpS870G.Km",
+          "ePKA+DHPGR.kcat",
+          "ePP2A+DHPGRpS870.Km",
+          "RpS870+DHPG.Kd",
+          "RpS870+DHPG.tau",
+          "RpS870DHPG+Gq.Kd",
+          "RpS870DHPG+Gq.tau",
+          "RpS870Gq+DHPG.Kd",
+          "RpS870Gq+DHPG.tau",
+          "DHPGRpS870G_act.Kf",
+          "ePKA+DHPGR.Km",
+          "ePKC+DHPGRpS870G.kcat",
+          "ePP2A+DHPGRpS870.kcat",
+          "ePP2A+DHPGRpS870G.Km",
+          "ePP2A+DHPGRpS870G.kcat",
+          "ePKC+DHPGRG.Km",
+          "ePKC+DHPGR.kcat"
+        ],
+        "resultFile": "DHPG_mGluR_1_parms.json",
+        "optModelFile": "DHPG_mGluR_1_opt.g"
+      },
+      "DHPG_mGluR_2": {
+        "expt": {
+          "Akam1997_Fig3_DHPG.json": {
+            "weight": 58
+          },
+          "Lee2008_Fig4C.json": {
+            "weight": 100
+          },
+          "Ribeiro2009_Fig4B.json": {
+            "weight": 100
+          },
+          "Uematsu2015_Fig4A.json": {
+            "weight": 74
+          },
+          "Uematsu2015_Fig4B.json": {
+            "weight": 74
+          }
+        },
+        "params": [
+          "ePKC+DHPGR.Km",
+          "ePKC+DHPGRpS870.Km",
+          "ePKC+DHPGRpS870.kcat",
+          "DHPG_mGluR+Gq.Kd",
+          "DHPG_mGluR+Gq.tau",
+          "DHPG+mGluR.Kd",
+          "DHPG+mGluR.tau",
+          "DHPG+mGluR_Gq.Kd",
+          "DHPG+mGluR_Gq.tau",
+          "DHPGGq_act.Kf"
+        ],
+        "resultFile": "DHPG_mGluR_2_parms.json",
+        "optModelFile": "DHPG_mGluR_2_opt.g"
+      },
+      "b2AR": {
+        "expt": {
+          "Tran2007_Fig2A.json": {
+            "weight": 64
+          },
+          "Ransnas1992_Fig1A.json": {
+            "weight": 58
+          },
+          "Ransnas1992_Fig1B.json": {
+            "weight": 58
+          }
+        },
+        "params": [
+          "Iso+b2AR.Kd",
+          "Iso+b2AR.tau",
+          "IsoR+GsGDP.Kd",
+          "IsoR+GsGDP.tau",
+          "Iso+RGs.Kd",
+          "Iso+RGs.tau",
+          "b2AR_recycling.Kf",
+          "Iso_act_Gs.Kf"
+        ],
+        "resultFile": "b2AR_parms.json",
+        "optModelFile": "b2AR_opt.g"
+      },
+      "AMPAR_1": {
+        "expt": {
+          "ArakiY2015_Fig1B.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1E.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1F.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig6B1.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig8A.json": {
+            "weight": 97
+          },
+          "SchapanskyJ2009_Fig3A.json": {
+            "weight": 100
+          },
+          "SchapanskyJ2009_Fig3B.json": {
+            "weight": 100
+          },
+          "Walkup2016_Fig3A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3B.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3C.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3E.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig5D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_0.5.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_10.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig7A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10B.json": {
+            "weight": 57
+          }
+        },
+        "params": [
+          "AMPA+sAMPAR.Kd",
+          "AMPA+sAMPAR.tau",
+          "Glu+sAMPARpS845.tau",
+          "from_memb3.Kf",
+          "eCaN+sAMPARpS845S831.kcat",
+          "eCaMKIIp+synGAP_PSD.kcat",
+          "synGAPpPSD_dissoc.tau",
+          "Glu+sAMPARpS831.Kd",
+          "eCaN+iAMPARpS845S831.Km",
+          "Glu+sAMPARpS845.Kd",
+          "ePP1+sAMPARpS831.Km",
+          "ePKA+intAMPAR.kcat",
+          "synGAP+PSD95.tau",
+          "from_memb.Kf",
+          "ePKA+sAMPAR.kcat",
+          "eCaN+sAMPARpS845.kcat",
+          "ePKA+Glu_sAMPARp.Km",
+          "eCaN+iAMPARpS845S831.kcat",
+          "synGAPpPSD_dissoc.Kd",
+          "ePKA+AMPA_sAMPARp.Km"
+        ],
+        "resultFile": "AMPAR_1_parms.json",
+        "optModelFile": "AMPAR_1_opt.g"
+      },
+      "AMPAR_2": {
+        "expt": {
+          "ArakiY2015_Fig1B.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1E.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1F.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig6B1.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig8A.json": {
+            "weight": 97
+          },
+          "SchapanskyJ2009_Fig3A.json": {
+            "weight": 100
+          },
+          "SchapanskyJ2009_Fig3B.json": {
+            "weight": 100
+          },
+          "Walkup2016_Fig3A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3B.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3C.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3E.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig5D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_0.5.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_10.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig7A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Table1.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10B.json": {
+            "weight": 57
+          }
+        },
+        "params": [
+          "ePKA+Glu_sAMPARp.kcat",
+          "ePKA+AMPA_sAMPARp.kcat",
+          "ePP1+iAMPARpS831.kcat",
+          "eCaMKII+synGAP_PDZ.kcat",
+          "AMPA+sAMPARpS831.Kd",
+          "eCaN+iAMPARpS845.kcat",
+          "eCaMKII+AMPA_sAMPARpS845.kcat",
+          "eCaMKIIp+synGAP_PSD.Km",
+          "synGAP+PSD95.Kd",
+          "ePP1+sAMPARpS845S831.kcat",
+          "ePKA+sAMPARpS831.Km",
+          "eCaMKII+AMPARpS845.kcat",
+          "eCaMKII+Glu_sAMPARpS845.Km",
+          "AMPA+sAMPARpS845S831.tau",
+          "ePP1+sAMPARpS831.kcat",
+          "to_memb.Kd",
+          "ePKA+sAMPAR.Km",
+          "ePP1+iAMPARpS831.Km",
+          "eCaN+sAMPARpS845S831.Km",
+          "Glu+sAMPARpS845S831.tau"
+        ],
+        "resultFile": "AMPAR_2_parms.json",
+        "optModelFile": "AMPAR_2_opt.g"
+      },
+      "AMPAR_3": {
+        "expt": {
+          "ArakiY2015_Fig1B.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1E.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1F.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig6B1.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig8A.json": {
+            "weight": 97
+          },
+          "SchapanskyJ2009_Fig3A.json": {
+            "weight": 100
+          },
+          "SchapanskyJ2009_Fig3B.json": {
+            "weight": 100
+          },
+          "Walkup2016_Fig3A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3B.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3C.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3E.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig5D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_0.5.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_10.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig7A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10B.json": {
+            "weight": 57
+          }
+        },
+        "params": [
+          "Glu+sAMPAR.tau",
+          "AMPA+sAMPARpS831.tau",
+          "ePP1+sAMPARpS845S831.Km",
+          "Glu+sAMPAR.Kd",
+          "eCaN+sAMPARpS845.Km",
+          "degradation_2.Kf",
+          "AMPA+sAMPARpS845.Kd",
+          "exchange.tau",
+          "ePP1+iAMPARpS845S831.kcat",
+          "Glu+sAMPARpS845S831.Kd",
+          "ePKA+sAMPARpS831.kcat",
+          "Glu+sAMPARpS831.tau",
+          "eCaMKII+synGAP_PDZ.Km",
+          "synGAP_deph.Kf",
+          "AMPA+sAMPARpS845S831.Kd",
+          "eCaN+iAMPARpS845.Km",
+          "degradation_1.Kf",
+          "from_memb1.Kf",
+          "from_memb2.Kf",
+          "to_memb_1.Kd"
+        ],
+        "resultFile": "AMPAR_3_parms.json",
+        "optModelFile": "AMPAR_3_opt.g"
+      },
+      "AMPAR_4": {
+        "expt": {
+          "ArakiY2015_Fig1B.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1E.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig1F.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_PSDsynGAP_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig4H_synGAPpS1108_KN62.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig6B1.json": {
+            "weight": 97
+          },
+          "ArakiY2015_Fig8A.json": {
+            "weight": 97
+          },
+          "SchapanskyJ2009_Fig3A.json": {
+            "weight": 100
+          },
+          "SchapanskyJ2009_Fig3B.json": {
+            "weight": 100
+          },
+          "Walkup2016_Fig3A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3B.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3C.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig3E.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig5D.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_0.5.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig6A_10.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig7A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10A.json": {
+            "weight": 57
+          },
+          "Walkup2016_Fig10B.json": {
+            "weight": 57
+          }
+        },
+        "params": [
+          "ePKA+intAMPAR.Km",
+          "ePP1+iAMPARpS845S831.Km",
+          "eCaMKII+AMPARpS845.Km",
+          "to_memb_1.tau",
+          "exchange.Kd",
+          "to_memb.tau",
+          "eCaMKII+Glu_sAMPARpS845.kcat",
+          "AMPA+sAMPARpS845.tau",
+          "eCaMKII+AMPA_sAMPARpS845.Km"
+        ],
+        "resultFile": "AMPAR_4_parms.json",
+        "optModelFile": "AMPAR_4_opt.g"
+      }
+    },
+    {
+      "name": "SecondMessengers",
+      "hierarchyLevel": 2,
+      "CaM": {
+        "expt": {
+          "Crouch1980_Fig1.json": {
+            "weight": 228
+          },
+          "Crouch1980_Table1.json": {
+            "weight": 55
+          },
+          "Peersen1997_Fig1.json": {
+            "weight": 243
+          },
+          "Porumb1994_Table3.json": {
+            "weight": 49
+          },
+          "Shifman2006_Table2.json": {
+            "weight": 37
+          },
+          "Stemmer1994_Table3.json": {
+            "weight": 55
+          }
+        },
+        "params": [
+          "CaMCa3+Ca.Kd",
+          "CaMCa3+Ca.tau",
+          "CaM+Ca.Kd",
+          "CaM+Ca.tau",
+          "CaMCa2+Ca.Kd",
+          "CaMCa2+Ca.tau",
+          "CaMCa+Ca.Kd",
+          "CaMCa+Ca.tau"
+        ],
+        "resultFile": "CaM_parms.json",
+        "optModelFile": "CaM_opt.g"
+      },
+      "barr2": {
+        "expt": {
+          "Mundell2001_Fig2A.json": {
+            "weight": 73
+          },
+          "Mundell2001_Fig2B.json": {
+            "weight": 73
+          },
+          "Mundell2001_Fig3B.json": {
+            "weight": 73
+          },
+          "Mundell2002_Fig2C.json": {
+            "weight": 64
+          }
+        },
+        "params": [
+          "GRK2+bg.Kd",
+          "GRK2+bg.tau",
+          "GRK2_antag.Kf",
+          "GRK2_Gq_inact.Kf",
+          "eGRK2+Glu_mGluR5.Km",
+          "eGRK2+Glu_mGluR5.kcat",
+          "eGRK2+DHPG_mGluR5.Km",
+          "eGRK2+DHPG_mGluR5.kcat",
+          "LRpT840+barr2.Kd",
+          "LRpT840+barr2.tau",
+          "DHPGRpT840+barr2.Kd",
+          "DHPGRpT840+barr2.tau",
+          "DHPGRpT840_barr2_internalize.Kf",
+          "LRpT840_barr2_internalize.Kf"
+        ],
+        "resultFile": "barr2_parms.json",
+        "optModelFile": "barr2_opt.g"
+      },
+      "HomerPIKE_1": {
+        "expt": {
+          "Gross2010_Fig2A.json": {
+            "weight": 100
+          },
+          "Gross2010_Fig2C.json": {
+            "weight": 100
+          },
+          "Gross2010_Fig2D.json": {
+            "weight": 100
+          },
+          "Orlando2009_Fig3A.json": {
+            "weight": 34
+          }
+        },
+        "params": [
+          "Glu+mGluR_Homer.tau",
+          "Glu+mGluR_Homer.Kd",
+          "DHPG+mGluR_Homer.tau",
+          "DHPG+mGluR_Homer.Kd",
+          "mGluR+Homer.Kd",
+          "mGluR+Homer.tau",
+          "Homer1c_deph.kcat",
+          "Homer1c_deph.Km",
+          "eCaMKII+LRHomerpPIKEPI3K.kcat",
+          "eCaMKII+DHPGRHomerpPIKEPI3K.Km",
+          "eHomerPIKEPI3K+PIP2.Km",
+          "PIKE+Glu_mGluR_Homer.Kd",
+          "PI3K+Glu_mGluR_HomerPIKE.Kd",
+          "PI3K+Glu_mGluR_HomerPIKE.tau",
+          "PIKE+Glu_mGluR_Homer.tau",
+          "eHomerPIKEPI3K+PIP2.kcat",
+          "eCaMKII+DHPGRHomerpPIKEPI3K.kcat",
+          "PI3K+DHPG_mGluR_HomerPIKE.tau",
+          "PIKE+DHPG_mGluR_Homer.Kd",
+          "PI3K+DHPG_mGluR_HomerPIKE.Kd"
+        ],
+        "resultFile": "HomerPIKE_1_parms.json",
+        "optModelFile": "HomerPIKE_1_opt.g"
+      },
+      "HomerPIKE_2": {
+        "expt": {
+          "Gross2010_Fig2A.json": {
+            "weight": 100
+          },
+          "Gross2010_Fig2C.json": {
+            "weight": 100
+          },
+          "Gross2010_Fig2D.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "PIKE+DHPG_mGluR_Homer.tau",
+          "eCaMKII+LRHomerpPIKEPI3K.Km"
+        ],
+        "resultFile": "HomerPIKE_2_parms.json",
+        "optModelFile": "HomerPIKE_2_opt.g"
+      }
+    },
+    {
+      "name": "ReceptorsToMessengers",
+      "hierarchyLevel": 3,
+      "TrKs_SHC": {
+        "expt": {
+          "Yuen1999_Fig4D.json": {
+            "weight": 70
+          },
+          "Kholodenko1999_Fig3B_slow.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig3C_slow.json": {
+            "weight": 88
+          },
+          "Tang2015_Fig4C.json": {
+            "weight": 94
+          }
+        },
+        "params": [
+          "eEGFR+SHC.Km",
+          "eEGFR+SHC.kcat",
+          "eTrKB+SHC.Km",
+          "eTrKB+SHC.kcat",
+          "bSHC_act.Km",
+          "bSHC_act.kcat",
+          "SHCp_deph.Kf",
+          "eMAPK+Sos.Km",
+          "eMAPK+Sos.kcat"
+        ],
+        "resultFile": "TrKs_SHC_parms.json",
+        "optModelFile": "TrKs_SHC_opt.g"
+      },
+      "TrKs_PLCg": {
+        "expt": {
+          "Yuen1999_Fig3C.json": {
+            "weight": 70
+          },
+          "Numakawa2009_Fig1Cii_PLCg.json": {
+            "weight": 100
+          },
+          "Andreozzi2003_Fig2B.json": {
+            "weight": 64
+          },
+          "Wahl1992_Fig7A.json": {
+            "weight": 55
+          },
+          "Wahl1992_Fig7A_woEGF.json": {
+            "weight": 55
+          },
+          "Wahl1992_Fig7B.json": {
+            "weight": 55
+          },
+          "Wahl1992_Fig7B_woEGF.json": {
+            "weight": 55
+          },
+          "Hsu1991_Table2.json": {
+            "weight": 28
+          },
+          "Kholodenko1999_Fig3A_2nM_slow.json": {
+            "weight": 88
+          },
+          "Kholodenko1999_Fig3A_20nM_slow.json": {
+            "weight": 88
+          },
+          "Ryu1987_Table2.json": {
+            "weight": 58
+          },
+          "Santoro1994_Fig4B.json": {
+            "weight": 70
+          },
+          "Thomas2003_Fig2A.json": {
+            "weight": 73
+          }
+        },
+        "params": [
+          "eEGFR+PLCg.Km",
+          "eEGFR+PLCg.kcat",
+          "eEGFR+CaPLCg.Km",
+          "eEGFR+CaPLCg.kcat",
+          "eTrKB+PLCg.Km",
+          "eTrKB+PLCg.kcat",
+          "eTrKB+CaPLCg.Km",
+          "eTrKB+CaPLCg.kcat",
+          "Ca+PLCg.Kd",
+          "Ca+PLCg.tau",
+          "Ca+PLCgp.Kd",
+          "Ca+PLCgp.tau",
+          "eCaPLCg+PIP2.Km",
+          "eCaPLCg+PIP2.kcat",
+          "eCaPLCgp+PIP2.Km",
+          "eCaPLCgp+PIP2.kcat",
+          "ebPLCg+PLCg.Km",
+          "ebPLCg+PLCg.kcat",
+          "PLCg_deph.Kf",
+          "PLCgp_deph.Kf"
+        ],
+        "resultFile": "TrKs_PLCg_parms.json",
+        "optModelFile": "TrKs_PLCg_opt.g"
+      },
+      "mGluR_PLCb": {
+        "expt": {
+          "Berstein1992.json": {
+            "weight": 58
+          },
+          "Homma1988_Fig7.json": {
+            "weight": 70
+          },
+          "Leon2005_Fig9.json": {
+            "weight": 94
+          },
+          "Leon2007_Fig6A.json": {
+            "weight": 94
+          },
+          "Smrcka1991.json": {
+            "weight": 55
+          },
+          "Sternweis1992.json": {
+            "weight": 55
+          },
+          "Ribeiro2009_Fig1C.json": {
+            "weight": 100
+          },
+          "Mundell2002_Fig8C.json": {
+            "weight": 58
+          },
+          "Sladeczek1985_Fig2_Glu.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "PLC_Ca+Gq.Kd",
+          "PLC_Ca+Gq.tau",
+          "PLC_CaGq_inact.Kf",
+          "PLC+Gq.Kd",
+          "PLC+Gq.tau",
+          "PLC_Gq+Ca.Kd",
+          "PLC_Gq+Ca.tau",
+          "ePLCb_Ca+PIP2.Km",
+          "ePLCb_Ca+PIP2.kcat",
+          "ePLCb_Ca_Gq+PIP2.Km",
+          "ePLCb_Ca_Gq+PIP2.kcat",
+          "PLCb+Ca.Kd",
+          "PLCb+Ca.tau",
+          "Trimerize_Gq.Kf",
+          "bGq_act.Kf",
+          "Gq_deph.Kf",
+          "Degrade_IP3.Kf",
+          "Degrade_DAG.Kf"
+        ],
+        "resultFile": "mGluR_PLCb_parms.json",
+        "optModelFile": "mGluR_PLCb_opt.g"
+      },
+      "AC_1": {
+        "expt": {
+          "Feinstein1991_Fig4_AC1.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig4_AC1_noCaM.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig5.json": {
+            "weight": 61
+          },
+          "January1997_Fig1A.json": {
+            "weight": 52
+          },
+          "Sette1996_Fig2B.json": {
+            "weight": 88
+          },
+          "Smigel1986_Fig3_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig3_with_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_with_bg.json": {
+            "weight": 43
+          },
+          "Suzuki1991_Fig2.json": {
+            "weight": 46
+          },
+          "Tang1991_Fig3A.json": {
+            "weight": 43
+          },
+          "Tang1991_Fig3B.json": {
+            "weight": 43
+          },
+          "Yuan1994_Fig2.json": {
+            "weight": 43
+          }
+        },
+        "params": [
+          "Epib2ARp2_barr2_internalize.Kf",
+          "Epib2ARp1_barr2_internalize.Kf",
+          "Epib2ARp1+barr2.tau",
+          "Epib2ARp2+barr2.tau",
+          "Isob2ARp1+barr2.tau",
+          "Isob2ARp2+barr2.tau",
+          "eGRK2+Epi_b2AR.kcat",
+          "eGRK5+Epi_b2AR.kcat",
+          "eGRK5+Iso_b2AR.kcat",
+          "eGRK2+Iso_b2AR.kcat",
+          "b2ARp2barr2p_deph.kcat",
+          "Intb2ARp1_deph.kcat",
+          "Isob2ARp1_deph.kcat",
+          "Epib2ARp2_deph.kcat",
+          "Epib2ARp1_deph.kcat",
+          "Isob2ARp2_deph.kcat",
+          "I1p+PP1.tau",
+          "ePP2A+I1p.kcat",
+          "ePP2A+PP1_Ip.Km",
+          "Gs+AC2p.tau"
+        ],
+        "resultFile": "AC_1_parms.json",
+        "optModelFile": "AC_1_opt.g"
+      },
+      "AC_2": {
+        "expt": {
+          "Feinstein1991_Fig4_AC1.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig4_AC1_noCaM.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig5.json": {
+            "weight": 61
+          },
+          "January1997_Fig1A.json": {
+            "weight": 52
+          },
+          "Laliberte2002_Fig1.json": {
+            "weight": 52
+          },
+          "Sette1996_Fig2B.json": {
+            "weight": 88
+          },
+          "Smigel1986_Fig3_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig3_with_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_with_bg.json": {
+            "weight": 43
+          },
+          "Suzuki1991_Fig2.json": {
+            "weight": 46
+          },
+          "Tang1991_Fig3A.json": {
+            "weight": 43
+          },
+          "Tang1991_Fig3B.json": {
+            "weight": 43
+          },
+          "Yuan1994_Fig2.json": {
+            "weight": 43
+          }
+        },
+        "params": [
+          "Epi_act_Gs.Kf",
+          "Gs_inact.Kf",
+          "ePDE1+cAMP.Km",
+          "ecAMP_PDE+cAMP.Km",
+          "ecAMP_PDE+cAMP.kcat",
+          "ePKC+AC2.Km",
+          "ePKC+AC2.kcat",
+          "b2ARp2barr2p_dissoc.Kf",
+          "Isob2ARp2_barr2_internalize.Kf",
+          "Isob2ARp1_barr2_internalize.Kf",
+          "Epib2ARp1+barr2.Kd",
+          "Epib2ARp2+barr2.Kd",
+          "Isob2ARp1+barr2.Kd",
+          "Isob2ARp2+barr2.Kd",
+          "eGRK2+Epi_b2AR.Km",
+          "eGRK5+Epi_b2AR.Km",
+          "eGRK5+Iso_b2AR.Km",
+          "eGRK2+Iso_b2AR.Km",
+          "b2ARp2barr2p_deph.Km",
+          "Intb2ARp1_deph.Km"
+        ],
+        "resultFile": "AC_2_parms.json",
+        "optModelFile": "AC_2_opt.g"
+      },
+      "AC_3": {
+        "expt": {
+          "Feinstein1991_Fig4_AC1.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig4_AC1_noCaM.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig5.json": {
+            "weight": 61
+          },
+          "January1997_Fig1A.json": {
+            "weight": 52
+          },
+          "Klee1978.json": {
+            "weight": 52
+          },
+          "Sette1996_Fig2B.json": {
+            "weight": 88
+          },
+          "Smigel1986_Fig3_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig3_with_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_with_bg.json": {
+            "weight": 43
+          },
+          "Suzuki1991_Fig2.json": {
+            "weight": 46
+          },
+          "Tang1991_Fig3A.json": {
+            "weight": 43
+          },
+          "Tang1991_Fig3B.json": {
+            "weight": 43
+          },
+          "Yuan1994_Fig2.json": {
+            "weight": 43
+          }
+        },
+        "params": [
+          "Isob2ARp1_deph.Km",
+          "Epib2ARp2_deph.Km",
+          "Epib2ARp1_deph.Km",
+          "Isob2ARp2_deph.Km",
+          "PP1_I1_dissoc.Kf",
+          "ePP2A+PP1_Ip.kcat",
+          "Gs+AC2.Kd",
+          "eAC2Gs+ATP.kcat",
+          "Gs+AC2.tau",
+          "eAC2Gs+ATP.Km",
+          "ePKA+cAMP_PDE.Km",
+          "eAC2pGs+ATP.Km",
+          "ecAMP_PDEp+cAMP.Km",
+          "eAC2pGs+ATP.kcat",
+          "ecAMP_PDEp+cAMP.kcat",
+          "CaMCa4+PDE1.Kd",
+          "eCaM_PDE1+cAMP.Km",
+          "eCaM_PDE1+cAMP.kcat",
+          "PDE_deph.Kf",
+          "ePKA+cAMP_PDE.kcat"
+        ],
+        "resultFile": "AC_3_parms.json",
+        "optModelFile": "AC_3_opt.g"
+      },
+      "AC_4": {
+        "expt": {
+          "Feinstein1991_Fig4_AC1.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig4_AC1_noCaM.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig5.json": {
+            "weight": 61
+          },
+          "January1997_Fig1A.json": {
+            "weight": 52
+          },
+          "Sette1996_Fig2B.json": {
+            "weight": 88
+          },
+          "Smigel1986_Fig3_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig3_with_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_with_bg.json": {
+            "weight": 43
+          },
+          "Suzuki1991_Fig2.json": {
+            "weight": 46
+          },
+          "Tang1991_Fig3A.json": {
+            "weight": 43
+          },
+          "Tang1991_Fig3B.json": {
+            "weight": 43
+          },
+          "Yuan1994_Fig2.json": {
+            "weight": 43
+          }
+        },
+        "params": [
+          "Gs+AC1.tau",
+          "eAC1CaM+ATP.Km",
+          "CaMCa4+AC1.tau",
+          "Gs+AC2p.Kd",
+          "AC2_deph.Kf",
+          "CaMCa4+PDE1.tau",
+          "eAC1CaM+ATP.kcat",
+          "ePDE1+cAMP.kcat",
+          "bGs_act.Kf",
+          "Epi+RGs.Kd",
+          "Epi+RGs.tau",
+          "Epi+b2AR.Kd",
+          "Epi+b2AR.tau",
+          "EpiR+GsGDP.Kd",
+          "EpiR+GsGDP.tau",
+          "Trimerize_Gs.Kf",
+          "eAC1Gs+ATP.Km",
+          "Gs+AC1.Kd",
+          "eAC1Gs+ATP.kcat",
+          "CaMCa4+AC1.Kd"
+        ],
+        "resultFile": "AC_4_parms.json",
+        "optModelFile": "AC_4_opt.g"
+      },
+      "AC_5": {
+        "expt": {
+          "Feinstein1991_Fig4_AC1.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig4_AC1_noCaM.json": {
+            "weight": 61
+          },
+          "Feinstein1991_Fig5.json": {
+            "weight": 61
+          },
+          "January1997_Fig1A.json": {
+            "weight": 52
+          },
+          "Sette1996_Fig2B.json": {
+            "weight": 88
+          },
+          "Smigel1986_Fig3_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig3_with_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_wo_bg.json": {
+            "weight": 43
+          },
+          "Smigel1986_Fig7_with_bg.json": {
+            "weight": 43
+          },
+          "Suzuki1991_Fig2.json": {
+            "weight": 46
+          },
+          "Tang1991_Fig3A.json": {
+            "weight": 43
+          },
+          "Tang1991_Fig3B.json": {
+            "weight": 43
+          },
+          "Yuan1994_Fig2.json": {
+            "weight": 43
+          }
+        },
+        "params": [
+          "eAC2p+ATP.Km",
+          "eAC2p+ATP.kcat"
+        ],
+        "resultFile": "AC_5_parms.json",
+        "optModelFile": "AC_5_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL4",
+      "hierarchyLevel": 4,
+      "Ca": {
+        "expt": {
+          "Balez2024_Fig3A_Glu.json": {
+            "weight": 70
+          },
+          "Balez2024_Fig3A_NMDA.json": {
+            "weight": 70
+          },
+          "BezprozvannyI1991_Fig2B.json": {
+            "weight": 57
+          },
+          "Chen-EngrerHJ2019_Fig1D.json": {
+            "weight": 100
+          },
+          "Chen-EngrerHJ2019_Fig1F.json": {
+            "weight": 100
+          },
+          "CsordasG2024_Fig3A_0.5uM.json": {
+            "weight": 100
+          },
+          "CsordasG2024_Fig3A_1uM.json": {
+            "weight": 100
+          },
+          "CsordasG2024_Fig3A_2uM.json": {
+            "weight": 100
+          },
+          "CsordasG2024_Fig5A.json": {
+            "weight": 100
+          },
+          "Higgins2006_Fig5B_DR.json": {
+            "weight": 100
+          },
+          "Higgins2006_Fig5B_TS.json": {
+            "weight": 100
+          },
+          "Higgins2006_Fig5C_DR.json": {
+            "weight": 100
+          },
+          "Higgins2006_Fig5C_TS.json": {
+            "weight": 100
+          },
+          "Johny2017_Fig5A.json": {
+            "weight": 100
+          },
+          "Kumar2017_Fig3B_Glu.json": {
+            "weight": 100
+          },
+          "Numakawa2009_Fig1B.json": {
+            "weight": 100
+          },
+          "Uematsu2015_Fig4C.json": {
+            "weight": 74
+          },
+          "WatrasJ1991_Fig1.json": {
+            "weight": 57
+          },
+          "WatrasJ1991_Fig6A.json": {
+            "weight": 57
+          },
+          "WatrasJ1991_Fig6B.json": {
+            "weight": 57
+          }
+        },
+        "params": [
+          "eIP3R+Ca.Km",
+          "eIP3R+Ca.kcat",
+          "eVGCC+Ca.Km",
+          "eVGCC+Ca.kcat",
+          "VGCC_inact.Kf",
+          "IP3Ract.Kd",
+          "IP3Ract.tau",
+          "eNMDA_NMDAR+Ca.Km",
+          "eNMDA_NMDAR+Ca.kcat",
+          "eGlu_NMDAR+Ca.Km",
+          "eGlu_NMDAR+Ca.kcat",
+          "eAMPAR+VGCC.Km",
+          "eAMPAR+VGCC.kcat"
+        ],
+        "resultFile": "Ca_parms.json",
+        "optModelFile": "Ca_opt.g"
+      },
+      "PKA_1": {
+        "expt": {
+          "Heubach2004_Table1.json": {
+            "weight": 76
+          },
+          "Heubach2004_Table1_Forskolin.json": {
+            "weight": 76
+          },
+          "Hasler1992_Fig4C.json": {
+            "weight": 64
+          },
+          "Sette1994_Fig4BwithInhibitor.json": {
+            "weight": 88
+          },
+          "Sette1994_Fig4BwoInhibitor.json": {
+            "weight": 88
+          },
+          "Solberg1994.json": {
+            "weight": 43
+          },
+          "Solberg1994_Fig7.json": {
+            "weight": 43
+          },
+          "Uematsu2015_Fig2E.json": {
+            "weight": 74
+          },
+          "Wolter2011_Fig2A.json": {
+            "weight": 37
+          }
+        },
+        "params": [
+          "Fsk+AC1Gs.Kd",
+          "Fsk+AC1Gs.tau",
+          "Release_C2.tau",
+          "ePKA+I1.kcat",
+          "ePKA+I1.Km",
+          "R2C2+cAMP.Kd",
+          "R2C2cAMP+cAMP.Kd",
+          "R2C2cAMP2+cAMP.Kd",
+          "R2C2cAMP3+cAMP.Kd",
+          "R2C2cAMP2+cAMP.tau",
+          "R2C2cAMP3+cAMP.tau",
+          "Release_C1.tau",
+          "R2C2+cAMP.tau",
+          "R2C2cAMP+cAMP.tau",
+          "PKAinhib+PKA.Kd",
+          "PKAinhib+PKA.tau",
+          "Fsk+AC2Gs.tau",
+          "Release_C1.Kd",
+          "Release_C2.Kd",
+          "eAC2GsFsk+ATP.kcat"
+        ],
+        "resultFile": "PKA_1_parms.json",
+        "optModelFile": "PKA_1_opt.g"
+      },
+      "PKA_2": {
+        "expt": {
+          "Heubach2004_Table1.json": {
+            "weight": 76
+          },
+          "Heubach2004_Table1_Forskolin.json": {
+            "weight": 76
+          },
+          "Hasler1992_Fig4C.json": {
+            "weight": 64
+          },
+          "Sette1994_Fig4BwithInhibitor.json": {
+            "weight": 88
+          },
+          "Sette1994_Fig4BwoInhibitor.json": {
+            "weight": 88
+          },
+          "Solberg1994_Fig7.json": {
+            "weight": 43
+          },
+          "Uematsu2015_Fig2E.json": {
+            "weight": 74
+          },
+          "Wolter2011_Fig2A.json": {
+            "weight": 37
+          }
+        },
+        "params": [
+          "Fsk+AC2Gs.Kd",
+          "eAC2GsFsk+ATP.Km",
+          "eAC1GsFsk+ATP.Km",
+          "eAC1GsFsk+ATP.kcat"
+        ],
+        "resultFile": "PKA_2_parms.json",
+        "optModelFile": "PKA_2_opt.g"
+      },
+      "PLA2_1": {
+        "expt": {
+          "Kim1995_Fig6A.json": {
+            "weight": 64
+          },
+          "LeslieC1990_Fig4A.json": {
+            "weight": 67
+          },
+          "Mosior1998_Fig3.json": {
+            "weight": 52
+          },
+          "Mosior1998_Fig4A.json": {
+            "weight": 52
+          },
+          "Mosior1998_Fig4B.json": {
+            "weight": 52
+          },
+          "Moskowitz1983_Fig3B.json": {
+            "weight": 64
+          },
+          "Moskowitz1983_Fig4.json": {
+            "weight": 64
+          },
+          "Sanghera1990.json": {
+            "weight": 37
+          },
+          "Yoshihara1990_Fig2A.json": {
+            "weight": 64
+          }
+        },
+        "params": [
+          "eMAPK+PLA2.kcat",
+          "PLA2_Ca_act.Kd",
+          "PIP2_PLA2_act.tau",
+          "ePLA2Ca+APC.Km",
+          "ePLA2PIP2Ca+APC.kcat",
+          "ePLA2PIP2Ca+APC.Km",
+          "PIP2_CaPLA2p_act.Kd",
+          "PIP2_CaPLA2p_act.tau",
+          "Degrade_AA.Kf",
+          "ePLA2Ca+APC.kcat",
+          "PLA2p_Ca_act.Kd",
+          "ePLA2pCa+APC.Km",
+          "PLA2p_deph.Kf",
+          "ePLA2pCa+APC.kcat",
+          "PLA2p_Ca_act.tau",
+          "eMAPK+PLA2.Km",
+          "DAG_CaPLA2p_act.tau",
+          "DAG_CaPLA2p_act.Kd",
+          "PLA2_Ca_act.tau",
+          "ePLA2PIP2+APC.kcat"
+        ],
+        "resultFile": "PLA2_1_parms.json",
+        "optModelFile": "PLA2_1_opt.g"
+      },
+      "PLA2_2": {
+        "expt": {
+          "Kim1995_Fig6A.json": {
+            "weight": 64
+          },
+          "LeslieC1990_Fig4A.json": {
+            "weight": 67
+          },
+          "Mosior1998_Fig4A.json": {
+            "weight": 52
+          },
+          "Mosior1998_Fig4B.json": {
+            "weight": 52
+          },
+          "Moskowitz1983_Fig3B.json": {
+            "weight": 64
+          },
+          "Yoshihara1990_Fig2A.json": {
+            "weight": 64
+          }
+        },
+        "params": [
+          "ePLA2PIP2+APC.Km",
+          "PIP2_PLA2_act.Kd",
+          "ePLA2DAGCa+APC.Km",
+          "ePLA2DAGCa+APC.kcat"
+        ],
+        "resultFile": "PLA2_2_parms.json",
+        "optModelFile": "PLA2_2_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL5",
+      "hierarchyLevel": 5,
+      "PP1": {
+        "expt": {
+          "Cohen1989.json": {
+            "weight": 64
+          },
+          "Endo1996_Table1.json": {
+            "weight": 73
+          }
+        },
+        "params": [
+          "I1p+PP1.Kd",
+          "ePP2A+I1p.Km"
+        ],
+        "resultFile": "PP1_parms.json",
+        "optModelFile": "PP1_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL6",
+      "hierarchyLevel": 6,
+      "CaN": {
+        "expt": {
+          "Li1984_Table5.json": {
+            "weight": 52
+          },
+          "Nimmo1978.json": {
+            "weight": 49
+          },
+          "Seki1995.json": {
+            "weight": 64
+          },
+          "Stemmer1994_Table2.json": {
+            "weight": 55
+          },
+          "Stewart1983_Table3.json": {
+            "weight": 46
+          }
+        },
+        "params": [
+          "Ca+CaN.Kd",
+          "CaMCa4+CaN.Kd",
+          "eCaMCaN+ngp.Km",
+          "eCaMCaN+ngp.kcat",
+          "eCaMCaN+I1p.Km",
+          "eCaMCaN+I1p.kcat",
+          "eCaN+I1p.Km",
+          "eCaN+I1p.kcat",
+          "eCaMCaN+PP1_I1p.Km",
+          "eCaMCaN+PP1_I1p.kcat"
+        ],
+        "resultFile": "CaN_parms.json",
+        "optModelFile": "CaN_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL7",
+      "hierarchyLevel": 7,
+      "Ras": {
+        "expt": {
+          "Eccleston1993_Table2.json": {
+            "weight": 55
+          },
+          "Molloy1995.json": {
+            "weight": 46
+          },
+          "Shutes2006_Fig2A.json": {
+            "weight": 52
+          },
+          "Shutes2006_Fig2B.json": {
+            "weight": 52
+          },
+          "Yoder-Hill1995_Fig1.json": {
+            "weight": 30
+          }
+        },
+        "params": [
+          "bRasGTP_deph.Kf",
+          "eGAP+Ras.Km",
+          "eGAP+Ras.kcat"
+        ],
+        "resultFile": "Ras_parms.json",
+        "optModelFile": "Ras_opt.g"
+      },
+      "CaMKII_1": {
+        "expt": {
+          "Bradshaw2002_Fig2A.json": {
+            "weight": 64
+          },
+          "Bradshaw2002_Fig2B.json": {
+            "weight": 64
+          },
+          "Bradshaw2002.json": {
+            "weight": 64
+          },
+          "Cipolletta2010_Fig5C.json": {
+            "weight": 43
+          },
+          "Coultrap2012_Fig2A_0.1uM.json": {
+            "weight": 52
+          },
+          "Coultrap2012_Fig2A_1uM.json": {
+            "weight": 52
+          },
+          "Meyer1992_Table1.json": {
+            "weight": 55
+          },
+          "Mitsui1993_Fig7_CaMKII.json": {
+            "weight": 255
+          },
+          "Shifman2006_Fig5.json": {
+            "weight": 37
+          },
+          "Mockett2011_Fig3A.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "eCaMKIIp+CaMKII_CaM.kcat",
+          "eCaMKIIp+CaMKIIp.kcat",
+          "eCaMKIIp+CaMKIIp.Km",
+          "ePP1+CaMKIIpppc.Km",
+          "ePP1+CaMKIIp_CaM.Km",
+          "ePP1+CaMKIIpp.Km",
+          "ePP1+CaMKIIpppc.kcat",
+          "ePP1+CaMKIIppp.kcat",
+          "ePP1+CaMKIIp.Km",
+          "CaMCa4+CaMKIIp.tau",
+          "ePP1+CaMKIIppp.Km",
+          "ePP1+CaMKIIp.kcat",
+          "ePP1+CaMKIIp_CaM.kcat",
+          "ePP1+CaMKIIpp.kcat",
+          "eCaMKIIp+CaMKII_CaM.Km",
+          "eCaMCaMKII+CaMKIIp.Km",
+          "eCaMCaMKII+CaMKIIp.kcat",
+          "eCaMCaMKII+CaMCaMKII.kcat",
+          "CaMCa4+CaMKII.Kd",
+          "CaMCa4+CaMKIIp.Kd"
+        ],
+        "resultFile": "CaMKII_1_parms.json",
+        "optModelFile": "CaMKII_1_opt.g"
+      },
+      "CaMKII_2": {
+        "expt": {
+          "Bradshaw2002_Fig2A.json": {
+            "weight": 64
+          },
+          "Bradshaw2002_Fig2B.json": {
+            "weight": 64
+          },
+          "Cipolletta2010_Fig5C.json": {
+            "weight": 43
+          },
+          "Coultrap2012_Fig2A_0.1uM.json": {
+            "weight": 52
+          },
+          "Coultrap2012_Fig2A_1uM.json": {
+            "weight": 52
+          },
+          "Mitsui1993_Fig7_CaMKII.json": {
+            "weight": 255
+          },
+          "Shifman2006_Fig5.json": {
+            "weight": 37
+          },
+          "Mockett2011_Fig3A.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "bCaMKII+CaMKII.Kf",
+          "CaMCa4+CaMKII.tau",
+          "eCaMCaMKII+CaMCaMKII.Km"
+        ],
+        "resultFile": "CaMKII_2_parms.json",
+        "optModelFile": "CaMKII_2_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL8",
+      "hierarchyLevel": 8,
+      "Receptors_Ras_1": {
+        "expt": {
+          "ArakiY2015_Fig5B1.json": {
+            "weight": 97
+          },
+          "ArakiY2020_Fig4D.json": {
+            "weight": 97
+          },
+          "Kim1998_Fig6.json": {
+            "weight": 52
+          },
+          "McDonald2012_Table3.json": {
+            "weight": 58
+          },
+          "Cardone2004_Fig7A.json": {
+            "weight": 61
+          },
+          "HennigA2016_Fig1A.json": {
+            "weight": 60
+          },
+          "Santoro1994_Fig6B.json": {
+            "weight": 70
+          },
+          "ZhouY2010_Fig3D.json": {
+            "weight": 70
+          }
+        },
+        "params": [
+          "esynGAP+RasGTP.kcat",
+          "Ca+CaNCa2.tau",
+          "eCaMGEF+Ras.kcat",
+          "ePKC+GAP.kcat",
+          "bg+GEF.tau",
+          "CaMCa2+CaN.tau",
+          "SHCp_Grb2+Gab1.Kd",
+          "ePKC+GEF.kcat",
+          "GEF_deph.Kf",
+          "eGEF+RasGDP.Km",
+          "ePKC+GEF.Km",
+          "ebGEF+Ras.Km",
+          "bg+GEF.Kd",
+          "eGbg+Ras.Km",
+          "eSHCpSosGrb2+Ras.kcat",
+          "eGEF+RasGDP.kcat",
+          "esynGAP+RasGTP.Km",
+          "eSHCpSosGrb2+Ras.Km",
+          "Ras_inact_GEFp.Kf",
+          "ebGEF+Ras.kcat"
+        ],
+        "resultFile": "Receptors_Ras_1_parms.json",
+        "optModelFile": "Receptors_Ras_1_opt.g"
+      },
+      "Receptors_Ras_2": {
+        "expt": {
+          "ArakiY2015_Fig5B1.json": {
+            "weight": 97
+          },
+          "ArakiY2020_Fig4D.json": {
+            "weight": 97
+          },
+          "Kim1998_Fig6.json": {
+            "weight": 52
+          },
+          "Orita1993_Table1.json": {
+            "weight": 64
+          },
+          "Cardone2004_Fig7A.json": {
+            "weight": 61
+          },
+          "HennigA2016_Fig1A.json": {
+            "weight": 60
+          },
+          "Santoro1994_Fig6B.json": {
+            "weight": 70
+          },
+          "ZhouY2010_Fig3D.json": {
+            "weight": 70
+          }
+        },
+        "params": [
+          "ePKA+GEF.kcat",
+          "eGbg+Ras.kcat",
+          "ePKA+GEF.Km",
+          "Ca+CaN.tau",
+          "SHCp_Grb2+Gab1.tau",
+          "CaMCa4+GEF.Kd",
+          "Ca+CaNCa2.Kd",
+          "GAP_deph.Kf",
+          "CaMCa4+GEF.tau",
+          "CaMCa3+CaN.tau",
+          "eCaMGEF+Ras.Km",
+          "CaMCa4+CaN.tau",
+          "CaMCa2+CaN.Kd",
+          "ePKC+GAP.Km",
+          "CaMCa3+CaN.Kd"
+        ],
+        "resultFile": "Receptors_Ras_2_parms.json",
+        "optModelFile": "Receptors_Ras_2_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL9",
+      "hierarchyLevel": 9,
+      "Receptors_PI3K_1": {
+        "expt": {
+          "Jeon2012_Fig1A_PI3K.json": {
+            "weight": 100
+          },
+          "Santoro1994_Fig5B.json": {
+            "weight": 70
+          },
+          "Huang2011_Fig4A_0.4ng_ul_PI3K.json": {
+            "weight": 52
+          },
+          "Huang2011_Fig4A_1.2ng_ul_PI3K.json": {
+            "weight": 52
+          },
+          "Huang2011_Fig4A_2ng_ul_PI3K.json": {
+            "weight": 52
+          },
+          "Huang2011_Fig4B.json": {
+            "weight": 52
+          },
+          "Maehama1998_Fig2A.json": {
+            "weight": 67
+          },
+          "Pacold2000.json": {
+            "weight": 58
+          }
+        },
+        "params": [
+          "ePTEN+PIP3.Km",
+          "ePTEN+PIP3.kcat",
+          "Sosp+Grb2.Kd",
+          "Sos+Grb2.Kd",
+          "SHC+SosGrb2.tau",
+          "SHC+SosGrb2.Kd",
+          "SHCpGrb2Gab1+PI3K.Kd",
+          "SHCp+Grb2.Kd",
+          "ebPI3K+PIP2.Km",
+          "PI3K+RasGTP.Kd",
+          "ebPI3K+PIP2.kcat",
+          "Sosp_deph.Kf",
+          "eSHCpGrb2Gab1PI3K+PIP2.kcat",
+          "Sosp+Grb2.tau",
+          "ePI3K_Ras+PIP2.kcat",
+          "Sos+Grb2.tau",
+          "PI3K+RasGTP.tau",
+          "ePI3K_Ras+PIP2.Km",
+          "SHCp+Grb2.tau",
+          "eSHCpGrb2Gab1PI3K+PIP2.Km"
+        ],
+        "resultFile": "Receptors_PI3K_1_parms.json",
+        "optModelFile": "Receptors_PI3K_1_opt.g"
+      },
+      "Receptors_PI3K_2": {
+        "expt": {
+          "Jeon2012_Fig1A_PI3K.json": {
+            "weight": 100
+          },
+          "Santoro1994_Fig5B.json": {
+            "weight": 70
+          },
+          "Huang2011_Fig4A_0.4ng_ul_PI3K.json": {
+            "weight": 52
+          },
+          "Huang2011_Fig4A_1.2ng_ul_PI3K.json": {
+            "weight": 52
+          },
+          "Huang2011_Fig4A_2ng_ul_PI3K.json": {
+            "weight": 52
+          },
+          "Maehama1998_Fig2A.json": {
+            "weight": 67
+          }
+        },
+        "params": [
+          "SHCpGrb2Gab1+PI3K.tau"
+        ],
+        "resultFile": "Receptors_PI3K_2_parms.json",
+        "optModelFile": "Receptors_PI3K_2_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL10",
+      "hierarchyLevel": 10,
+      "Receptors_AKT": {
+        "expt": {
+          "Alessi1997_Fig3A.json": {
+            "weight": 37
+          },
+          "Alessi1997_Fig3B.json": {
+            "weight": 37
+          },
+          "Alessi1998_Fig4B.json": {
+            "weight": 55
+          },
+          "Biondi2000_Fig8A.json": {
+            "weight": 46
+          },
+          "Frech1997_Fig3A.json": {
+            "weight": 46
+          },
+          "Dijkhuizen2004_Fig2A.json": {
+            "weight": 100
+          },
+          "Genheden2015_Fig2D.json": {
+            "weight": 100
+          },
+          "Gottschalk1999_Fig2B.json": {
+            "weight": 97
+          },
+          "Kumar2005_Fig6L_pAKT.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_Akt_BDNF.json": {
+            "weight": 100
+          },
+          "Numakawa2009_FigS8B.json": {
+            "weight": 100
+          },
+          "Robinet2010_Fig4A.json": {
+            "weight": 100
+          },
+          "Troca-Martin2011_Fig2A.json": {
+            "weight": 100
+          },
+          "ZhouX2010_Fig2A.json": {
+            "weight": 100
+          },
+          "Zurashvili2013_Fig4C_pAKT_Ser473.json": {
+            "weight": 100
+          },
+          "Zurashvili2013_Fig4C_pAKT_Thr308.json": {
+            "weight": 100
+          },
+          "Li2013_Fig2A_pAKT.json": {
+            "weight": 94
+          },
+          "Lenz2005_Fig1C_Akt_NMDA.json": {
+            "weight": 100
+          },
+          "Shehata2012_Fig4B_AKT.json": {
+            "weight": 100
+          },
+          "Aditi_AKT.json": {
+            "weight": 97
+          },
+          "Hou2004_Fig1B.json": {
+            "weight": 97
+          },
+          "Osterweil2010_Fig2D_AKT.json": {
+            "weight": 97
+          },
+          "Zhu2017_Fig2B.json": {
+            "weight": 97
+          },
+          "Jeon2012_Fig1A_AKT.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ePI3K+AKT.Km",
+          "ePI3K+AKT.kcat",
+          "ePDK2+AKTp.Km",
+          "ePDK2+AKTp.kcat",
+          "ePP2A+AKTpq.Km",
+          "ePP2A+AKTpq.kcat",
+          "ePP2A+AKTp.Km",
+          "ePP2A+AKTp.kcat",
+          "PIP3+AKT.Kd",
+          "PIP3+AKT.tau",
+          "PIP3+PDK1.Kd",
+          "PIP3+PDK1.tau"
+        ],
+        "resultFile": "Receptors_AKT_parms.json",
+        "optModelFile": "Receptors_AKT_opt.g"
+      },
+      "PKC": {
+        "expt": {
+          "Andreozzi2003_Fig1A.json": {
+            "weight": 64
+          },
+          "Schaechter1993_Fig1B_absenceOfCa.json": {
+            "weight": 97
+          },
+          "Schaechter1993_Fig1B_presenceOfCa.json": {
+            "weight": 97
+          },
+          "Schaechter1993_Fig6B_absenceOfAA.json": {
+            "weight": 97
+          },
+          "Schaechter1993_Fig6B_presenceOfAA.json": {
+            "weight": 97
+          },
+          "Schaechter1993_Fig7.json": {
+            "weight": 97
+          },
+          "Schaechter1993_Fig8.json": {
+            "weight": 97
+          }
+        },
+        "params": [
+          "PKC+Ca.Kd",
+          "PKC+Ca.tau",
+          "PKC_Ca+DAG.Kd",
+          "PKC_Ca+DAG.tau",
+          "PKC_Ca_to_memb.Kd",
+          "PKC_Ca_to_memb.tau",
+          "PKC_Ca_DAG_to_memb.Kd",
+          "PKC_Ca_DAG_to_memb.tau",
+          "bPKC_act.Kd",
+          "bPKC_act.tau",
+          "PKC+DAG.Kd",
+          "PKC+DAG.tau",
+          "PKC_Ca+AA.Kd",
+          "PKC_Ca+AA.tau",
+          "PKC_DAG_AA_act.Kd",
+          "PKC_DAG_AA_act.tau",
+          "PKC+AA.Kd",
+          "PKC+AA.tau",
+          "PKC_DAG+AA.Kd",
+          "PKC_DAG+AA.tau"
+        ],
+        "resultFile": "PKC_parms.json",
+        "optModelFile": "PKC_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL11",
+      "hierarchyLevel": 11,
+      "Receptors_MAPK_1": {
+        "expt": {
+          "BarnesSA2015_Fig4Diii_WT.json": {
+            "weight": 97
+          },
+          "Kolch1993_Fig2.json": {
+            "weight": 85
+          },
+          "Seger1992_Table2.json": {
+            "weight": 52
+          },
+          "Genheden2015_Fig2C.json": {
+            "weight": 100
+          },
+          "Gottschalk1999_Fig1C.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig1D.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig2A.json": {
+            "weight": 97
+          },
+          "Ji2010_Fig1B_ERK_acute.json": {
+            "weight": 100
+          },
+          "Ji2010_Fig1B_ERK_gradient.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_ERK_BDNF.json": {
+            "weight": 100
+          },
+          "Numakawa2009_FigS8C.json": {
+            "weight": 100
+          },
+          "Robinet2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1B.json": {
+            "weight": 100
+          },
+          "Teng1995_Fig9A.json": {
+            "weight": 64
+          },
+          "Cardone2004_Fig5D.json": {
+            "weight": 61
+          },
+          "Gu2004_Fig3B.json": {
+            "weight": 70
+          },
+          "Li2013_Fig2A_pERK.json": {
+            "weight": 94
+          },
+          "Queipo2018_Fig2.json": {
+            "weight": 100
+          },
+          "Shah2003_Fig1B.json": {
+            "weight": 73
+          },
+          "Tang2015_Fig4D.json": {
+            "weight": 94
+          },
+          "Tucker1993_Fig7.json": {
+            "weight": 97
+          },
+          "ZhouY2010_Fig3C.json": {
+            "weight": 70
+          },
+          "Aditi_ERK.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig1B_pERK2.json": {
+            "weight": 97
+          },
+          "Auerbach2011_Fig1D_WT.json": {
+            "weight": 100
+          },
+          "BarnesSA2015_Fig3Eii_WT.json": {
+            "weight": 97
+          },
+          "Kim2008_Fig1A.json": {
+            "weight": 94
+          },
+          "Mao2005_Fig4.json": {
+            "weight": 100
+          },
+          "Nicodemo2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Osterweil2010_Fig2D_ERK.json": {
+            "weight": 97
+          },
+          "Page2006_Fig4C.json": {
+            "weight": 100
+          },
+          "Sethna2016_Fig1A.json": {
+            "weight": 94
+          },
+          "Sethna2016_Fig1C.json": {
+            "weight": 94
+          },
+          "Uematsu2015_Fig3B.json": {
+            "weight": 74
+          },
+          "Uematsu2015_Fig3F.json": {
+            "weight": 74
+          },
+          "Zhang2016_Fig7C.json": {
+            "weight": 79
+          },
+          "Zhu2017_Fig2C.json": {
+            "weight": 97
+          },
+          "Emery2012_Fig1B.json": {
+            "weight": 61
+          },
+          "Emery2012_Fig1C.json": {
+            "weight": 61
+          },
+          "Kaphzan2006_Fig1B.json": {
+            "weight": 97
+          },
+          "Kaphzan2007_Fig1A.json": {
+            "weight": 97
+          },
+          "Lenz2005_Fig1C_ERK_NMDA.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ePKC+mGluRbarr2_craf.kcat",
+          "ePKC+ng.kcat",
+          "crafpq_deph.kcat",
+          "eAKT+Raf.kcat",
+          "Raf1_deph.kcat",
+          "eRas+MAPKK.Km",
+          "eRas+MAPKKp.Km",
+          "crafpq_deph.Km",
+          "Raf1_deph.Km",
+          "Ras+craf.tau",
+          "mGluR_barr2+Raf.Kd",
+          "eMAPKK+MAPKp.kcat",
+          "craf_deph.Km",
+          "craf_deph.kcat",
+          "ePP2A+MAPKKp.Km",
+          "eRas+MAPKKp.kcat",
+          "eMAPKK+MAPK.kcat",
+          "ePP2A+MAPKKpq.kcat",
+          "ecraf+MAPKK.kcat",
+          "ecraf+MAPKKp.kcat"
+        ],
+        "resultFile": "Receptors_MAPK_1_parms.json",
+        "optModelFile": "Receptors_MAPK_1_opt.g"
+      },
+      "Receptors_MAPK_2": {
+        "expt": {
+          "BarnesSA2015_Fig4Diii_WT.json": {
+            "weight": 97
+          },
+          "Force1994_Table2.json": {
+            "weight": 52
+          },
+          "Kolch1993_Fig2.json": {
+            "weight": 85
+          },
+          "Genheden2015_Fig2C.json": {
+            "weight": 100
+          },
+          "Gottschalk1999_Fig1C.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig1D.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig2A.json": {
+            "weight": 97
+          },
+          "Ji2010_Fig1B_ERK_acute.json": {
+            "weight": 100
+          },
+          "Ji2010_Fig1B_ERK_gradient.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_ERK_BDNF.json": {
+            "weight": 100
+          },
+          "Numakawa2009_FigS8C.json": {
+            "weight": 100
+          },
+          "Robinet2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1B.json": {
+            "weight": 100
+          },
+          "Teng1995_Fig9A.json": {
+            "weight": 64
+          },
+          "Cardone2004_Fig5D.json": {
+            "weight": 61
+          },
+          "Gu2004_Fig3B.json": {
+            "weight": 70
+          },
+          "Li2013_Fig2A_pERK.json": {
+            "weight": 94
+          },
+          "Queipo2018_Fig2.json": {
+            "weight": 100
+          },
+          "Shah2003_Fig1B.json": {
+            "weight": 73
+          },
+          "Tang2015_Fig4D.json": {
+            "weight": 94
+          },
+          "Tucker1993_Fig7.json": {
+            "weight": 97
+          },
+          "ZhouY2010_Fig3C.json": {
+            "weight": 70
+          },
+          "Aditi_ERK.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig1B_pERK2.json": {
+            "weight": 97
+          },
+          "Auerbach2011_Fig1D_WT.json": {
+            "weight": 100
+          },
+          "BarnesSA2015_Fig3Eii_WT.json": {
+            "weight": 97
+          },
+          "Kim2008_Fig1A.json": {
+            "weight": 94
+          },
+          "Mao2005_Fig4.json": {
+            "weight": 100
+          },
+          "Nicodemo2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Osterweil2010_Fig2D_ERK.json": {
+            "weight": 97
+          },
+          "Page2006_Fig4C.json": {
+            "weight": 100
+          },
+          "Sethna2016_Fig1A.json": {
+            "weight": 94
+          },
+          "Sethna2016_Fig1C.json": {
+            "weight": 94
+          },
+          "Uematsu2015_Fig3B.json": {
+            "weight": 74
+          },
+          "Uematsu2015_Fig3F.json": {
+            "weight": 74
+          },
+          "Zhang2016_Fig7C.json": {
+            "weight": 79
+          },
+          "Zhu2017_Fig2C.json": {
+            "weight": 97
+          },
+          "Emery2012_Fig1B.json": {
+            "weight": 61
+          },
+          "Emery2012_Fig1C.json": {
+            "weight": 61
+          },
+          "Kaphzan2006_Fig1B.json": {
+            "weight": 97
+          },
+          "Kaphzan2007_Fig1A.json": {
+            "weight": 97
+          },
+          "Lenz2005_Fig1C_ERK_NMDA.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ePP2A+MAPKKpq.Km",
+          "eMKP1+MAPKp.Km",
+          "ePP2A+MAPKKp.kcat",
+          "eMKP1+MAPKpq.Km",
+          "eRas+MAPKK.kcat",
+          "Ras+craf.Kd",
+          "ePKC+craf.kcat",
+          "ecraf+MAPKK.Km",
+          "ecraf+MAPKKp.Km",
+          "eMKP1+MAPKp.kcat",
+          "ePP2A+RpT840barr2craf1p.Km",
+          "eMKP1+MAPKpq.kcat",
+          "ePP2A+RpT840barr2craf1p.kcat",
+          "ecraf1_mGluRbarr2+MEK.kcat",
+          "ecraf1_mGluRbarr2+MEKp.kcat",
+          "eAKT+Raf.Km",
+          "mGluRpT840barr2craf_dissoc.Kf",
+          "ePKC+mGluRbarr2_craf.Km",
+          "ecraf1_mGluRbarr2+MEK.Km",
+          "ecraf1_mGluRbarr2+MEKp.Km"
+        ],
+        "resultFile": "Receptors_MAPK_2_parms.json",
+        "optModelFile": "Receptors_MAPK_2_opt.g"
+      },
+      "Receptors_MAPK_3": {
+        "expt": {
+          "BarnesSA2015_Fig4Diii_WT.json": {
+            "weight": 97
+          },
+          "Kolch1993_Fig2.json": {
+            "weight": 85
+          },
+          "Genheden2015_Fig2C.json": {
+            "weight": 100
+          },
+          "Gottschalk1999_Fig1C.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig1D.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig2A.json": {
+            "weight": 97
+          },
+          "Ji2010_Fig1B_ERK_acute.json": {
+            "weight": 100
+          },
+          "Ji2010_Fig1B_ERK_gradient.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_ERK_BDNF.json": {
+            "weight": 100
+          },
+          "Numakawa2009_FigS8C.json": {
+            "weight": 100
+          },
+          "Robinet2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1B.json": {
+            "weight": 100
+          },
+          "Teng1995_Fig9A.json": {
+            "weight": 64
+          },
+          "Cardone2004_Fig5D.json": {
+            "weight": 61
+          },
+          "Gu2004_Fig3B.json": {
+            "weight": 70
+          },
+          "Li2013_Fig2A_pERK.json": {
+            "weight": 94
+          },
+          "Queipo2018_Fig2.json": {
+            "weight": 100
+          },
+          "Shah2003_Fig1B.json": {
+            "weight": 73
+          },
+          "Tang2015_Fig4D.json": {
+            "weight": 94
+          },
+          "Tucker1993_Fig7.json": {
+            "weight": 97
+          },
+          "ZhouY2010_Fig3C.json": {
+            "weight": 70
+          },
+          "Aditi_ERK.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig1B_pERK2.json": {
+            "weight": 97
+          },
+          "Auerbach2011_Fig1D_WT.json": {
+            "weight": 100
+          },
+          "BarnesSA2015_Fig3Eii_WT.json": {
+            "weight": 97
+          },
+          "Kim2008_Fig1A.json": {
+            "weight": 94
+          },
+          "Mao2005_Fig4.json": {
+            "weight": 100
+          },
+          "Nicodemo2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Osterweil2010_Fig2D_ERK.json": {
+            "weight": 97
+          },
+          "Page2006_Fig4C.json": {
+            "weight": 100
+          },
+          "Sethna2016_Fig1A.json": {
+            "weight": 94
+          },
+          "Sethna2016_Fig1C.json": {
+            "weight": 94
+          },
+          "Uematsu2015_Fig3B.json": {
+            "weight": 74
+          },
+          "Uematsu2015_Fig3F.json": {
+            "weight": 74
+          },
+          "Zhang2016_Fig7C.json": {
+            "weight": 79
+          },
+          "Zhu2017_Fig2C.json": {
+            "weight": 97
+          },
+          "Emery2012_Fig1B.json": {
+            "weight": 61
+          },
+          "Emery2012_Fig1C.json": {
+            "weight": 61
+          },
+          "Kaphzan2006_Fig1B.json": {
+            "weight": 97
+          },
+          "Kaphzan2007_Fig1A.json": {
+            "weight": 97
+          },
+          "Lenz2005_Fig1C_ERK_NMDA.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ng+CaM.Kd",
+          "ePKC+ng.Km",
+          "ng+CaM.tau",
+          "mGluR_barr2+Raf.tau",
+          "ePKC+ng_CaM.kcat",
+          "ePP2A+b2ARp1barr2crafp.kcat",
+          "eIntb2ARp1barr2craf+MEK.kcat",
+          "ePP2A+b2ARp1barr2crafp.Km",
+          "eIntb2ARp1barr2craf+MEK.Km",
+          "b2ARp1_barr2+Raf.tau",
+          "ePKC+b2ARp1barr2_craf.Km",
+          "b2ARp1_barr2+Raf.Kd",
+          "b2ARp1barr2craf_dissoc.Kf",
+          "ePKC+b2ARp1barr2_craf.kcat",
+          "eIntb2ARp1barr2craf+MEKp.Km",
+          "eIntb2ARp1barr2craf+MEKp.kcat",
+          "ePKC+ng_CaM.Km",
+          "ngp_deph.Kf",
+          "eMAPK+crafp.Km",
+          "eMAPK+crafp.kcat"
+        ],
+        "resultFile": "Receptors_MAPK_3_parms.json",
+        "optModelFile": "Receptors_MAPK_3_opt.g"
+      },
+      "Receptors_MAPK_4": {
+        "expt": {
+          "BarnesSA2015_Fig4Diii_WT.json": {
+            "weight": 97
+          },
+          "Haystead1992_Fig4.json": {
+            "weight": 49
+          },
+          "Kolch1993_Fig2.json": {
+            "weight": 85
+          },
+          "Genheden2015_Fig2C.json": {
+            "weight": 100
+          },
+          "Gottschalk1999_Fig1C.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig1D.json": {
+            "weight": 97
+          },
+          "Gottschalk1999_Fig2A.json": {
+            "weight": 97
+          },
+          "Ji2010_Fig1B_ERK_acute.json": {
+            "weight": 100
+          },
+          "Ji2010_Fig1B_ERK_gradient.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_ERK_BDNF.json": {
+            "weight": 100
+          },
+          "Numakawa2009_FigS8C.json": {
+            "weight": 100
+          },
+          "Robinet2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1A.json": {
+            "weight": 100
+          },
+          "Abe2000_Fig1B.json": {
+            "weight": 100
+          },
+          "Teng1995_Fig9A.json": {
+            "weight": 64
+          },
+          "Cardone2004_Fig5D.json": {
+            "weight": 61
+          },
+          "Gu2004_Fig3B.json": {
+            "weight": 70
+          },
+          "Li2013_Fig2A_pERK.json": {
+            "weight": 94
+          },
+          "Queipo2018_Fig2.json": {
+            "weight": 100
+          },
+          "Shah2003_Fig1B.json": {
+            "weight": 73
+          },
+          "Tang2015_Fig4D.json": {
+            "weight": 94
+          },
+          "Tucker1993_Fig7.json": {
+            "weight": 97
+          },
+          "ZhouY2010_Fig3C.json": {
+            "weight": 70
+          },
+          "Aditi_ERK.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig1B_pERK2.json": {
+            "weight": 97
+          },
+          "Auerbach2011_Fig1D_WT.json": {
+            "weight": 100
+          },
+          "BarnesSA2015_Fig3Eii_WT.json": {
+            "weight": 97
+          },
+          "Kim2008_Fig1A.json": {
+            "weight": 94
+          },
+          "Mao2005_Fig4.json": {
+            "weight": 100
+          },
+          "Nicodemo2010_Fig5A.json": {
+            "weight": 100
+          },
+          "Osterweil2010_Fig2D_ERK.json": {
+            "weight": 97
+          },
+          "Page2006_Fig4C.json": {
+            "weight": 100
+          },
+          "Sethna2016_Fig1A.json": {
+            "weight": 94
+          },
+          "Sethna2016_Fig1C.json": {
+            "weight": 94
+          },
+          "Uematsu2015_Fig3B.json": {
+            "weight": 74
+          },
+          "Uematsu2015_Fig3F.json": {
+            "weight": 74
+          },
+          "Zhang2016_Fig7C.json": {
+            "weight": 79
+          },
+          "Zhu2017_Fig2C.json": {
+            "weight": 97
+          },
+          "Emery2012_Fig1B.json": {
+            "weight": 61
+          },
+          "Emery2012_Fig1C.json": {
+            "weight": 61
+          },
+          "Kaphzan2006_Fig1B.json": {
+            "weight": 97
+          },
+          "Kaphzan2007_Fig1A.json": {
+            "weight": 97
+          },
+          "Lenz2005_Fig1C_ERK_NMDA.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ePKC+craf.Km",
+          "eMAPKK+MAPKp.Km",
+          "eMAPKK+MAPK.Km"
+        ],
+        "resultFile": "Receptors_MAPK_4_parms.json",
+        "optModelFile": "Receptors_MAPK_4_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL12",
+      "hierarchyLevel": 12,
+      "TSC1_2": {
+        "expt": {
+          "Inoki2003_Fig1B.json": {
+            "weight": 49
+          },
+          "Inoki2003_Fig1C.json": {
+            "weight": 49
+          },
+          "Li2006_Table1.json": {
+            "weight": 49
+          },
+          "Tee2003_Fig6B.json": {
+            "weight": 49
+          },
+          "Zhang2003_Fig2A.json": {
+            "weight": 46
+          }
+        },
+        "params": [
+          "eTSC1_2+RhebGTP.Km",
+          "eTSC1_2+RhebGTP.kcat"
+        ],
+        "resultFile": "TSC1_2_parms.json",
+        "optModelFile": "TSC1_2_opt.g"
+      },
+      "Receptors_mTOR_S6K": {
+        "expt": {
+          "Antion2008_Fig1B_mTOR.json": {
+            "weight": 97
+          },
+          "Toral-Barza2005_Fig3B.json": {
+            "weight": 55
+          },
+          "Toral-Barza2005_Fig4C.json": {
+            "weight": 55
+          },
+          "Troca-Martin2011_Fig2B.json": {
+            "weight": 100
+          },
+          "Bateup2011_Fig1B_pS6.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ebAKT+TSC1_2.Km",
+          "ebAKT+TSC1_2.kcat",
+          "eAKT+TSC1_2.Km",
+          "eAKT+TSC1_2.kcat",
+          "TSC1_2_deph.Kf",
+          "RhebGTP+mTOR.Kd",
+          "RhebGTP+mTOR.tau",
+          "Rheb_act.Kf"
+        ],
+        "resultFile": "Receptors_mTOR_S6K_parms.json",
+        "optModelFile": "Receptors_mTOR_S6K_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL13",
+      "hierarchyLevel": 13,
+      "Receptors_S6K": {
+        "expt": {
+          "Alessi1998.json": {
+            "weight": 55
+          },
+          "Toral-Barza2005_Fig5A.json": {
+            "weight": 55
+          },
+          "Alessi1998_Fig6A.json": {
+            "weight": 55
+          },
+          "Bateup2011_Fig1B_pS6K.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_S6K_BDNF.json": {
+            "weight": 100
+          },
+          "Schratt2004_Fig8C_S6K.json": {
+            "weight": 94
+          },
+          "Takei2004_Fig4B_pS6K.json": {
+            "weight": 100
+          },
+          "Troca-Martin2011_Fig2C.json": {
+            "weight": 100
+          },
+          "ZhouX2010_Fig1A.json": {
+            "weight": 100
+          },
+          "ZhouX2010_Fig1B.json": {
+            "weight": 100
+          },
+          "Aditi_S6K.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig1C.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig6B_DHPG.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig6B_DHPG_U0126.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig6D_DHPG.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig6D_DHPG_LY294002.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig6D_DHPG_Rapamycin.json": {
+            "weight": 97
+          },
+          "Page2006_Fig2D.json": {
+            "weight": 100
+          },
+          "Page2006_Fig4D.json": {
+            "weight": 100
+          },
+          "Sethna2016_Fig1B.json": {
+            "weight": 94
+          },
+          "Sethna2016_Fig1D.json": {
+            "weight": 94
+          },
+          "Ru2012_Fig1A.json": {
+            "weight": 100
+          },
+          "Ru2012_Fig1C.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_S6K_NMDA.json": {
+            "weight": 100
+          },
+          "Shehata2012_Fig4B_S6K.json": {
+            "weight": 100
+          },
+          "Li2012_Fig1C.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ePDK1+S6K.Km",
+          "ePDK1+S6K.kcat",
+          "emTORC1+S6K.Km",
+          "emTORC1+S6K.kcat",
+          "bS6K_act.Kf",
+          "ePP2A+S6Kpq.Km",
+          "ePP2A+S6Kpq.kcat",
+          "ePP2A+S6Kpqrs.Km",
+          "ePP2A+S6Kpqrs.kcat",
+          "ePP2A+S6Kpqr.Km",
+          "ePP2A+S6Kpqr.kcat",
+          "eMAPK+S6K.Km",
+          "eMAPK+S6K.kcat"
+        ],
+        "resultFile": "Receptors_S6K_parms.json",
+        "optModelFile": "Receptors_S6K_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL14",
+      "hierarchyLevel": 14,
+      "4EBP": {
+        "expt": {
+          "Haar2002_Fig2D.json": {
+            "weight": 28
+          },
+          "Karim2001_Fig8.json": {
+            "weight": 49
+          },
+          "Ptushkina1999_Fig4B.json": {
+            "weight": 58
+          },
+          "Ptushkina1999_Fig3and4.json": {
+            "weight": 58
+          }
+        },
+        "params": [
+          "eIF4E+4EBP.Kd",
+          "eIF4E+4EBP.tau",
+          "eIF4EBPpqr_dissoc.Kd",
+          "eIF4EBPpq_dissoc.Kd"
+        ],
+        "resultFile": "4EBP_parms.json",
+        "optModelFile": "4EBP_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL15",
+      "hierarchyLevel": 15,
+      "CaMKIII": {
+        "expt": {
+          "Mitsui1993_Fig7_CaMKIII.json": {
+            "weight": 255
+          },
+          "Pigott2012_Fig3A.json": {
+            "weight": 255
+          },
+          "Pigott2012_Fig4C.json": {
+            "weight": 255
+          },
+          "Ruys2012_Fig1A.json": {
+            "weight": 255
+          },
+          "Tavares2014_Fig4A.json": {
+            "weight": 255
+          },
+          "Tavares2014_Fig4D.json": {
+            "weight": 255
+          },
+          "Wang2001_Fig3B.json": {
+            "weight": 255
+          },
+          "Wang2001_Fig4B.json": {
+            "weight": 255
+          }
+        },
+        "params": [
+          "CaMCa4+CaMKIII.Kd",
+          "CaMCa4+CaMKIII.tau",
+          "eS6Kpqrs+CaMKIII.Km",
+          "eS6Kpqrs+CaMKIII.kcat"
+        ],
+        "resultFile": "CaMKIII_parms.json",
+        "optModelFile": "CaMKIII_opt.g"
+      },
+      "Receptors_eIF4E": {
+        "expt": {
+          "Brunn1997_Fig2A.json": {
+            "weight": 94
+          },
+          "Brunn1997_Fig3.json": {
+            "weight": 58
+          },
+          "Sato2009_Fig1C.json": {
+            "weight": 55
+          },
+          "Haystead1994_Fig2.json": {
+            "weight": 49
+          },
+          "Haystead1994_Fig3.json": {
+            "weight": 49
+          },
+          "Genheden2015_Fig2B.json": {
+            "weight": 100
+          },
+          "Reichling2008_Fig1.json": {
+            "weight": 46
+          },
+          "Schratt2004_Fig8C_eIF4E.json": {
+            "weight": 94
+          },
+          "Takei2004_Fig4B_eIF4E_4EBP.json": {
+            "weight": 100
+          },
+          "Takei2004_Fig4B_p4EBP.json": {
+            "weight": 100
+          },
+          "Troca-Martin2011_Fig2E.json": {
+            "weight": 100
+          },
+          "Troca-Martin2011_Fig3B.json": {
+            "weight": 100
+          },
+          "Kleijn1996_Fig1B_EGF.json": {
+            "weight": 67
+          },
+          "Kleijn1996_Fig5B_Rapamycin.json": {
+            "weight": 67
+          },
+          "Mockett2011_Fig3B.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "emTORC1+eIF4E_4EBP.Km",
+          "emTORC1+eIF4E_4EBP.kcat",
+          "emTORC1+4EBP.Km",
+          "emTORC1+4EBP.kcat",
+          "ePP2A+4EBPpqr.Km",
+          "ePP2A+4EBPpqr.kcat",
+          "ePP2A+4EBPpq.Km",
+          "ePP2A+4EBPpq.kcat",
+          "ePP2A+eIF4EBPpqr.Km",
+          "ePP2A+eIF4EBPpqr.kcat",
+          "ePP2A+eIF4EBPpq.Km",
+          "ePP2A+eIF4EBPpq.kcat",
+          "eIF4EBPpqr_dissoc.tau",
+          "eIF4EBPpq_dissoc.tau",
+          "eMAPK+eIF4EBPpq.Km",
+          "eMAPK+eIF4EBPpq.kcat",
+          "eMAPK+4EBPpq.Km",
+          "eMAPK+4EBPpq.kcat"
+        ],
+        "resultFile": "Receptors_eIF4E_parms.json",
+        "optModelFile": "Receptors_eIF4E_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL16",
+      "hierarchyLevel": 16,
+      "Receptors_S6": {
+        "expt": {
+          "Flotow1992_Fig1.json": {
+            "weight": 49
+          },
+          "Flotow1992_Table1.json": {
+            "weight": 49
+          },
+          "Zhang2006_Fig5B.json": {
+            "weight": 49
+          },
+          "Bhattacharya2016_Fig2B_S6p.json": {
+            "weight": 100
+          },
+          "Bhattacharya2016_Fig2D_S6p.json": {
+            "weight": 100
+          },
+          "Genheden2015_Fig2E.json": {
+            "weight": 100
+          },
+          "Lenz2005_Fig1C_S6_BDNF.json": {
+            "weight": 100
+          },
+          "Robinet2010_Fig4C.json": {
+            "weight": 100
+          },
+          "Takei2004_Fig4B_pS6.json": {
+            "weight": 100
+          },
+          "Troca-Martin2011_Fig2D.json": {
+            "weight": 100
+          },
+          "Kleijn1996_Fig5B.json": {
+            "weight": 67
+          },
+          "Lenz2005_Fig1C_S6_NMDA.json": {
+            "weight": 100
+          },
+          "Antion2008_Fig1B_pS6.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig3B_DHPG.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig3B_DHPG_LY294002.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig3B_DHPG_Wortmannin.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig4B_pS6_DHPG.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig4B_pS6_DHPG_Rapamycin.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig5B_pS6_DHPG.json": {
+            "weight": 97
+          },
+          "Antion2008_Fig5B_pS6_DHPG_U0126.json": {
+            "weight": 97
+          },
+          "Zhu2017_Fig2D.json": {
+            "weight": 97
+          }
+        },
+        "params": [
+          "ebS6K+S6.Km",
+          "ebS6K+S6.kcat",
+          "eS6Kpqrs+40S.Km",
+          "eS6Kpqrs+40S.kcat",
+          "eS6Kpqr+40S.Km",
+          "eS6Kpqr+40S.kcat",
+          "S6_deph.Kf"
+        ],
+        "resultFile": "Receptors_S6_parms.json",
+        "optModelFile": "Receptors_S6_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL17",
+      "hierarchyLevel": 17,
+      "TransInit": {
+        "expt": {
+          "Haar2006_Table1.json": {
+            "weight": 19
+          },
+          "Slepenkov2008_Table3B.json": {
+            "weight": 58
+          }
+        },
+        "params": [
+          "eIF4E+GA.Kd",
+          "eIF4E+GA.tau",
+          "eIF4F+mRNA.Kd",
+          "eIF4F+mRNA.tau",
+          "eIF4G+A.Kd",
+          "eIF4G+A.tau"
+        ],
+        "resultFile": "TransInit_parms.json",
+        "optModelFile": "TransInit_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL18",
+      "hierarchyLevel": 18,
+      "43S": {
+        "expt": {
+          "Lorsch1999_Fig5A.json": {
+            "weight": 46
+          },
+          "Parkhurst1994_QR.json": {
+            "weight": 49
+          },
+          "Parkhurst1994_QRM.json": {
+            "weight": 49
+          },
+          "Parkhurst1994_Table1.json": {
+            "weight": 49
+          },
+          "VillaN2024_Fig5A.json": {
+            "weight": 64
+          }
+        },
+        "params": [
+          "Q+R.Kd",
+          "Q+R.tau",
+          "QR+M.Kd",
+          "QR+M.tau",
+          "R+M.Kd",
+          "R+M.tau",
+          "RM+Q.Kd",
+          "RM+Q.tau"
+        ],
+        "resultFile": "43S_parms.json",
+        "optModelFile": "43S_opt.g"
+      },
+      "Receptors_eEF2": {
+        "expt": {
+          "Mitsui1993_Fig7_Table3.json": {
+            "weight": 55
+          },
+          "Bhattacharya2016_Fig2B_eEF2p.json": {
+            "weight": 100
+          },
+          "Bhattacharya2016_Fig2D_eEF2p.json": {
+            "weight": 100
+          },
+          "Dastidar2020_3H_DHPG.json": {
+            "weight": 100
+          },
+          "Marin1997_Fig1C.json": {
+            "weight": 97
+          },
+          "Redpath1993_Fig3.json": {
+            "weight": 49
+          },
+          "Redpath1993_Fig6.json": {
+            "weight": 49
+          },
+          "Scheetz2000_Fig3A.json": {
+            "weight": 100
+          },
+          "Dastidar2020_3H_NMDA.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "ebCaMKIII+eEF2.Km",
+          "ebCaMKIII+eEF2.kcat",
+          "eCaMKIII+eEF2.Km",
+          "eCaMKIII+eEF2.kcat",
+          "ePP2A+eEF2p.Km",
+          "ePP2A+eEF2p.kcat",
+          "ebS6K+CaMKIII.Km",
+          "ebS6K+CaMKIII.kcat",
+          "CaMKIIIp_deph.Kf"
+        ],
+        "resultFile": "Receptors_eEF2_parms.json",
+        "optModelFile": "Receptors_eEF2_opt.g"
+      }
+    },
+    {
+      "name": "SignalsHL19",
+      "hierarchyLevel": 19,
+      "Receptors_protein": {
+        "expt": {
+          "Auerbach2011_Fig2I_WT.json": {
+            "weight": 100
+          },
+          "Demeshkina2007_Fig1B.json": {
+            "weight": 37
+          },
+          "Demeshkina2007_FigS3B.json": {
+            "weight": 37
+          },
+          "Lorsch1999_Fig5B.json": {
+            "weight": 46
+          },
+          "BarnesSA2015_Fig3D_WT.json": {
+            "weight": 97
+          },
+          "BarnesSA2015_Fig4Di_WT.json": {
+            "weight": 97
+          },
+          "Bhattacharya2016_Fig1C.json": {
+            "weight": 100
+          },
+          "Bowling2016_Fig1C.json": {
+            "weight": 97
+          },
+          "Bowling2016_Fig1E_CA1.json": {
+            "weight": 97
+          },
+          "Bowling2016_Fig1E_DG.json": {
+            "weight": 97
+          },
+          "Dieterich2010_Fig5B.json": {
+            "weight": 100
+          },
+          "Genheden2015_Fig2A.json": {
+            "weight": 100
+          },
+          "Osterweil2010_Fig4.json": {
+            "weight": 97
+          },
+          "Wei-Lun2015_Fig4C_BDNF.json": {
+            "weight": 100
+          },
+          "Rothenberg2018_FigS3B.json": {
+            "weight": 46
+          },
+          "Dastidar2020_3C_DHPG.json": {
+            "weight": 100
+          },
+          "Osterweil2010_Fig1G.json": {
+            "weight": 97
+          },
+          "Wei-Lun2015_Fig4C_Glutamate.json": {
+            "weight": 100
+          },
+          "Jeon2012_Fig1C_FMRP.json": {
+            "weight": 100
+          },
+          "Dastidar2020_3C_NMDA.json": {
+            "weight": 100
+          },
+          "Gross2010_Fig5D_APV.json": {
+            "weight": 100
+          },
+          "Scheetz2000_Fig1B.json": {
+            "weight": 100
+          }
+        },
+        "params": [
+          "FMRP+iTransl.Kd",
+          "FMRP+iTransl.tau",
+          "Degrade_FMRP.Kf",
+          "pep_elongation.Kd",
+          "pep_elongation.tau",
+          "Degrade_protein.Kf",
+          "FMRP_synth.Kd",
+          "FMRP_synth.tau",
+          "eTrans+AA.Km",
+          "eTrans+AA.kcat",
+          "ebTrans+AA.Km",
+          "ebTrans+AA.kcat",
+          "eCKII+FMRP.Km",
+          "eCKII+FMRP.kcat",
+          "ePP2A+FMRPp.Km",
+          "ePP2A+FMRPp.kcat",
+          "elongation.Kd",
+          "elongation.tau",
+          "activation.Kd",
+          "activation.tau"
+        ],
+        "resultFile": "Receptors_protein_parms.json",
+        "optModelFile": "Receptors_protein_opt.g"
+      }
+    }
+  ]
+}
